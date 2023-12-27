@@ -1,6 +1,11 @@
 var/global/list/image/ghost_darkness_images = list() //this is a list of images for things ghosts should still be able to see when they toggle darkness
 var/global/list/image/ghost_sightless_images = list() //this is a list of images for things ghosts should still be able to see even without ghost sight
 
+var/list/NOIRLIST = list(0.3,0.3,0.3,0, // stolen from IS12 :)
+			 			 0.3,0.3,0.3,0,
+						 0.3,0.3,0.3,0,
+						 0.0,0.0,0.0,1,)
+
 /mob/observer/ghost
 	name = "ghost"
 	desc = "It's a g-g-g-g-ghooooost!" //jinkies!
@@ -144,8 +149,12 @@ Works together with spawning an observer, noted above.
 		ghost.can_reenter_corpse = can_reenter_corpse
 		ghost.timeofdeath = src.stat == DEAD ? src.timeofdeath : world.time
 		ghost.key = key
-		if(ghost.client && !ghost.client.holder && !config.antag_hud_allowed)		// For new ghosts we remove the verb from even showing up if it's not allowed.
+		sound_to(ghost.client, sound('sound/effects/DVreplay.ogg'))
+
+		if(ghost.client)
+			ghost.client.color = NOIRLIST
 			ghost.verbs -= /mob/observer/ghost/verb/toggle_antagHUD	// Poor guys, don't know what they are missing!
+			ghost.set_sight(sight&(~(SEE_TURFS|SEE_MOBS|SEE_OBJS)))//Ghosts can no longer see all
 		return ghost
 
 /mob/observer/ghostize() // Do not create ghosts of ghosts.

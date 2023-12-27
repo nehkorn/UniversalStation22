@@ -439,6 +439,7 @@ This function restores all organs.
 			created_wound = organ.take_external_damage(0, damage, damage_flags, used_weapon)
 		if(PAIN)
 			organ.add_pain(damage)
+			organ.owner.emote("scream")
 		if(CLONE)
 			organ.add_genetic_damage(damage)
 

@@ -120,7 +120,7 @@
 
 /obj/screen/fullscreen/noise
 	icon = 'icons/effects/static.dmi'
-	icon_state = "1 light"
+	icon_state = "1 moderate"
 	screen_loc = ui_entire_screen
 	alpha = 127
 

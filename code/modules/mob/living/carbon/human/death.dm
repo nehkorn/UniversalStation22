@@ -23,7 +23,7 @@
 	else
 		..()
 
-/mob/living/carbon/human/death(gibbed,deathmessage="seizes up and falls limp...", show_dead_message = "You have died.")
+/mob/living/carbon/human/death(gibbed,deathmessage="seizes up and falls limp...", show_dead_message = "ERR: D-V Replay Error: Fatality")
 
 	if(stat == DEAD) return
 

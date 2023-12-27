@@ -72,6 +72,7 @@
 			Paralyse(effect * blocked_mult(blocked))
 		if(PAIN)
 			adjustHalLoss(effect * blocked_mult(blocked))
+			emote("scream")
 		if(STUTTER)
 			if(status_flags & CANSTUN) // stun is usually associated with stutter - TODO CANSTUTTER flag?
 				stuttering = max(stuttering, effect * blocked_mult(blocked))
