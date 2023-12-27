@@ -387,7 +387,7 @@
 						to_chat(user, "<span class='warning'>You struggle to hold \the [src] steady!</span>")
 
 		// If your skill in weapons is higher than/equal to (screen_shake + 2) - it won't shake at all.
-		if(screen_shake && !user.skill_check(SKILL_WEAPONS,screen_shake+2))
+		if(screen_shake)
 			spawn()
 				shake_camera(user, screen_shake+1, screen_shake)
 
@@ -524,9 +524,9 @@
 		user.visible_message("<span class = 'warning'>[user] pulls the trigger.</span>")
 		var/shot_sound = in_chamber.fire_sound? in_chamber.fire_sound : fire_sound
 		if(silenced)
-			playsound(user, shot_sound, 10, 1)
+			playsound(user, shot_sound, 20, 1)
 		else
-			playsound(user, shot_sound, 50, 1)
+			playsound(user, shot_sound, 200, 1)
 		if(istype(in_chamber, /obj/item/projectile/beam/lastertag))
 			user.show_message("<span class = 'warning'>You feel rather silly, trying to commit suicide with a toy.</span>")
 			mouthshoot = 0
