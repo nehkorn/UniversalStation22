@@ -118,9 +118,27 @@
 	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	icon_state = "druggy"
 
-/obj/screen/fullscreen/noise
+/obj/screen/fullscreen/noise/light
+	icon = 'icons/effects/static.dmi'
+	icon_state = "1 light"
+	screen_loc = ui_entire_screen
+	alpha = 127
+
+/obj/screen/fullscreen/noise/moderate
 	icon = 'icons/effects/static.dmi'
 	icon_state = "1 moderate"
+	screen_loc = ui_entire_screen
+	alpha = 127
+
+/obj/screen/fullscreen/noise/heavy
+	icon = 'icons/effects/static.dmi'
+	icon_state = "1 heavy"
+	screen_loc = ui_entire_screen
+	alpha = 127
+
+/obj/screen/fullscreen/greyscale
+	icon = 'icons/effects/static.dmi'
+	icon_state = "greyscale"
 	screen_loc = ui_entire_screen
 	alpha = 127
 
