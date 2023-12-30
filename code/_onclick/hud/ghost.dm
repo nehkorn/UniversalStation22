@@ -33,3 +33,5 @@
 
 	G.client.screen = list()
 	G.client.screen += adding
+
+	G.client.color = NOIRLIST

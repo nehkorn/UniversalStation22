@@ -45,6 +45,8 @@
 
 	handle_regular_hud_updates()
 
+	handle_cool_screen_effects()
+
 	return 1
 
 /mob/living/proc/handle_breathing()
@@ -167,19 +169,18 @@
 
 	handle_hud_icons()
 	handle_vision()
-	handle_cool_screen_effects()
 
 	return 1
 
 /mob/living/proc/handle_cool_screen_effects()
-	clear_fullscreen("whitenoise")
+	src.clear_fullscreen("whitenoise")
 	switch(src.get_damage_percentage())
 		if(100 to INFINITY)
-			overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/light)
+			src.overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/light)
 		if(60 to 80)
-			overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/moderate)
+			src.overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/moderate)
 		if(20 to 40)
-			overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/heavy)
+			src.overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/heavy)
 
 /mob/living/proc/handle_vision()
 	update_sight()

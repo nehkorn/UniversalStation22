@@ -1,6 +1,8 @@
 var/global/list/image/ghost_darkness_images = list() //this is a list of images for things ghosts should still be able to see when they toggle darkness
 var/global/list/image/ghost_sightless_images = list() //this is a list of images for things ghosts should still be able to see even without ghost sight
 
+var/global/list/NOIRLIST = list(0.299,0.299,0.299, 0.587,0.587,0.587, 0.114,0.114,0.114)
+
 /mob/observer/ghost
 	name = "ghost"
 	desc = "It's a g-g-g-g-ghooooost!" //jinkies!
@@ -147,7 +149,6 @@ Works together with spawning an observer, noted above.
 		sound_to(ghost.client, sound('sound/effects/DVreplay.ogg'))
 
 		if(ghost.client)
-			add_client_color(/datum/client_color/noir)
 			ghost.verbs -= /mob/observer/ghost/verb/toggle_antagHUD	// Poor guys, don't know what they are missing!
 			ghost.set_sight(sight&(~(SEE_TURFS|SEE_MOBS|SEE_OBJS)))//Ghosts can no longer see all
 		return ghost
