@@ -230,7 +230,7 @@ meteor_act
 		return //if the weapon itself didn't get bloodied than it makes little sense for the target to be bloodied either
 
 	//getting the weapon bloodied is easier than getting the target covered in blood, so run prob() again
-	if(prob(33 + W.sharp ? 10 : 0))
+	if(prob(33 + W.sharp*10))
 		var/turf/location = loc
 		if(istype(location, /turf/simulated))
 			location.add_blood(src)
@@ -253,6 +253,21 @@ meteor_act
 					update_inv_glasses(0)
 			if(BP_CHEST)
 				bloody_body(src)
+
+	//All this is copypasta'd from projectile code. Basically there's a cool splat animation when someone gets hit by something.
+	var/splatter_dir = dir
+	var/turf/target_loca = get_turf(src)
+	splatter_dir = get_dir(attacker, target_loca)
+	target_loca = get_step(target_loca, splatter_dir)
+	var/blood_color = "#C80000"
+	blood_color = src.species.blood_color
+	new/obj/effect/temp_visual/bloodsplatter(get_turf(src), splatter_dir, blood_color)
+	var/obj/effect/decal/cleanable/blood/B = blood_splatter(target_loca, src, 1, splatter_dir)
+	B.icon_state = pick("dir_splatter_1","dir_splatter_2")
+	var/scale = min(1, round(effective_force / 50, 0.2))
+	var/matrix/M = new()
+	B.transform = M.Scale(scale)
+	//target_loca.add_blood(src)
 
 /mob/living/carbon/human/proc/projectile_hit_bloody(obj/item/projectile/P, var/effective_force, var/hit_zone, var/obj/item/organ/external/organ)
 	if(P.damage_type != BRUTE || P.nodamage)

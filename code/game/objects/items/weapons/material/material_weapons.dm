@@ -12,6 +12,8 @@
 	var/default_material = MATERIAL_STEEL
 	var/material/material
 
+	i_want_cool_sharp_sounds = TRUE
+
 	var/applies_material_colour = 1
 	var/applies_material_name = 1 //if false, does not rename item to 'material item.name'
 	var/furniture_icon  //icon states for non-material colorable overlay, i.e. handles

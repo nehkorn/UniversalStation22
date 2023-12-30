@@ -113,6 +113,12 @@ GLOBAL_LIST_INIT(chop_sound,\
 		'sound/weapons/chop2.ogg',\
 		'sound/weapons/chop3.ogg'))
 
+GLOBAL_LIST_INIT(sharp_sound,\
+	list(\
+		'sound/weapons/stab1.ogg',\
+		'sound/weapons/stab2.ogg',\
+		'sound/weapons/stab3.ogg'))
+
 GLOBAL_LIST_INIT(glasscrack_sound,\
 	list(\
 		'sound/effects/glass_crack1.ogg',\

@@ -12,6 +12,7 @@
 	var/hitsound = "swing_hit"
 	var/slot_flags = 0		//This is used to determine on which slots an item can fit.
 	var/no_attack_log = FALSE			//If it's an item we don't want to log attack_logs with, set this to 1
+	var/i_want_cool_sharp_sounds = FALSE
 	pass_flags = PASS_FLAG_TABLE
 //	causeerrorheresoifixthis
 	var/obj/item/master = null
