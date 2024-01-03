@@ -14,6 +14,12 @@
 	. = ..()
 	QDEL_IN(src, duration)
 
+/obj/effect/temp_visual/bloodmist
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "blood_mist"
+	duration = 5
+	layer = LYING_HUMAN_LAYER
+
 /obj/effect/temp_visual/bloodsplatter
 	icon = 'icons/effects/bloodspatter.dmi'
 	duration = 5

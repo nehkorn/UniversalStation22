@@ -243,8 +243,8 @@
 		return
 
 	..()
-	var/min_damage = 7
-	var/max_damage = 14
+	var/min_damage = 3
+	var/max_damage = 7
 	apply_damage(rand(min_damage, max_damage), BRUTE, BP_HEAD, armor_pen = 50)
 	apply_damage(rand(min_damage, max_damage), BRUTE, BP_CHEST, armor_pen = 50)
 	apply_damage(rand(min_damage, max_damage), BRUTE, BP_GROIN, armor_pen = 75)

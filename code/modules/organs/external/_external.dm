@@ -918,6 +918,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 		if(DROPLIMB_EDGE)
 			compile_icon()
 			add_blood(victim)
+			new/obj/effect/temp_visual/bloodmist(get_turf(src))
 			var/matrix/M = matrix()
 			M.Turn(rand(180))
 			src.transform = M

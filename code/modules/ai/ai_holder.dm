@@ -18,6 +18,7 @@
 
 /mob/living/Initialize()
 	overlay_fullscreen("greyscale",/obj/screen/fullscreen/greyscale)
+	overlay_fullscreen("noiseCool",/obj/screen/fullscreen/noise/light)
 	if (ai_holder_type)
 		ai_holder = new ai_holder_type(src)
 		if (istype(src, /mob/living/carbon/human))
@@ -25,17 +26,6 @@
 			H.InitializeHud()
 		ai_status_image = image('icons/misc/buildmode.dmi', src, "ai_0")
 	return ..()
-
-/mob/living/Life()
-	. = ..()
-	src.clear_fullscreen("whitenoise")
-	switch(src.health)
-		if(200 to INFINITY)
-			src.overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/light)
-		if(130 to 180)
-			src.overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/moderate)
-		if(80 to 120)
-			src.overlay_fullscreen("whitenoise",/obj/screen/fullscreen/noise/heavy)
 
 /mob/living/Destroy()
 	if (ai_holder)
