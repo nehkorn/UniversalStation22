@@ -56,11 +56,8 @@
 	light_color = "#64c864"
 
 /obj/effect/projectile/muzzle/bullet
+	icon_state = "muzzle_bullet"
 	light_color = "#e1e17d"
-
-/obj/effect/projectile/muzzle/bullet/New(loc, ...)
-	. = ..()
-	icon_state = pick("muzzle_bullet", "muzzle_bullet2", "muzzle_bullet3")
 
 /obj/effect/projectile/muzzle/particle
 	icon_state = "muzzle_particle"

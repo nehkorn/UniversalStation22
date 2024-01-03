@@ -42,6 +42,10 @@
  * Backpack Types
  */
 
+/obj/item/storage/backpack/pouch
+	name = "pocketpack"
+	desc = "The standard Techo way of storage, put it in your pocket!"
+
 /obj/item/storage/backpack/holding
 	name = "bag of holding"
 	desc = "A backpack that opens into a localized pocket of Blue Space."
@@ -512,4 +516,3 @@
 	name = "corporate security messenger bag"
 	desc = "A small, tactical backpack worn over one shoulder. This one is in EXO colors."
 	icon_state = "courierbagsec_exo"
-

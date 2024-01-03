@@ -39,16 +39,6 @@
 	max_ammo = 5
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/speedloader/clip
-	name = "rifle stripper clip"
-	desc = "A stripper clip for rifle caliber weapons."
-	icon_state = "clip"
-	caliber = CALIBER_RIFLE
-	ammo_type = /obj/item/ammo_casing/rifle
-	matter = list(MATERIAL_STEEL = 1800)
-	max_ammo = 5
-	multiple_sprites = 1
-
 /obj/item/ammo_magazine/speedloader/clip/flame
 	ammo_type = /obj/item/ammo_casing/rifle/flame
 
