@@ -195,6 +195,12 @@
 	icon = 'icons/turf/flooring/misc.dmi'
 	icon_state = "concrete"
 
+/turf/simulated/floor/exoplanet/asphalt
+	name = "asphalt"
+	desc = "Sturdy. You wouldn't see this on Psi territory."
+	icon = 'icons/turf/flooring/misc.dmi'
+	icon_state = "asphalt"
+
 /turf/simulated/floor/exoplanet/concrete/on_update_icon()
 	overlays.Cut()
 	if(burnt)
