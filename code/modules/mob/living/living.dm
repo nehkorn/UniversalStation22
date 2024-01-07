@@ -909,6 +909,34 @@ default behaviour is:
 /mob/living/proc/needs_wheelchair()
 	return FALSE
 
+/mob/living/carbon/proc/get_social_class_level()
+	var/socclass = social_class
+	if(!socclass)
+		return
+	switch(socclass)
+		if(SOCIAL_CLASS_MIN)
+			return "<b>low</b>"
+		if(SOCIAL_CLASS_MED)
+			return "<b>mediocre</b>"
+		if(SOCIAL_CLASS_HIGH)
+			return "<b>high</b>"
+		if(SOCIAL_CLASS_MAX)
+			return "<b>superioris</b>"
+
+proc/get_social_class_level_Global(social_class)
+	var/socclass = social_class
+	if(!socclass)
+		return
+	switch(socclass)
+		if(SOCIAL_CLASS_MIN)
+			return "<b>low</b>"
+		if(SOCIAL_CLASS_MED)
+			return "<b>mediocre</b>"
+		if(SOCIAL_CLASS_HIGH)
+			return "<b>high</b>"
+		if(SOCIAL_CLASS_MAX)
+			return "<b>superioris</b>"
+
 /mob/living/proc/seizure()
 	set waitfor = 0
 	sleep(rand(5,10))

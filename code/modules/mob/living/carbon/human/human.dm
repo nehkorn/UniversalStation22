@@ -725,10 +725,10 @@
 	lastpuke = TRUE
 	if(delay)
 		sleep(delay)
-	to_chat(src, SPAN_WARNING("You feel nauseous..."))
+	to_chat(src, SPAN_WARNING("I feel nauseous..."))
 	if(level > 1)
 		sleep(150 / timevomit)	//15 seconds until second warning
-		to_chat(src, SPAN_WARNING("You feel like you are about to throw up!"))
+		to_chat(src, SPAN_WARNING("Ugh... I feel like I'm about to throw up..."))
 		if(level > 2)
 			sleep(100 / timevomit)	//and you have 10 more for mad dash to the bucket
 			empty_stomach()
@@ -1632,7 +1632,7 @@
 		var/datum/gender/T = gender_datums[get_gender()]
 		visible_message( \
 			"<span class='notice'>[src] examines [T.self].</span>", \
-			"<span class='notice'>You check yourself for injuries.</span>" \
+			"<div class='examinebox'> <span class='notice'>Let's see how I am doing.</span>" \
 			)
 
 		for(var/obj/item/organ/external/org in organs)
@@ -1671,9 +1671,11 @@
 			if(!org.is_usable() || org.is_dislocated())
 				status += "dangling uselessly"
 			if(status.len)
-				src.show_message("My [org.name] is <span class='warning'>[english_list(status)].</span>",1)
+				src.show_message("<span class='notice'>My [org.name] is </span> <span class='danger'>[english_list(status)].</span>",1)
 			else
-				src.show_message("My [org.name] is <span class='notice'>OK.</span>",1)
+				src.show_message("<span class='notice'> My [org.name] is </span> <span class='notice'>OK.</span>",1)
+
+		src.show_message("</div>",1)
 
 		if((MUTATION_SKELETON in mutations) && (!w_uniform) && (!wear_suit))
 			play_xylophone()

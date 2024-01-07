@@ -38,6 +38,8 @@
 	var/list/stasis_sources = list()
 	var/stasis_value
 
+	var/social_class = null
+
 	var/player_triggered_sleeping = 0
 
 	/// Assoc list of addiction values, key is the type of withdrawal (as singleton type), and the value is the amount of addiction points (as number)

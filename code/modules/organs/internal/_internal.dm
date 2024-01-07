@@ -150,7 +150,7 @@ obj/item/organ/internal/take_general_damage(amount, silent = FALSE)
 					degree = " a lot"
 				else if(damage < min_bruised_damage*0.5) // If it's higher and not bruised - it just hurts
 					degree = " a bit"
-				owner.custom_pain("Something inside your [parent.name] hurts[degree].", amount, affecting = parent)
+				owner.custom_pain("Something inside my [parent.name] hurts[degree].", amount, affecting = parent)
 
 /obj/item/organ/internal/proc/get_visible_state()
 	if(damage > max_damage)

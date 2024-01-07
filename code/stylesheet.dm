@@ -85,8 +85,8 @@ h1.alert, h2.alert		{color: #000080;}
 
 .italic				{font-style: italic;}
 .bold					{font-weight: bold;}
-.danger					{color: #ff0000; font-weight: bold;}
-.bigdanger					{color: #ff0000; font-weight: bold; font-size: 115%;}
+.danger					{color: #ff0000; font-weight: bold; text-shadow: #dd0000 1px 0 10px;}
+.bigdanger				{color: #ff0000; font-weight: bold; font-size: 115%; text-shadow: #dd0000 1px 0 10px;}
 .warning				{color: #ff0000; font-style: italic;}
 .bigwarning				{color: #ff0000; font-style: italic; font-size: 115%;}
 .boldannounce			{color: #ff0000; font-weight: bold;}
@@ -101,6 +101,7 @@ h1.alert, h2.alert		{color: #000080;}
 .cultannounce			{color: #800080; font-style: italic; font-size: 175%;}
 .mfauna					{color: #884422; font-weight: bold; font-size: 125%;}
 .antagdesc				{color: #ff0033; font-size: 125%}
+.examinebox {border: 1px ridge #151319; background: rgba(40, 40, 40, 0.5); margin: 2px 8px; padding: 8px 12px; max-width: 550px;}
 
 .reflex_shoot			{color: #000099; font-style: italic;}
 

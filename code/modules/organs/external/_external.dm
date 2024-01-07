@@ -183,7 +183,7 @@ r/****************************************************
 			burn_damage += I.w_class * rand(power, 3*power)
 
 	if(owner && burn_damage)
-		owner.custom_pain("Something inside your [src] burns a [severity < 2 ? "bit" : "lot"]!", power * 15) //robotic organs won't feel it anyway
+		owner.custom_pain("Something inside my [src] burns a [severity < 2 ? "bit" : "lot"]!!!", power * 15) //robotic organs won't feel it anyway
 		take_external_damage(0, burn_damage, 0, used_weapon = "Hot metal")
 
 	if(owner && limb_flags & ORGAN_FLAG_CAN_GRASP)

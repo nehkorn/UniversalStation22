@@ -43,6 +43,8 @@
 	var/no_skill_buffs = FALSE			  //Whether skills can be buffed by age/species modifiers.
 	var/available_by_default = TRUE
 
+	var/social_class = SOCIAL_CLASS_MED	 //Job's social standing.
+
 	var/list/possible_goals
 	var/min_goals = 1
 	var/max_goals = 3
@@ -99,10 +101,19 @@
 			if(affected)
 				affected.implants += imp
 				imp.part = affected
-			to_chat(H, SPAN_DANGER("As a registered psionic, you are fitted with a psi-dampening control implant. Using psi-power while the implant is active will result in neural shocks and your violation being reported."))
+			to_chat(H, SPAN_WARNING("As a registered psionic, you are fitted with a psi-dampening control implant. Using psi-power while the implant is active will result in neural shocks and your violation being reported."))
+
 
 	var/decl/hierarchy/outfit/outfit = get_outfit(H, alt_title, branch, grade)
 	if(outfit) . = outfit.equip(H, title, alt_title)
+
+	if(social_class)
+		var/obj/item/social_badge/badge = new /obj/item/social_badge(H.back)
+		badge.owner = H.real_name
+		badge.social_class = H.social_class
+		H.equip_to_slot_or_store_or_drop(badge, slot_in_backpack)
+		H.social_class = social_class
+		to_chat(H, "Your social class is <span class='danger'>[H.social_class]</span>, a <span class='danger'>[H.get_social_class_level()]</span> class.")
 
 /datum/job/proc/get_outfit(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
 	if(alt_title && alt_titles)

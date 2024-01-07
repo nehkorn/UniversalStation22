@@ -122,7 +122,7 @@
 	icon = 'icons/effects/static.dmi'
 	icon_state = "1 light"
 	screen_loc = ui_entire_screen
-	alpha = 127
+	alpha = 150
 
 /obj/screen/fullscreen/noise/moderate
 	icon = 'icons/effects/static.dmi'
@@ -140,7 +140,7 @@
 	icon = 'icons/effects/static.dmi'
 	icon_state = "greyscale"
 	screen_loc = ui_entire_screen
-	alpha = 127
+	alpha = 150
 
 /obj/screen/fullscreen/fadeout
 	icon = 'icons/mob/screen1.dmi'

@@ -365,6 +365,12 @@
 #define AURA_TYPE_THROWN "Thrown"
 #define AURA_TYPE_LIFE   "Life"
 
+//Social Classes
+#define SOCIAL_CLASS_MIN "sordess"
+#define SOCIAL_CLASS_MED "pleban"
+#define SOCIAL_CLASS_HIGH "praenor"
+#define SOCIAL_CLASS_MAX "superioris praenor"
+
 #define SPECIES_BLOOD_DEFAULT 560
 
 #define SLIME_EVOLUTION_THRESHOLD 10

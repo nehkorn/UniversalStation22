@@ -313,7 +313,7 @@ h1.alert, h2.alert		{color: #000080;}
 .disarm					{color: #990000;}
 .passive				{color: #660000;}
 
-.danger					{color: #ff0000; font-weight: bold;}
+.danger					{color: #ff0000; font-weight: bold; text-shadow: #dd0000 1px 0 10px;}
 .warning				{color: #ff0000; font-style: italic;}
 .boldannounce			{color: #ff0000; font-weight: bold;}
 .rose					{color: #ff5050;}
@@ -369,3 +369,11 @@ h1.alert, h2.alert		{color: #000080;}
 /* HELPER CLASSES */
 .text-normal {font-weight: normal;	font-style: normal;}
 .hidden {display: none;	visibility: hidden;}
+
+.examinebox {
+    border: 1px ridge #151319;
+	background: rgba(40, 40, 40, 0.5);
+	margin: 2px 8px;
+	padding: 8px 12px;
+	max-width: 550px;
+}
