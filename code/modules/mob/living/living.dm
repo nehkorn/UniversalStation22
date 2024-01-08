@@ -914,28 +914,36 @@ default behaviour is:
 	if(!socclass)
 		return
 	switch(socclass)
-		if(SOCIAL_CLASS_MIN)
+		if(SOCIAL_CLASS_AC)
+			return "<b>very low</b>"
+		if(SOCIAL_CLASS_LOW)
 			return "<b>low</b>"
 		if(SOCIAL_CLASS_MED)
-			return "<b>mediocre</b>"
+			return "<b>average</b>"
+		if(SOCIAL_CLASS_COM)
+			return "<b>above average</b>"
 		if(SOCIAL_CLASS_HIGH)
 			return "<b>high</b>"
 		if(SOCIAL_CLASS_MAX)
-			return "<b>superioris</b>"
+			return "<b>very high</b>"
 
 proc/get_social_class_level_Global(social_class)
 	var/socclass = social_class
 	if(!socclass)
 		return
 	switch(socclass)
-		if(SOCIAL_CLASS_MIN)
+		if(SOCIAL_CLASS_AC)
+			return "<b>very low</b>"
+		if(SOCIAL_CLASS_LOW)
 			return "<b>low</b>"
 		if(SOCIAL_CLASS_MED)
-			return "<b>mediocre</b>"
+			return "<b>average</b>"
+		if(SOCIAL_CLASS_COM)
+			return "<b>above average</b>"
 		if(SOCIAL_CLASS_HIGH)
 			return "<b>high</b>"
 		if(SOCIAL_CLASS_MAX)
-			return "<b>superioris</b>"
+			return "<b>very high</b>"
 
 /mob/living/proc/seizure()
 	set waitfor = 0

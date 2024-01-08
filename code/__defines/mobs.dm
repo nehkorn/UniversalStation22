@@ -366,10 +366,12 @@
 #define AURA_TYPE_LIFE   "Life"
 
 //Social Classes
-#define SOCIAL_CLASS_MIN "sordess"
-#define SOCIAL_CLASS_MED "pleban"
-#define SOCIAL_CLASS_HIGH "praenor"
-#define SOCIAL_CLASS_MAX "superioris praenor"
+#define SOCIAL_CLASS_AC "anti-citizen"
+#define SOCIAL_CLASS_LOW "citizen"
+#define SOCIAL_CLASS_MED "civil defender"
+#define SOCIAL_CLASS_COM "civil commander"
+#define SOCIAL_CLASS_HIGH "syntheta"
+#define SOCIAL_CLASS_MAX "gratanor"
 
 #define SPECIES_BLOOD_DEFAULT 560
 

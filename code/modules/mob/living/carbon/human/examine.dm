@@ -46,6 +46,9 @@
 
 	msg += "<EM>[src.name]</EM>"
 
+	if(social_class)
+		msg += "They are a <span class='danger'>[social_class]</span>, a <span class='danger'>[src.get_social_class_level()]</span> social class."
+
 	var/is_synth = isSynthetic()
 	if(!(skipjumpsuit && skipface))
 		var/species_name = "\improper "

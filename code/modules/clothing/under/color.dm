@@ -50,7 +50,8 @@
 
 /obj/item/clothing/under/color/blue
 	name = "blue jumpsuit"
-	color = "#0066ff"
+	desc = "The standard for citizens of Combine occupied cities."
+	color = "#0553c9"
 
 /obj/item/clothing/under/color/pink
 	name = "pink jumpsuit"

@@ -108,10 +108,6 @@
 	if(outfit) . = outfit.equip(H, title, alt_title)
 
 	if(social_class)
-		var/obj/item/social_badge/badge = new /obj/item/social_badge(H.back)
-		badge.owner = H.real_name
-		badge.social_class = H.social_class
-		H.equip_to_slot_or_store_or_drop(badge, slot_in_backpack)
 		H.social_class = social_class
 		to_chat(H, "Your social class is <span class='danger'>[H.social_class]</span>, a <span class='danger'>[H.get_social_class_level()]</span> class.")
 

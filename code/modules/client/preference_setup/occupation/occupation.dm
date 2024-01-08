@@ -202,13 +202,13 @@
 				. += "<td width='30%' align='left'>"
 
 				if(bad_message)
-					. += "<del>[title_link]</del>[help_link][skill_link]<td>[bad_message]</td></tr>"
+					. += "<del>[title_link]</del>[help_link]<td>[bad_message]</td></tr>"
 					continue
 				else if((GLOB.using_map.default_assistant_title in pref.job_low) && (title != GLOB.using_map.default_assistant_title))
-					. += "<font color=grey>[title_link]</font>[help_link][skill_link]<td></td></tr>"
+					. += "<font color=grey>[title_link]</font>[help_link]<td></td></tr>"
 					continue
 				else
-					. += "[title_link][help_link][skill_link]"
+					. += "[title_link][help_link]"
 
 				. += "<td>"
 				if(title == GLOB.using_map.default_assistant_title)//Assistant is special
