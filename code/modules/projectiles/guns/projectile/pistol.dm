@@ -23,7 +23,7 @@
 			return
 		else
 			overlays += image(icon, "ammo_ok")
-	
+
 /obj/item/gun/projectile/pistol/military
 	name = "military pistol"
 	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the SCGDF."
@@ -36,6 +36,25 @@
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	fire_delay = 7
 	ammo_indicator = TRUE
+
+/obj/item/gun/projectile/pistol/usp
+	name = "USP Match"
+	desc = "Civil Protection standard-issue handgun. Usually found in the hands of low-ranked units."
+	icon = 'icons/obj/guns/7guns.dmi'
+	icon_state = "usp"
+	item_state = "secgun"
+	magazine_type = /obj/item/ammo_magazine/pistol/double/usp
+	allowed_magazines = /obj/item/ammo_magazine/pistol/double/usp
+
+/obj/item/ammo_magazine/pistol/double/usp
+	name = "USP magazine"
+	icon = 'icons/obj/guns/7guns.dmi'
+	icon_state = "uspmag"
+
+/obj/item/ammo_magazine/pistol/double/usp/on_update_icon()
+	. = ..()
+	if(stored_ammo.len == 0)
+		icon_state = "[initial(icon_state)]-e"
 
 /obj/item/gun/projectile/pistol/military/alt
 	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."

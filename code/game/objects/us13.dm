@@ -18,9 +18,12 @@
 	desc = "I wonder who this Breen is..."
 	icon = 'icons/obj/32x64.dmi'
 	icon_state = "breen_vend"
-	icon_deny = icon_state
-	icon_vend = icon_state
 	products = list(/obj/item/reagent_containers/food/drinks/breen = 50)
+
+/obj/machinery/vending/sovietsoda/breen/Initialize(mapload, d, populate_parts)
+	. = ..()
+	icon_deny = initial(icon_state)
+	icon_vend = initial(icon_state)
 
 /obj/item/reagent_containers/food/drinks/breen
 	name = "canned water"
@@ -31,3 +34,12 @@
 /obj/item/reagent_containers/food/drinks/cans/breen/Initialize()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/water, 30) // TODO: new reagent for breen watah
+
+/obj/structure/phone_booth
+	name = "phone booth"
+	desc = "Looks like you could phone someone with this... as if!"
+	icon = 'icons/obj/furniture.dmi'
+	icon_state = "phone"
+	anchored = TRUE
+	density = TRUE
+	var/phone_number // TODO: make phones actually be phonable

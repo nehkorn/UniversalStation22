@@ -126,6 +126,32 @@
 		list(mode_name="full auto",      burst=1,    fire_delay=0,    burst_delay=1,     one_hand_penalty=7,  burst_accuracy=list(0,-1,-1),       dispersion=list(0.2, 0.6, 1.0), autofire_enabled=1)
 		)
 
+/obj/item/gun/projectile/automatic/assault_rifle/mp7
+	name = "MP7"
+	desc = "Civil Protection standard-issue automatic rifle, for when you really want those rebel scum to get peppered with lead."
+	icon = 'icons/obj/guns/7guns.dmi'
+	icon_state = "mp7"
+	magazine_type = /obj/item/ammo_magazine/rifle/mp7
+	allowed_magazines = /obj/item/ammo_magazine/rifle/mp7
+
+/obj/item/ammo_magazine/rifle/mp7
+	name = "mp7 magazine"
+	icon = 'icons/obj/guns/7guns.dmi'
+	icon_state = "mp7mag"
+
+/obj/item/ammo_magazine/rifle/mp7/on_update_icon()
+	. = ..()
+	if(stored_ammo.len == 0)
+		icon_state = "[initial(icon_state)]-e"
+
+/obj/item/gun/projectile/automatic/assault_rifle/mp7/on_update_icon()
+	if(ammo_magazine)
+		icon_state = "mp7"
+		wielded_item_state = "arifle-wielded"
+	else
+		icon_state = "mp7-e"
+		wielded_item_state = "arifle-wielded-empty"
+
 /obj/item/gun/projectile/automatic/assault_rifle/on_update_icon()
 	..()
 	if(ammo_magazine)

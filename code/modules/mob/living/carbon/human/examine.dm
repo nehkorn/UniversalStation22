@@ -46,9 +46,6 @@
 
 	msg += "<EM>[src.name]</EM>"
 
-	if(social_class)
-		msg += "They are a <span class='danger'>[social_class]</span>, a <span class='danger'>[src.get_social_class_level()]</span> social class."
-
 	var/is_synth = isSynthetic()
 	if(!(skipjumpsuit && skipface))
 		var/species_name = "\improper "
@@ -59,6 +56,10 @@
 		msg += ", <b><font color='[species.get_flesh_colour(src)]'>\a [species_name]!</font></b>[(user.can_use_codex() && SScodex.get_codex_entry(get_codex_value())) ?  SPAN_NOTICE(" \[<a href='?src=\ref[SScodex];show_examined_info=\ref[src];show_to=\ref[user]'>?</a>\]") : ""]"
 
 	msg += "<br>"
+
+	if(social_class)
+		msg += "They are a <span class='danger'>[social_class]</span>, a <span class='danger'>[src.get_social_class_level()]</span> social class."
+		msg += "<br>"
 
 	//uniform
 	if(w_uniform && !skipjumpsuit)

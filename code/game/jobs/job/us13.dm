@@ -61,7 +61,7 @@
 	total_positions = 5
 	spawn_positions = 3
 
-	outfit_type = /decl/hierarchy/outfit/job/civilprotection
+	outfit_type = /decl/hierarchy/outfit/job/cp/civilprotection
 
 // CITY COMMAND
 
@@ -74,7 +74,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	outfit_type = /decl/hierarchy/outfit/job/earthadministrator
+	//outfit_type = /decl/hierarchy/outfit/job/earthadministrator
 
 /datum/job/overwatch_elite
 	title = "Overwatch Elite"
@@ -91,4 +91,4 @@
 		SKILL_WEAPONS = SKILL_MASTER,
 		SKILL_FORENSICS = SKILL_UNTRAINED)
 
-	outfit_type = /decl/hierarchy/outfit/job/overwatch_elite
+	//outfit_type = /decl/hierarchy/outfit/job/overwatch_elite
