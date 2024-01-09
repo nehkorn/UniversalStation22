@@ -185,6 +185,22 @@
 	icon_state = "steel"
 	initial_flooring = /decl/flooring/tiling
 
+/turf/simulated/floor/tiled/cmb_tiled
+	name = "tiled floor"
+	desc = "Depressing architecture."
+	icon_state = "tiled_a"
+
+/turf/simulated/floor/tiled/cmb_tiled/b
+	icon_state = "tiled_b"
+
+/turf/simulated/floor/tiled/cmb_tiled/c
+	icon_state = "tiled_c"
+
+/turf/simulated/floor/tiled/cmb_tiled/trainstation
+	name = "trainstation tiling"
+	desc = "Welcome, welcome to City... what was it again?"
+	icon_state = "trainstation"
+
 /turf/simulated/floor/tiled/dark
 	name = "dark floor"
 	icon_state = "dark"
