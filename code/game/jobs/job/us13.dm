@@ -65,16 +65,24 @@
 
 // CITY COMMAND
 
+var/datum/announcement/minor/ca_announcement = new(do_newscast = 1)
+
 /datum/job/cityadmin
 	title = "City Administrator"
 	department = "City Command"
 	supervisors = "Combine officials and the Earth Administrator"
 	social_class = SOCIAL_CLASS_MAX
 
+	access = list()
+	minimal_access = list()
+
 	total_positions = 1
 	spawn_positions = 1
 
 	//outfit_type = /decl/hierarchy/outfit/job/earthadministrator
+
+/datum/job/cityadmin/get_access()
+	return get_all_station_access()
 
 /datum/job/overwatch_elite
 	title = "Overwatch Elite"
