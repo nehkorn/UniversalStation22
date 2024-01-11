@@ -1,7 +1,8 @@
 /obj/item/clothing/under/cp_uniform
 	name = "civil protection uniform"
 	desc = "The thing to keep under you while you wear that fancy armor."
-	icon_state = "cp_uniform"
+	icon_state = "cpuniform"
+	worn_state = "cpuniform"
 
 /obj/item/clothing/suit/armor/vest/old/security/cpO
 	name = "civil protection officer armored vest"

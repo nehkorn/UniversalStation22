@@ -1,8 +1,8 @@
 //replaces our stun baton code with /tg/station's code
 /obj/item/melee/baton
 	icon = 'icons/obj/weapons/melee_physical.dmi'
-	name = "stunbaton"
-	desc = "A stun baton for incapacitating people with."
+	name = "stunstick"
+	desc = "The standard issue Civil Protection subduing device, make those petty citizens listen to you!"
 	icon_state = "stunbaton"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
@@ -55,11 +55,11 @@
 
 /obj/item/melee/baton/on_update_icon()
 	if(status)
-		icon_state = "[initial(name)]_active"
+		icon_state = "[initial(icon_state)]_active"
 	else if(!bcell)
-		icon_state = "[initial(name)]_nocell"
+		icon_state = "[initial(icon_state)]_nocell"
 	else
-		icon_state = "[initial(name)]"
+		icon_state = "[initial(icon_state)]"
 
 	if(icon_state == "[initial(name)]_active")
 		set_light(0.4, 0.1, 1, 2, "#ff6a00")
@@ -170,7 +170,7 @@
 			target.visible_message("<span class='danger'>[target] has been prodded in the [affecting.name] with [src]!</span>")
 		else
 			target.visible_message("<span class='danger'>[target] has been prodded with [src][abuser]!</span>")
-		playsound(loc, 'sound/weapons/Egloves.ogg', 50, 1, -1)
+		playsound(loc, "stunstick_sound", 50)
 
 	//stun effects
 	if(status)

@@ -43,6 +43,7 @@
 	icon = 'icons/obj/guns/7guns.dmi'
 	icon_state = "usp"
 	item_state = "secgun"
+	fire_sound = 'sound/weapons/gunshot/us13/pistol_fire.ogg'
 	magazine_type = /obj/item/ammo_magazine/pistol/double/usp
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double/usp
 

@@ -186,11 +186,7 @@ var/list/outfits_decls_by_type_
 		var/decl/backpack_outfit/bo
 		var/metadata
 
-		if(H.backpack_setup)
-			bo = H.backpack_setup.backpack
-			metadata = H.backpack_setup.metadata
-		else
-			bo = get_default_outfit_backpack()
+		bo = get_default_outfit_backpack()
 
 		var/override_type = backpack_overrides[bo.type]
 		var/backpack = bo.spawn_backpack(H, metadata, override_type)
@@ -202,8 +198,6 @@ var/list/outfits_decls_by_type_
 			else
 				H.equip_to_slot_or_del(backpack, slot_back)
 
-	if(H.species && !(OUTFIT_ADJUSTMENT_SKIP_SURVIVAL_GEAR & equip_adjustments))
-		H.species.equip_survival_gear(H, flags&OUTFIT_EXTENDED_SURVIVAL)
 	check_and_try_equip_xeno(H)
 
 /decl/hierarchy/outfit/proc/equip_ids(mob/living/carbon/human/H, rank, assignment, equip_adjustments)

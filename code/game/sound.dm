@@ -163,6 +163,7 @@ var/const/FALLOFF_SOUNDS = 0.5
 			if ("tray_hit") soundin = pick(GLOB.tray_hit_sound)
 			if ("gun_t12") soundin = pick(GLOB.t12_sound)
 			if ("sharp_sound") soundin = pick(GLOB.sharp_sound)
+			if("stunstick_sound") soundin = pick(GLOB.stunstick_sound)
 	return soundin
 
 /client/verb/stop_sounds()

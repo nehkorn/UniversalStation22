@@ -43,3 +43,29 @@
 	anchored = TRUE
 	density = TRUE
 	var/phone_number // TODO: make phones actually be phonable
+
+
+/obj/structure/cmb_ffprojector // indestructible version
+	name = "forcefield projector"
+	desc = "Used by the Combine to make gates or just keep people out of places they don't want them to be. This one looks pretty sturdy..."
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "cmb_forcefieldON"
+	breakable = FALSE
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/cmb_ffprojector/off
+	desc = "This one is off."
+	icon_state = "cmb_forceifledOFF"
+
+/obj/structure/cmb_forcefield
+	name = "forcefield"
+	desc = "Used by the Combine to make gates or just keep people out of places they don't want them to be."
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "cmb_forcefield"
+	breakable = FALSE
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/cmb_forcefield/CanPass(atom/movable/mover, turf/target, height, air_group)
+	return FALSE

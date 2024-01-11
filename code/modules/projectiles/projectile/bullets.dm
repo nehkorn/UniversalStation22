@@ -121,7 +121,7 @@
 /* short-casing projectiles, like the kind used in pistols or SMGs */
 
 /obj/item/projectile/bullet/pistol
-	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+	fire_sound = 'sound/weapons/gunshot/us13/pistol_fire.ogg'
 	damage = 40
 	distance_falloff = 3
 
@@ -239,7 +239,7 @@
 /* "Rifle" rounds */
 
 /obj/item/projectile/bullet/rifle
-	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	fire_sound = 'sound/weapons/gunshot/us13/smg_fire.ogg'
 	damage = 40
 	armor_penetration = 25
 	penetration_modifier = 1.5

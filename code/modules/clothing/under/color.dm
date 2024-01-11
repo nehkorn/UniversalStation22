@@ -49,8 +49,9 @@
 	color = "#c4c4c4"
 
 /obj/item/clothing/under/color/blue
-	name = "blue jumpsuit"
+	name = "citizen jumpsuit"
 	desc = "The standard for citizens of Combine occupied cities."
+	icon_state = "citizen"
 	color = "#0553c9"
 
 /obj/item/clothing/under/color/pink

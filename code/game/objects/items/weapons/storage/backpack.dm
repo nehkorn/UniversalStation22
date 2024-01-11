@@ -368,8 +368,8 @@
 	icon_state = "satchel-nt"
 
 /obj/item/storage/backpack/satchel/sec
-	name = "security satchel"
-	desc = "A robust satchel for security-related needs."
+	name = "civil protection satchel"
+	desc = "A robust satchel for CP-related needs."
 	icon_state = "satchel-sec"
 	item_state_slots = list(
 		slot_l_hand_str = "securitypack",

@@ -114,6 +114,11 @@
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_sec
 
+/obj/item/device/radio/headset/headset_sec/civil_protection
+	name = "civil protection radio headset"
+	desc = "Used by Civil Protection forces since the initialization of the program, filled to the brim with Combine technology."
+	icon_state = "cp_headset"
+
 /obj/item/device/radio/headset/headset_sec/alt
 	name = "security bowman headset"
 	icon_state = "sec_headset_alt"
