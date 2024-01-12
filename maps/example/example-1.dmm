@@ -256,6 +256,12 @@
 /obj/machinery/telecomms/receiver/map_preset/example,
 /turf/simulated/floor/tiled,
 /area/constructionsite)
+"Z" = (
+/obj/effect/landmark{
+	name = "JoinLate"
+	},
+/turf/space,
+/area/space)
 
 (1,1,1) = {"
 a
@@ -877,7 +883,7 @@ a
 a
 a
 a
-a
+Z
 a
 b
 c

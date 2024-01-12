@@ -13,6 +13,7 @@
 	name = "civil protection officer gasmask"
 	desc = "Standard issue, hides your face and protects it from bullets, the whole thing!"
 	icon_state = "cpO_helm"
+	unique_death = 'sound/voice/sec_death.ogg'
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,

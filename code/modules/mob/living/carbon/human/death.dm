@@ -67,6 +67,9 @@
 	. = ..(gibbed,"no message")
 	if(!gibbed)
 		handle_organs()
+		if(istype(src) && istype(carbon_user.wear_mask, /obj/item/clothing) && src.wear_mask.unique_death)
+			playsound(src, src.wear_mask.unique_death, 80, 1, 1)
+			return
 		if(species.death_sound)
 			playsound(loc, species.death_sound, 80, 1, 1)
 	handle_hud_list()

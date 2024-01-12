@@ -420,6 +420,18 @@ client/verb/character_setup()
 	if(world.byond_version >= 511 && byond_version >= 511 && client_fps >= CLIENT_MIN_FPS && client_fps <= CLIENT_MAX_FPS)
 		vars["fps"] = client_fps
 
+/client/New()
+	..()
+	fullscreen()
+
+/client/proc/fullscreen()
+	fullscreen = !fullscreen
+	if(fullscreen)
+		winset(src, "mainwindow", "is-maximized=false;can-resize=false;titlebar=false;menu=")
+		winset(src, "mainwindow", "is-maximized=true")
+	else //If fullscreen == 0 (FALSE)
+		winset(src, "mainwindow", "is-maximized=false;can-resize=true;titlebar=true;menu=menu")
+
 /client/MouseDrag(src_object, over_object, src_location, over_location, src_control, over_control, params)
 	. = ..()
 	var/mob/living/M = mob

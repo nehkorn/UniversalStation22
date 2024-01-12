@@ -529,6 +529,7 @@ BLIND     // can't see anything
 	var/down_flags_inv = 0
 	var/pull_mask = 0
 	var/hanging = 0
+	var/unique_death // unique death sound while wearing this
 	var/list/filtered_gases
 	blood_overlay_type = "maskblood"
 

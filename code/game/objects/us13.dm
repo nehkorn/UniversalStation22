@@ -1,13 +1,34 @@
 /obj/structure/bed/chair/bench // because we are too good for chairs
 	name = "bench"
 	desc = "For all of your sitting needs during an alien occupation."
-	icon_state = "bench_c"
+	icon_state = "bench"
+	base_icon = "bench"
 
 /obj/machinery/clock
 	name = "trainstation clock"
 	icon = 'icons/obj/32x64.dmi'
 	icon_state = "clock"
 	desc = "I wonder what time it is..."
+
+/obj/structure/trashbin
+	name = "trash can"
+	icon = 'icons/obj/furniture.dmi'
+	icon_state = "bin"
+
+/obj/structure/trashbin/examine(mob/user)
+	. = ..()
+	if(ishuman(user))
+		var/mob/living/carbon/human/examinator
+		if(examinator.social_class)
+			switch(examinator.social_class)
+				if(SOCIAL_CLASS_LOW)
+					to_chat(examinator, "Those CP assholes keep telling me to pick up cans and then put them in these.")
+				if(SOCIAL_CLASS_MED)
+					to_chat(examinator, "Hehehe, I keep telling citizens to put cans into these.")
+				if(SOCIAL_CLASS_HIGH)
+					to_chat(examinator, "My fucking goons keep telling citizens to put cans into these.")
+				else
+					to_chat(examinator, "Just a normal trash can.")
 
 /obj/machinery/clock/examine(mob/user, distance)
 	. = ..()
@@ -42,8 +63,13 @@
 	icon_state = "phone"
 	anchored = TRUE
 	density = TRUE
+	var/random_num = TRUE
 	var/phone_number // TODO: make phones actually be phonable
 
+/obj/structure/phone_booth/Initialize()
+	. = ..()
+	if(random_num)
+		phone_number = rand(1, 999)
 
 /obj/structure/cmb_ffprojector // indestructible version
 	name = "forcefield projector"
@@ -69,3 +95,8 @@
 
 /obj/structure/cmb_forcefield/CanPass(atom/movable/mover, turf/target, height, air_group)
 	return FALSE
+
+/obj/structure/train_track
+	name = "train track"
+	icon = 'icons/obj/224x32.dmi'
+	icon_state = "track"
