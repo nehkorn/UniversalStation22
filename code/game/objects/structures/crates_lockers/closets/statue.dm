@@ -13,6 +13,16 @@
 	var/intialOxy = 0
 	var/timer = 240 //eventually the person will be freed
 
+/obj/structure/statue
+	name = "statue"
+	desc = "What could it represent?!"
+
+	icon = 'icons/obj/statue.dmi'
+	icon_state = "human_male"
+
+/obj/structure/statue/female
+	icon_state = "human_female" // booba
+
 /obj/structure/closet/statue/New(loc, var/mob/living/L)
 	if(L && (ishuman(L) || L.isMonkey() || iscorgi(L)))
 		if(L.buckled)

@@ -208,15 +208,15 @@
 /obj/item/organ/internal/brain/proc/handle_severe_brain_damage()
 	set waitfor = FALSE
 	healed_threshold = 0
-	to_chat(owner, "Did we win?")
+	to_chat(owner, SPAN_DANGER("Did we... lose?"))
 	sleep(5 SECONDS)
 	if(!owner)
 		return
-	to_chat(owner, "Is the war over?")
+	to_chat(owner, SPAN_DANGER("Is the war over?"))
 	sleep(10 SECONDS)
 	if(!owner)
 		return
-	to_chat(owner, pick("...why can't I move?", "Please... I don't want to die."))
+	to_chat(owner, pick(SPAN_DANGER("...why can't I move?"), "<span class='small'>Please... I don't want to die.</span>"))
 	if(owner.psi)
 		owner.psi.check_latency_trigger(40, "physical trauma")
 
@@ -245,7 +245,7 @@
 	if(owner.stat)
 		return
 	if(damage > 0 && prob(1))
-		owner.custom_pain("Your head feels numb and painful.",10)
+		owner.custom_pain("Ugh... my head...",10)
 	if(is_bruised() && prob(1) && owner.eye_blurry <= 0)
 		to_chat(owner, "Why is it all blurry?")
 		owner.eye_blurry = 5

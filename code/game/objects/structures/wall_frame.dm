@@ -22,6 +22,9 @@
 	noblend_objects = list(/obj/machinery/door/window)
 	material = DEFAULT_WALL_MATERIAL
 
+/obj/structure/wall_frame/statue_crb // idk what CRB stands for tbh
+	desc = "Used as a under-plate for a statue of some sort."
+
 /obj/structure/wall_frame/New(var/new_loc, var/materialtype)
 	..(new_loc)
 

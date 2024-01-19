@@ -172,6 +172,35 @@
 	can_paint = 1
 	footstep_type = /decl/footsteps/tiles
 
+/decl/flooring/tiling/cmb_tiled
+	name = "tiled floor"
+	flags = null
+	desc = "Depressing architecture."
+	icon_base = "tiled_a"
+
+/decl/flooring/tiling/cmb_tiled/road
+	name = "road"
+	icon_base = "road"
+	desc = "Many years ago, automatons called 'cars' used to travel along these roads."
+
+/decl/flooring/tiling/cmb_tiled/road/walk
+	icon_base = "road_walk"
+
+/decl/flooring/tiling/cmb_tiled/trainstation
+	name = "trainstation tiling"
+	desc = "Welcome, welcome to City... what was it again?"
+	icon_base = "trainstation"
+
+/decl/flooring/tiling/cmb_tiled/sidewalk
+	name = "sidewalk"
+	icon_base = "sidewalk"
+
+/decl/flooring/tiling/cmb_tiled/b
+	icon_base = "tiled_b"
+
+/decl/flooring/tiling/cmb_tiled/c
+	icon_base = "tiled_c"
+
 /decl/flooring/tiling/mono
 	icon_base = "monotile"
 	build_type = /obj/item/stack/tile/mono

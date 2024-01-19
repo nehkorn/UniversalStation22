@@ -103,6 +103,11 @@ area/space/atmosalert()
 	dynamic_lighting = 0
 	req_access = list(access_cent_general)
 
+/area/outside
+	name = "City"
+	requires_power = 0
+	dynamic_lighting = 0
+
 /area/centcom/holding
 	name = "\improper Holding Facility"
 

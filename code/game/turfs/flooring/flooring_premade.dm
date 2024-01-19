@@ -189,17 +189,36 @@
 	name = "tiled floor"
 	desc = "Depressing architecture."
 	icon_state = "tiled_a"
+	initial_flooring = /decl/flooring/tiling/cmb_tiled
 
 /turf/simulated/floor/tiled/cmb_tiled/b
 	icon_state = "tiled_b"
+	initial_flooring = /decl/flooring/tiling/cmb_tiled/b
 
 /turf/simulated/floor/tiled/cmb_tiled/c
 	icon_state = "tiled_c"
+	initial_flooring = /decl/flooring/tiling/cmb_tiled/c
+
+/turf/simulated/floor/tiled/road
+	name = "road"
+	desc = "Many years ago, automatons called 'cars' used to travel along these roads."
+	icon_state = "road"
+	initial_flooring = /decl/flooring/tiling/cmb_tiled/road
+
+/turf/simulated/floor/tiled/road/walk
+	icon_state = "road_walk"
+	initial_flooring = /decl/flooring/tiling/cmb_tiled/road/walk
+
+/turf/simulated/floor/tiled/sidewalk
+	name = "sidewalk"
+	icon_state = "sidewalk"
+	initial_flooring =/decl/flooring/tiling/cmb_tiled/sidewalk
 
 /turf/simulated/floor/tiled/cmb_tiled/trainstation
 	name = "trainstation tiling"
 	desc = "Welcome, welcome to City... what was it again?"
 	icon_state = "trainstation"
+	initial_flooring = /decl/flooring/tiling/cmb_tiled/trainstation
 
 /turf/simulated/floor/tiled/dark
 	name = "dark floor"
