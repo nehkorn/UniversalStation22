@@ -1,10 +1,16 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"al" = (
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/cmb_tiled/trainstation,
+/area/cmb/trainstation)
 "aQ" = (
 /obj/effect/floor_decal/industrial/loading{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "bx" = (
 /obj/structure/cmb_forcefield{
 	dir = 4
@@ -13,7 +19,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "cM" = (
 /obj/structure/curtain/open/shower,
 /obj/structure/hygiene/shower{
@@ -28,29 +34,38 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/lino,
 /area/space)
+"eB" = (
+/turf/simulated/wall,
+/area/cmb/trainstation)
 "fT" = (
 /obj/random/trash,
 /turf/simulated/floor/lino,
 /area/space)
 "gH" = (
 /obj/effect/floor_decal/industrial/warning/corner,
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "hs" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "hA" = (
 /turf/simulated/floor/tiled/sidewalk,
-/area/space)
+/area/outside)
 "hW" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "iF" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/lino,
@@ -66,49 +81,52 @@
 "jV" = (
 /obj/structure/train_track,
 /turf/simulated/floor,
-/area/space)
+/area/cmb/trainstation)
 "kw" = (
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "kT" = (
 /obj/structure/cmb_ffprojector{
 	dir = 8
 	},
 /turf/simulated/floor,
-/area/space)
+/area/cmb/trainstation)
 "kV" = (
 /obj/machinery/clock,
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "mr" = (
 /obj/structure/bed/chair/bench,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "nC" = (
 /obj/structure/railing/mapped{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "qq" = (
 /obj/structure/statue,
 /obj/structure/wall_frame/statue_crb,
 /turf/simulated/floor/tiled/sidewalk,
-/area/space)
+/area/outside)
 "qr" = (
 /obj/structure/railing/mapped{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/cmb_tiled/b,
-/area/space)
+/area/outside)
 "qL" = (
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "qO" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "qV" = (
 /obj/structure/table/woodentable,
 /obj/effect/decal/cleanable/blood/drip,
@@ -137,13 +155,13 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "sJ" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
 /turf/simulated/floor/asteroid,
-/area/space)
+/area/cmb/trainstation)
 "tj" = (
 /obj/structure/hygiene/toilet{
 	dir = 1
@@ -151,29 +169,42 @@
 /obj/random/trash,
 /turf/simulated/floor/tiled/old_cargo,
 /area/space)
+"tk" = (
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/cmb_tiled/c,
+/area/cmb/trainstation)
 "tD" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "vH" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/road,
-/area/space)
+/area/outside)
 "wK" = (
 /turf/simulated/floor/tiled/cmb_tiled/b,
-/area/space)
+/area/outside)
+"xX" = (
+/obj/structure/phone_booth,
+/obj/machinery/light/small/dystopian{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/cmb_tiled/trainstation,
+/area/cmb/trainstation)
 "yM" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "zH" = (
 /obj/structure/railing/mapped{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/road,
-/area/space)
+/area/outside)
 "Al" = (
 /obj/structure/hygiene/urinal{
 	pixel_y = 26
@@ -183,18 +214,33 @@
 "AN" = (
 /obj/machinery/vending/sovietsoda/breen,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
+"Bm" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/light/small/dystopian{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/cmb_tiled/c,
+/area/cmb/trainstation)
 "Bs" = (
 /obj/structure/train_track,
 /obj/structure/cmb_ffprojector{
 	dir = 4
 	},
 /turf/simulated/floor,
-/area/space)
+/area/cmb/trainstation)
+"Cf" = (
+/obj/machinery/light/small/dystopian{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/cmb_tiled/trainstation,
+/area/cmb/trainstation)
 "Ck" = (
 /obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "Cu" = (
 /turf/simulated/wall,
 /area/space)
@@ -203,13 +249,22 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/sidewalk,
-/area/space)
+/area/outside)
+"CT" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/light/small/dystopian{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/cmb_tiled/c,
+/area/cmb/trainstation)
 "CY" = (
 /obj/structure/cmb_forcefield{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "Dh" = (
 /obj/effect/paint_stripe/white,
 /turf/simulated/wall,
@@ -224,39 +279,45 @@
 	dir = 4
 	},
 /turf/simulated/floor,
-/area/space)
+/area/cmb/trainstation)
 "Fq" = (
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "GB" = (
 /turf/unsimulated/wall/other,
-/area/space)
+/area/cmb/trainstation)
 "HI" = (
 /obj/structure/phone_booth,
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "HS" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /turf/simulated/floor/asteroid,
-/area/space)
+/area/cmb/trainstation)
 "Ii" = (
 /obj/structure/train_track,
 /obj/structure/cmb_forcefield{
 	dir = 4
 	},
 /turf/simulated/floor,
-/area/space)
+/area/cmb/trainstation)
 "Im" = (
 /turf/simulated/floor/tiled/road/walk{
 	dir = 4
 	},
-/area/space)
+/area/outside)
+"IN" = (
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/cmb_tiled/trainstation,
+/area/cmb/trainstation)
 "Jt" = (
 /obj/structure/trashbin,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "JJ" = (
 /obj/structure/hygiene/shower{
 	dir = 1
@@ -275,11 +336,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/road,
-/area/space)
+/area/outside)
 "MS" = (
 /obj/structure/trashbin,
 /turf/simulated/floor/tiled/sidewalk,
-/area/space)
+/area/outside)
 "Nh" = (
 /turf/simulated/floor/tiled/old_cargo,
 /area/space)
@@ -295,10 +356,10 @@
 	name = "Citizen"
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "Oz" = (
 /turf/simulated/floor/tiled/road,
-/area/space)
+/area/outside)
 "OV" = (
 /obj/structure/bed/chair/office{
 	dir = 8
@@ -308,10 +369,10 @@
 "Pf" = (
 /obj/structure/phone_booth,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
-/area/space)
+/area/cmb/trainstation)
 "PT" = (
 /turf/simulated/floor,
-/area/space)
+/area/cmb/trainstation)
 "Qc" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 8
@@ -322,7 +383,7 @@
 /obj/structure/statue/female,
 /obj/structure/wall_frame/statue_crb,
 /turf/simulated/floor/tiled/sidewalk,
-/area/space)
+/area/outside)
 "SM" = (
 /obj/structure/table/woodentable,
 /obj/item/device/flashlight/lamp/green,
@@ -333,7 +394,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/road,
-/area/space)
+/area/outside)
 "Th" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/lino,
@@ -346,7 +407,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "Uh" = (
 /obj/structure/table/woodentable,
 /obj/item/paper_bin,
@@ -371,6 +432,12 @@
 "VB" = (
 /turf/simulated/floor/lino,
 /area/space)
+"VG" = (
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/cmb_tiled/c,
+/area/cmb/trainstation)
 "Wz" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/lino,
@@ -380,7 +447,7 @@
 	name = "Citizen"
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "XQ" = (
 /obj/structure/table/woodentable,
 /obj/item/paperwork,
@@ -390,13 +457,13 @@
 "XS" = (
 /obj/structure/trashbin,
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "Ya" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "YM" = (
 /obj/structure/flora/pottedplant/dead,
 /turf/simulated/floor/lino,
@@ -404,14 +471,14 @@
 "YW" = (
 /obj/structure/wall_frame/statue_crb,
 /turf/simulated/floor/tiled/sidewalk,
-/area/space)
+/area/outside)
 "Zb" = (
 /turf/simulated/floor/asteroid,
-/area/space)
+/area/cmb/trainstation)
 "ZS" = (
 /obj/machinery/vending/sovietsoda/breen,
 /turf/simulated/floor/tiled/cmb_tiled/c,
-/area/space)
+/area/cmb/trainstation)
 "ZV" = (
 /obj/structure/table/woodentable,
 /obj/item/paperwork,
@@ -17566,16 +17633,16 @@ Oz
 Oz
 hA
 hA
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
 dq
 dq
 dq
@@ -17823,16 +17890,16 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
 Fq
 Fq
+tk
 Fq
 Fq
-Fq
-Cu
+eB
 dq
 dq
 dq
@@ -18080,7 +18147,7 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
@@ -18089,7 +18156,7 @@ Fq
 Fq
 Fq
 Fq
-Cu
+eB
 dq
 dq
 dq
@@ -18337,7 +18404,8 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
+VG
 Fq
 Fq
 Fq
@@ -18345,8 +18413,7 @@ Fq
 Fq
 Fq
 Fq
-Fq
-Cu
+eB
 dq
 dq
 dq
@@ -18594,16 +18661,16 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 Fq
 Fq
 Fq
 Fq
-Cu
+eB
 dq
 dq
 dq
@@ -18851,16 +18918,16 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 Fq
 Fq
 Fq
 Fq
-Cu
+eB
 dq
 dq
 dq
@@ -19108,16 +19175,16 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
+VG
 Fq
 Fq
 Fq
-Fq
-Cu
+eB
 dq
 dq
 dq
@@ -19365,50 +19432,50 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 ZS
 Fq
 Fq
 Fq
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
 GB
 dq
 Cu
@@ -19622,11 +19689,11 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 Fq
 Fq
 Fq
@@ -19879,11 +19946,11 @@ Oz
 Oz
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 HI
 Fq
 Fq
@@ -20136,11 +20203,11 @@ hA
 hA
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 HI
 Fq
 Fq
@@ -20393,11 +20460,11 @@ hA
 hA
 hA
 hA
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 Fq
 Fq
 Fq
@@ -20634,7 +20701,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 qr
 qr
 qr
@@ -20650,11 +20717,11 @@ qr
 qr
 qr
 qr
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 HI
 Fq
 Fq
@@ -20891,7 +20958,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 wK
 wK
 wK
@@ -20907,11 +20974,11 @@ wK
 wK
 wK
 wK
-Cu
+eB
+VG
 Fq
 Fq
-Fq
-Cu
+eB
 HI
 Fq
 Fq
@@ -20919,6 +20986,7 @@ Fq
 Fq
 hW
 yM
+Bm
 yM
 yM
 yM
@@ -20926,16 +20994,15 @@ yM
 yM
 yM
 yM
+Bm
 yM
 yM
 yM
 yM
+Bm
 yM
 yM
-yM
-yM
-yM
-yM
+Bm
 yM
 yM
 yM
@@ -21148,7 +21215,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 wK
 wK
 wK
@@ -21164,11 +21231,11 @@ wK
 wK
 wK
 wK
-Cu
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 Fq
 Fq
 Fq
@@ -21405,27 +21472,27 @@ dq
 dq
 dq
 dq
-Cu
-Cu
-Cu
-Cu
+eB
+eB
+eB
+eB
 hs
 hs
-Cu
-Cu
-Cu
+eB
+eB
+eB
 hs
 hs
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
+eB
+eB
+eB
+eB
+eB
+eB
 Fq
 Fq
 Fq
-Cu
+eB
 Fq
 Fq
 Fq
@@ -21662,14 +21729,15 @@ dq
 dq
 dq
 dq
-Cu
-Pf
+eB
+xX
 qL
 qL
 qL
 qL
-qL
+IN
 Jt
+IN
 qL
 qL
 qL
@@ -21677,13 +21745,12 @@ qL
 qL
 qL
 qL
+Cf
 qL
 qL
 qL
-qL
-qL
-Cu
-Fq
+eB
+VG
 Fq
 Fq
 Fq
@@ -21919,7 +21986,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 Pf
 qL
 qL
@@ -21939,7 +22006,7 @@ qL
 qL
 qL
 qL
-Cu
+eB
 Fq
 Fq
 Fq
@@ -21947,6 +22014,7 @@ Fq
 Fq
 gH
 Ya
+CT
 Ya
 Ya
 Ya
@@ -21954,16 +22022,15 @@ Ya
 Ya
 Ya
 Ya
+CT
 Ya
 Ya
 Ya
 Ya
+CT
 Ya
 Ya
-Ya
-Ya
-Ya
-Ya
+CT
 Ya
 Ya
 Ya
@@ -22176,7 +22243,8 @@ dq
 dq
 dq
 dq
-Cu
+eB
+al
 qL
 qL
 qL
@@ -22195,8 +22263,7 @@ qL
 qL
 qL
 qL
-qL
-Cu
+eB
 Fq
 Fq
 Fq
@@ -22433,7 +22500,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 AN
 qL
 qL
@@ -22453,7 +22520,7 @@ kw
 kw
 mr
 qL
-Cu
+eB
 Fq
 Fq
 Fq
@@ -22690,7 +22757,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 Jt
 qL
 qL
@@ -22710,7 +22777,7 @@ kw
 kw
 mr
 qL
-Cu
+eB
 Fq
 Fq
 Fq
@@ -22947,7 +23014,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 AN
 qL
 qL
@@ -22967,7 +23034,7 @@ kw
 kw
 mr
 qL
-Cu
+eB
 Fq
 Fq
 Fq
@@ -23204,7 +23271,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 qL
 qL
 qL
@@ -23224,8 +23291,8 @@ kw
 kw
 mr
 qL
-Cu
-Fq
+eB
+VG
 Fq
 Fq
 Fq
@@ -23461,7 +23528,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 qL
 qL
 qL
@@ -23481,46 +23548,46 @@ qL
 qL
 qL
 qL
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
 GB
 dq
 Cu
@@ -23718,13 +23785,8 @@ dq
 dq
 dq
 dq
-Cu
-qL
-qL
-tD
-aQ
-nC
-qL
+eB
+al
 qL
 tD
 aQ
@@ -23736,9 +23798,14 @@ aQ
 nC
 qL
 qL
+tD
+aQ
+nC
 qL
 qL
-Cu
+qL
+qL
+eB
 dq
 dq
 dq
@@ -23975,7 +24042,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 qL
 qL
 tD
@@ -23995,7 +24062,7 @@ qL
 qL
 qL
 qL
-Cu
+eB
 dq
 dq
 dq
@@ -24232,7 +24299,7 @@ dq
 dq
 dq
 dq
-Cu
+eB
 qL
 qL
 tD
@@ -24252,7 +24319,7 @@ qL
 qL
 qL
 qL
-Cu
+eB
 dq
 dq
 dq
@@ -24489,27 +24556,27 @@ dq
 dq
 dq
 dq
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
 dq
 dq
 dq

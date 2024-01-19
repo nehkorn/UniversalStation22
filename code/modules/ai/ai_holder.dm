@@ -17,7 +17,7 @@
 	var/image/ai_status_image
 
 /mob/living/Initialize()
-	overlay_fullscreen("greyscale",/obj/screen/fullscreen/greyscale)
+	//overlay_fullscreen("greyscale",/obj/screen/fullscreen/greyscale)
 	overlay_fullscreen("noiseCool",/obj/screen/fullscreen/noise/light)
 	if (ai_holder_type)
 		ai_holder = new ai_holder_type(src)

@@ -108,6 +108,16 @@ area/space/atmosalert()
 	requires_power = 0
 	dynamic_lighting = 0
 
+/area/cmb
+	name = "Unknown"
+	requires_power = 0
+
+/area/cmb/trainstation
+	name = "Trainstation"
+
+/area/cmb/misc_buildings // for buildings that arent special
+	name = "<UNREGISTERED BUILDING>"
+
 /area/centcom/holding
 	name = "\improper Holding Facility"
 

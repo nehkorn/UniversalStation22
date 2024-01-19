@@ -99,4 +99,5 @@
 /obj/structure/train_track
 	name = "train track"
 	icon = 'icons/obj/224x32.dmi'
+	desc = "This is what trains move on."
 	icon_state = "track"

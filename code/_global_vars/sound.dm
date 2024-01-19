@@ -130,6 +130,10 @@ GLOBAL_LIST_INIT(tray_hit_sound,\
 		'sound/items/trayhit1.ogg',\
 		'sound/items/trayhit2.ogg'))
 
+GLOBAL_LIST_INIT(jackboot_sound,\
+	list(\
+		'sound/effects/footstep/jackboot1.ogg',\
+		'sound/effects/footstep/jackboot2.ogg'))
 
 GLOBAL_LIST_INIT(t12_sound,\
 	list(\

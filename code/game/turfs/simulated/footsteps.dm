@@ -67,6 +67,18 @@
 		return
 
 	var/turf/simulated/T = get_turf(src)
+
+	if(istype(src.shoes, /obj/item/clothing/shoes/jackboots))
+		if(!prob(90))
+			return
+		var/range = -(world.view - 2)
+		var/volume = 70
+		if(MOVING_DELIBERATELY(src))
+			volume -= 45
+			range -= 0.333
+		playsound(T, "jackboot_sound", volume, 1, range)
+		return
+
 	if(istype(T))
 		var/footsound = T.get_footstep_sound(src)
 		if(footsound)

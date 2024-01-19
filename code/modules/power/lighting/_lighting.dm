@@ -548,6 +548,7 @@
 
 /obj/machinery/light/dystopian
 	spawn_light_type = /obj/item/light/tube/dystopian
+	on = 1
 
 /obj/machinery/light/skrell
 	name = "skrellian light"
@@ -579,6 +580,7 @@
 
 /obj/machinery/light/small/dystopian
 	spawn_light_type = /obj/item/light/bulb/dystopian
+	on = 1
 
 /obj/machinery/light/small/readylight
 	spawn_light_type = /obj/item/light/bulb/red/readylight

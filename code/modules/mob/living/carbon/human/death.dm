@@ -69,6 +69,7 @@
 		handle_organs()
 		if(istype(src) && istype(src.wear_mask, /obj/item/clothing) && src.wear_mask.unique_death)
 			playsound(src, src.wear_mask.unique_death, 80, 1, 1)
+			handle_hud_list()
 			return
 		if(species.death_sound)
 			playsound(loc, species.death_sound, 80, 1, 1)
