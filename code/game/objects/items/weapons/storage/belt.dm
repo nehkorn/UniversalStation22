@@ -198,8 +198,8 @@
 	item_state = "emsbelt"
 
 /obj/item/storage/belt/holster/security
-	name = "security holster belt"
-	desc = "Can hold security gear like handcuffs and flashes. This one has a convenient holster."
+	name = "civil protection holster belt"
+	desc = "Can hold Civil Protection gear like handcuffs and flashes. This one has a convenient holster."
 	icon_state = "securitybelt"
 	item_state = "security"
 	storage_slots = 8

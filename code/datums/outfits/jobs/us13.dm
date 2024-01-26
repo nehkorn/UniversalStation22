@@ -16,6 +16,8 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/sec
+	belt = /obj/item/storage/belt/holster/security/fullusp
+	l_pocket = /obj/item/handcuffs/cable
 	backpack_contents = list(/obj/item/handcuffs = 1)
 
 /decl/hierarchy/outfit/job/cp/civilprotection

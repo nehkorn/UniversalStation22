@@ -125,12 +125,12 @@ var/last_chew = 0
 	last_chew = world.time
 
 /obj/item/handcuffs/cable
-	name = "cable restraints"
-	desc = "Looks like some cables tied together. Could be used to tie something up."
+	name = "zipties"
+	desc = "Looks like some plastic cables tied together. Could be used to tie something up."
 	icon_state = "cuff_white"
 	breakouttime = 300 //Deciseconds = 30s
 	cuff_sound = 'sound/weapons/cablecuff.ogg'
-	cuff_type = "cable restraints"
+	cuff_type = "zipties"
 	elastic = 1
 	health_max = 75
 

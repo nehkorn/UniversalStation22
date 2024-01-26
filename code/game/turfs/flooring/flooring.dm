@@ -175,6 +175,7 @@
 /decl/flooring/tiling/cmb_tiled
 	name = "tiled floor"
 	flags = null
+	color = null
 	desc = "Depressing architecture."
 	icon_base = "tiled_a"
 

@@ -36,7 +36,7 @@
 	var/msg_line2 = ""
 	var/centcomm_message_cooldown = 0
 	var/announcment_cooldown = 0
-	var/datum/announcement/priority/crew_announcement = new
+	var/datum/announcement/city/crew_announcement = new
 	var/current_viewing_message_id = 0
 	var/current_viewing_message = null
 
@@ -137,11 +137,7 @@
 		if("announce")
 			. = TRUE
 			if(is_autenthicated(user) && !issilicon(usr) && ntn_comm)
-				if(user)
-					var/obj/item/card/id/id_card = user.GetIdCard()
-					crew_announcement.announcer = GetNameAndAssignmentFromId(id_card)
-				else
-					crew_announcement.announcer = "Unknown"
+				crew_announcement.announcer = "THE CITY ADMINISTRATOR."
 				if(announcment_cooldown)
 					to_chat(usr, "Please allow at least one minute to pass between announcements")
 					return TRUE
@@ -150,6 +146,7 @@
 					return 1
 				var/affected_zlevels = GetConnectedZlevels(get_host_z())
 				crew_announcement.Announce(input, zlevels = affected_zlevels)
+				sound_to(world, sound('sound/voice/announcement/dingdong.ogg'))
 				announcment_cooldown = 1
 				spawn(600)//One minute cooldown
 					announcment_cooldown = 0

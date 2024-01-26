@@ -106,7 +106,6 @@ area/space/atmosalert()
 /area/outside
 	name = "City"
 	requires_power = 0
-	dynamic_lighting = 0
 
 /area/cmb
 	name = "Unknown"

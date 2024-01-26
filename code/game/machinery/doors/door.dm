@@ -51,7 +51,7 @@
 	// turf animation
 	var/atom/movable/overlay/c_animation = null
 
-	atmos_canpass = CANPASS_PROC
+	atmos_canpass = CANPASS_NEVER
 
 /obj/machinery/door/attack_generic(var/mob/user, var/damage, var/attack_verb, var/environment_smash)
 	if(environment_smash >= 1)

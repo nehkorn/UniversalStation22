@@ -1,6 +1,7 @@
 /var/datum/announcement/priority/priority_announcement = new(do_log = 0)
 /var/datum/announcement/priority/command/command_announcement = new(do_log = 0, do_newscast = 1)
 /var/datum/announcement/minor/minor_announcement = new(new_sound = 'sound/AI/commandreport.ogg',)
+/var/datum/announcement/city/CA = new(do_log = 0 ,new_sound = 'sound/voice/announcement/city_administrator.ogg')
 
 /datum/announcement
 	var/title = "Attention"
@@ -14,6 +15,10 @@
 /datum/announcement/priority
 	title = "Priority Announcement"
 	announcement_type = "Priority Announcement"
+
+/datum/announcement/city
+	title = "CITY ADMINISTRATOR ANNOUNCEMENT"
+	announcement_type = "CA ANNOUNCEMENT"
 
 /datum/announcement/priority/security
 	title = "Security Announcement"

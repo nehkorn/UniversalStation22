@@ -52,7 +52,7 @@
 	icon_state = "breen_blu"
 	center_of_mass = "x=16;y=10"
 
-/obj/item/reagent_containers/food/drinks/cans/breen/Initialize()
+/obj/item/reagent_containers/food/drinks/cans/breen/New()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/water, 30) // TODO: new reagent for breen watah
 
@@ -70,6 +70,14 @@
 	. = ..()
 	if(random_num)
 		phone_number = rand(1, 999)
+
+/obj/structure/traffic_pole
+	name = "traffic pole"
+	desc = "Used to stop traffic. Used to."
+	icon = 'icons/obj/furniture.dmi'
+	icon_state = "road_pole"
+	anchored = TRUE
+	density = FALSE
 
 /obj/structure/cmb_ffprojector // indestructible version
 	name = "forcefield projector"
@@ -101,3 +109,25 @@
 	icon = 'icons/obj/224x32.dmi'
 	desc = "This is what trains move on."
 	icon_state = "track"
+
+/obj/structure/street_light
+	name = "street light"
+	icon = 'icons/obj/street.dmi'
+	desc = "It is on 24/7, not even the night looks like night anymore."
+	icon_state = "streetlamp1"
+
+	density = TRUE
+	anchored = TRUE
+
+	layer = ABOVE_HUMAN_LAYER
+
+	/// Brightness of the light when on. Can be negative.
+	var/lamp_brightness = 1
+	/// Inner range of the light when on. Can be negative
+	var/lamp_inner_range = 0.6
+	/// Outer range of the light when on. Can be negative.
+	var/lamp_outer_range = 7.5
+
+/obj/structure/street_light/Initialize()
+	. = ..()
+	set_light(lamp_brightness, lamp_inner_range, lamp_outer_range)

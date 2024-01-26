@@ -21,3 +21,14 @@
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
+
+/obj/item/storage/belt/holster/security/fullusp/New()
+	..()
+	new /obj/item/reagent_containers/spray/pepper(src)
+	new /obj/item/device/flash(src)
+	new /obj/item/device/flashlight/maglight(src)
+	new /obj/item/gun/projectile/pistol/usp(src)
+	new /obj/item/ammo_magazine/pistol/double/usp(src)
+	new /obj/item/ammo_magazine/pistol/double/usp(src)
+	new /obj/item/melee/baton/loaded(src)
+	update_icon()
