@@ -205,7 +205,7 @@
 "eA" = (
 /obj/effect/paint_stripe/gunmetal,
 /turf/simulated/wall/r_wall,
-/area/cmb/administration_elevator)
+/area/turbolift/administration_elevator_1)
 "eB" = (
 /turf/simulated/wall,
 /area/cmb/trainstation)
@@ -369,10 +369,10 @@
 	lift_size_y = 7;
 	lift_size_x = 5;
 	depth = 2;
-	areas_to_use = list(/area/cmb/administration_elevator)
+	areas_to_use = list(/area/turbolift/administration_elevator_1, /area/turbolift/administration_elevator_2)
 	},
 /turf/simulated/floor/plating,
-/area/cmb/administration_elevator)
+/area/turbolift/administration_elevator_1)
 "iF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1890,9 +1890,8 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
 "RJ" = (
-/obj/machinery/door/airlock/lift,
 /turf/simulated/floor/plating,
-/area/cmb/administration_elevator)
+/area/cmb/administration_access)
 "RM" = (
 /obj/random/maintenance/clean,
 /obj/effect/decal/cleanable/dirt,
@@ -2160,7 +2159,7 @@
 /area/cmb/misc_buildings)
 "VT" = (
 /turf/simulated/floor/plating,
-/area/cmb/administration_elevator)
+/area/turbolift/administration_elevator_1)
 "Wh" = (
 /obj/item/ammo_casing/pistol/used,
 /obj/item/ammo_casing/rifle/used,
@@ -2181,9 +2180,8 @@
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/outside)
 "Wt" = (
-/obj/machinery/door/airlock/lift,
-/turf/simulated/floor/reinforced,
-/area/cmb/administration_access)
+/turf/space,
+/area/turbolift/administration_elevator_1)
 "Wu" = (
 /obj/structure/bed/chair/wood{
 	dir = 8
@@ -5542,7 +5540,7 @@ dq
 dq
 dq
 dq
-dq
+Wt
 dq
 dq
 dq
@@ -7607,8 +7605,8 @@ cm
 rG
 rG
 rG
-Wt
-Wt
+So
+So
 rG
 rG
 rG
