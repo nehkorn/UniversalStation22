@@ -6,6 +6,12 @@
 	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://bandcamp.zhaytee.net/track/absconditus"
 
+/decl/audio/track/harvester
+	source = 'maps/city22/combine.ogg'
+	title = "Combine Harvester"
+	author = "Kelly Bailey"
+	collection = "Half Life 2: OST"
+
 /decl/audio/track/asfarasitgets
 	source = 'sound/music/europa/asfarasitgets.ogg'
 	title = "As Far As It Gets"

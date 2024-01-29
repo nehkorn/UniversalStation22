@@ -76,6 +76,7 @@
 	lore_text = "The most ubiquitous building material of old Earth, now in space. Consists of mineral aggregate bound with some sort of cementing solution."
 	stack_type = /obj/item/stack/material/generic/brick
 	icon_colour = COLOR_CONCRETE
+	hardness = MATERIAL_UNDEAD
 	value = 1
 	var/image/texture
 

@@ -33,6 +33,8 @@
 	total_positions = 1
 	spawn_positions = 1
 
+	outfit_type = /decl/hierarchy/outfit/job/cp/rankleader
+
 /datum/job/cp_elite
 	title = "Civil Protection Elite"
 	department = "Civil Protection"
@@ -46,6 +48,8 @@
 
 	total_positions = 3
 	spawn_positions = 3
+
+	outfit_type = /decl/hierarchy/outfit/job/cp/elite
 
 /datum/job/cp_officer
 	title = "Civil Protection Officer"
@@ -90,6 +94,9 @@ var/datum/announcement/minor/ca_announcement = new(do_newscast = 1)
 	supervisors = "the City Administrator"
 	social_class = SOCIAL_CLASS_HIGH
 
+	access = list()
+	minimal_access = list()
+
 	total_positions = 2
 	spawn_positions = 2
 
@@ -100,3 +107,6 @@ var/datum/announcement/minor/ca_announcement = new(do_newscast = 1)
 		SKILL_FORENSICS = SKILL_UNTRAINED)
 
 	//outfit_type = /decl/hierarchy/outfit/job/overwatch_elite
+
+/datum/job/overwatch_elite/get_access()
+	return get_all_station_access()

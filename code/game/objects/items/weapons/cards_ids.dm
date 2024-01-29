@@ -286,7 +286,6 @@ var/const/NO_EMAG_ACT = -50
 	dat += text("Assignment: []</A><BR>\n", assignment)
 	dat += text("Fingerprint: []</A><BR>\n", fingerprint_hash)
 	dat += text("Blood Type: []<BR>\n", blood_type)
-	dat += text("DNA Hash: []<BR><BR>\n", dna_hash)
 	if(front && side)
 		dat +="<td align = center valign = top>Photo:<br><img src=front.png height=70 width=70 border=7 style='-ms-interpolation-mode: nearest-neighbor'> <img src=side.png height=70 width=70 border=4 style='-ms-interpolation-mode: nearest-neighbor'></td>"
 	dat += "</tr></table>"
@@ -312,7 +311,6 @@ var/const/NO_EMAG_ACT = -50
 
 	to_chat(usr, text("[icon2html(src, usr)] []: The current assignment on the card is [].", src.name, src.assignment))
 	to_chat(usr, "The blood type on the card is [blood_type].")
-	to_chat(usr, "The DNA hash on the card is [dna_hash].")
 	to_chat(usr, "The fingerprint hash on the card is [fingerprint_hash].")
 	return
 
@@ -585,7 +583,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/civilian
 	name = "identification card"
-	desc = "A card issued to civilian staff."
+	desc = "A card issued to civilians."
 	job_access_type = DEFAULT_JOB_TYPE
 	detail_color = COLOR_CIVIE_GREEN
 

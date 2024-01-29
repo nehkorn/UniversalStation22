@@ -6,6 +6,11 @@
 	w_class = 1
 	var/key_data = ""
 
+/obj/item/key/medbay
+	name = "civilian medbay key"
+	desc = "Used to unlock the doors of the citizen medbay."
+	key_data = "CivMedbay"
+
 /obj/item/key/New(var/newloc,var/data)
 	if(data)
 		key_data = data

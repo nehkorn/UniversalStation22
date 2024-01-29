@@ -117,6 +117,9 @@ area/space/atmosalert()
 /area/cmb/misc_buildings // for buildings that arent special
 	name = "<UNREGISTERED BUILDING>"
 
+/area/cmb/medbay
+	name = "Citizen Medbay"
+
 /area/centcom/holding
 	name = "\improper Holding Facility"
 

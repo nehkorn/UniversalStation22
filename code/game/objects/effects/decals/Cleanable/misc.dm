@@ -32,6 +32,11 @@
 	mouse_opacity = 0
 	persistent = TRUE
 
+/obj/effect/decal/cleanable/dirt/Initialize(ml, _age)
+	. = ..()
+	if(locate(/turf/simulated/wall) in loc)
+		addtimer(CALLBACK(src, /datum/proc/qdel_self), )
+
 /obj/effect/decal/cleanable/flour
 	name = "flour"
 	desc = "It's still good. Four second rule!"

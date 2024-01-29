@@ -476,3 +476,9 @@
 	id = access_ascent
 	desc = "Ascent Materiel"
 	access_type = ACCESS_TYPE_NONE
+
+/var/const/access_civilprotection = "ACCESS_CP"
+/datum/access/civilprotection
+	id = access_civilprotection
+	desc = "Civil Protection Access"
+	access_type = ACCESS_TYPE_STATION

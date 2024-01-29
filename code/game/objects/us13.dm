@@ -3,32 +3,37 @@
 	desc = "For all of your sitting needs during an alien occupation."
 	icon_state = "bench"
 	base_icon = "bench"
+	anchored = TRUE
 
 /obj/machinery/clock
 	name = "trainstation clock"
 	icon = 'icons/obj/32x64.dmi'
 	icon_state = "clock"
 	desc = "I wonder what time it is..."
+	anchored = TRUE
+	density = TRUE
 
 /obj/structure/trashbin
 	name = "trash can"
+	desc = "Just a normal trash can."
 	icon = 'icons/obj/furniture.dmi'
 	icon_state = "bin"
+	density = TRUE
+	anchored = TRUE
 
-/obj/structure/trashbin/examine(mob/user)
+/obj/structure/trashbin/attackby(obj/item/O, mob/user)
 	. = ..()
-	if(ishuman(user))
-		var/mob/living/carbon/human/examinator
-		if(examinator.social_class)
-			switch(examinator.social_class)
-				if(SOCIAL_CLASS_LOW)
-					to_chat(examinator, "Those CP assholes keep telling me to pick up cans and then put them in these.")
-				if(SOCIAL_CLASS_MED)
-					to_chat(examinator, "Hehehe, I keep telling citizens to put cans into these.")
-				if(SOCIAL_CLASS_HIGH)
-					to_chat(examinator, "My fucking goons keep telling citizens to put cans into these.")
-				else
-					to_chat(examinator, "Just a normal trash can.")
+	if(user && O)
+		if(!user.unEquip(O, src)) //for some reason this allows it to actually move, hilarious
+			return
+		O.forceMove(src)
+
+/obj/structure/trashbin/attack_hand(mob/user)
+	. = ..()
+	if(contents.len)
+		var/obj/item/random_item = pick(contents)
+		random_item.dropInto(loc)
+		user.visible_message(SPAN_NOTICE("[user] grabs [random_item] out from \the [src], gross."), SPAN_NOTICE("You grab [random_item] out from \the [src], gross!"))
 
 /obj/machinery/clock/examine(mob/user, distance)
 	. = ..()
@@ -131,3 +136,31 @@
 /obj/structure/street_light/Initialize()
 	. = ..()
 	set_light(lamp_brightness, lamp_inner_range, lamp_outer_range)
+
+/obj/item/gnome
+	name = "gnome"
+	desc = "Hopefully this one isn't TOO aware..."
+	icon_state = "gnome"
+	var/supercharged = FALSE
+
+/obj/item/gnome/supercharged
+	supercharged = TRUE
+
+/obj/item/gnome/attack(mob/living/M, mob/living/user, target_zone, animate)
+	. = ..()
+	var/mob/living/carbon/human/victim = M
+	if(supercharged)
+		victim.gib()
+		to_world(SPAN_DANGER("<font size='4'>[pick("ANOTHER POOR SOUL GOT GNOMED.", "HAAH-HE!")]</font>"))
+
+/obj/structure/rustcar
+	name = "rusted derelict"
+	desc = "A rusted metal chassis of some pre-war machine. What could it be?"
+	icon = './icons/medium_vehicles.dmi'
+	icon_state = "derelict"
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/rustcar/Initialize()
+	. = ..()
+	color = get_random_colour()

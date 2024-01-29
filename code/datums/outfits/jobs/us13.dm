@@ -18,6 +18,8 @@
 	back = /obj/item/storage/backpack/satchel/sec
 	belt = /obj/item/storage/belt/holster/security/fullusp
 	l_pocket = /obj/item/handcuffs/cable
+	pda_type = /obj/item/modular_computer/pda
+	id_types = list(/obj/item/card/id/security)
 	backpack_contents = list(/obj/item/handcuffs = 1)
 
 /decl/hierarchy/outfit/job/cp/civilprotection
@@ -25,3 +27,19 @@
 
 	suit = /obj/item/clothing/suit/armor/vest/old/security/cpO
 	mask = /obj/item/clothing/mask/cpO
+
+/decl/hierarchy/outfit/job/cp/elite
+	name = OUTFIT_JOB_NAME("Civil Protection Elite")
+
+	suit = /obj/item/clothing/suit/armor/vest/old/security/cpE
+	mask = /obj/item/clothing/mask/cpE
+	suit_store = /obj/item/gun/projectile/automatic/assault_rifle/mp7
+	backpack_contents = list(/obj/item/ammo_magazine/rifle/mp7 = 4)
+
+/decl/hierarchy/outfit/job/cp/rankleader
+	name = OUTFIT_JOB_NAME("Civil Protection Rank Leader")
+
+	suit = /obj/item/clothing/suit/armor/vest/old/security/cpRL
+	mask = /obj/item/clothing/mask/cpRL
+	suit_store = /obj/item/gun/projectile/automatic/assault_rifle/mp7
+	backpack_contents = list(/obj/item/ammo_magazine/rifle/mp7 = 4)
