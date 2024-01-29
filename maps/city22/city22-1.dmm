@@ -202,10 +202,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
-"eA" = (
-/obj/effect/paint_stripe/gunmetal,
-/turf/simulated/wall/r_wall,
-/area/cmb/administration_elevator)
 "eB" = (
 /turf/simulated/wall,
 /area/cmb/trainstation)
@@ -518,8 +514,12 @@
 	},
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
-"lM" = (
-/turf/simulated/wall/elevator,
+"lD" = (
+/obj/effect/paint_stripe/gunmetal,
+/turf/simulated/wall/r_wall,
+/area/cmb/administration_elevator)
+"lG" = (
+/turf/simulated/wall/r_wall,
 /area/cmb/administration_access)
 "lZ" = (
 /obj/structure/trashbin,
@@ -763,9 +763,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
-"rG" = (
-/turf/simulated/wall/r_wall,
-/area/cmb/administration_access)
 "rT" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 8
@@ -816,6 +813,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
+"sM" = (
+/obj/machinery/door/airlock/lift,
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
 "tf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1603,6 +1604,9 @@
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"Lu" = (
+/turf/simulated/wall/elevator,
+/area/cmb/administration_access)
 "LB" = (
 /obj/structure/filingcabinet,
 /obj/effect/decal/cleanable/dirt,
@@ -1795,6 +1799,10 @@
 /obj/structure/bed,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"Pp" = (
+/obj/machinery/door/airlock/lift,
+/turf/simulated/floor/plating,
+/area/cmb/administration_elevator)
 "Pw" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/lino,
@@ -1889,10 +1897,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
-"RJ" = (
-/obj/machinery/door/airlock/lift,
-/turf/simulated/floor/plating,
-/area/cmb/administration_elevator)
 "RM" = (
 /obj/random/maintenance/clean,
 /obj/effect/decal/cleanable/dirt,
@@ -2180,10 +2184,6 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/outside)
-"Wt" = (
-/obj/machinery/door/airlock/lift,
-/turf/simulated/floor/reinforced,
-/area/cmb/administration_access)
 "Wu" = (
 /obj/structure/bed/chair/wood{
 	dir = 8
@@ -5804,16 +5804,16 @@ dq
 dq
 dq
 dq
-eA
-eA
-eA
-eA
-eA
-eA
-eA
-eA
-eA
-eA
+lD
+lD
+lD
+lD
+lD
+lD
+lD
+lD
+lD
+lD
 dq
 dq
 dq
@@ -6061,7 +6061,7 @@ dq
 dq
 dq
 dq
-eA
+lD
 VT
 VT
 VT
@@ -6070,7 +6070,7 @@ VT
 VT
 VT
 il
-eA
+lD
 dq
 dq
 dq
@@ -6318,7 +6318,7 @@ dq
 dq
 dq
 dq
-eA
+lD
 VT
 VT
 VT
@@ -6327,7 +6327,7 @@ VT
 VT
 VT
 VT
-eA
+lD
 dq
 dq
 dq
@@ -6575,7 +6575,7 @@ dq
 dq
 dq
 dq
-eA
+lD
 VT
 VT
 VT
@@ -6584,7 +6584,7 @@ VT
 VT
 VT
 VT
-eA
+lD
 dq
 dq
 dq
@@ -6832,7 +6832,7 @@ dq
 dq
 dq
 dq
-eA
+lD
 VT
 VT
 VT
@@ -6841,7 +6841,7 @@ VT
 VT
 VT
 VT
-eA
+lD
 dq
 dq
 dq
@@ -7089,7 +7089,7 @@ dq
 dq
 dq
 dq
-eA
+lD
 VT
 VT
 VT
@@ -7098,7 +7098,7 @@ VT
 VT
 VT
 VT
-eA
+lD
 dq
 dq
 dq
@@ -7347,14 +7347,14 @@ dq
 dq
 dq
 cm
-lM
-lM
-lM
-RJ
-RJ
-lM
-lM
-lM
+Lu
+Lu
+Lu
+Pp
+Pp
+Lu
+Lu
+Lu
 cm
 dq
 dq
@@ -7604,14 +7604,14 @@ dq
 dq
 dq
 cm
-rG
-rG
-rG
-Wt
-Wt
-rG
-rG
-rG
+lG
+lG
+lG
+sM
+sM
+lG
+lG
+lG
 cm
 dq
 dq

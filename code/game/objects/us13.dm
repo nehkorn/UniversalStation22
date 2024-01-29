@@ -158,6 +158,7 @@
 	desc = "A rusted metal chassis of some pre-war machine. What could it be?"
 	icon = './icons/medium_vehicles.dmi'
 	icon_state = "derelict"
+	bound_width = 64
 	anchored = TRUE
 	density = TRUE
 
