@@ -103,29 +103,6 @@ area/space/atmosalert()
 	dynamic_lighting = 0
 	req_access = list(access_cent_general)
 
-/area/outside
-	name = "City"
-	requires_power = 0
-
-/area/cmb
-	name = "Unknown"
-	requires_power = 0
-
-/area/cmb/trainstation
-	name = "Trainstation"
-
-/area/cmb/misc_buildings // for buildings that arent special
-	name = "<UNREGISTERED BUILDING>"
-
-/area/cmb/medbay
-	name = "Citizen Medbay"
-
-/area/cmb/administration_access
-	name = "City Administration Access"
-
-/area/cmb/administration_elevator
-	name = "City Administration Elevator"
-
 /area/centcom/holding
 	name = "\improper Holding Facility"
 

@@ -7,21 +7,16 @@
 /area/space)
 "I" = (
 /turf/simulated/open,
-/area/cmb/administration_elevator)
+/area/turbolift/administration_elevator_2)
 "Q" = (
 /turf/simulated/wall/r_wall,
 /area/space)
-"T" = (
-/obj/machinery/door/airlock/lift,
-/turf/simulated/floor/reinforced,
-/area/space)
 "W" = (
 /turf/simulated/wall/r_wall,
-/area/cmb/administration_elevator)
+/area/turbolift/administration_elevator_2)
 "X" = (
-/obj/machinery/door/airlock/lift,
 /turf/simulated/floor/plating,
-/area/cmb/administration_elevator)
+/area/space)
 
 (1,1,1) = {"
 a
@@ -5798,8 +5793,8 @@ a
 o
 o
 o
-T
-T
+o
+o
 o
 o
 o
