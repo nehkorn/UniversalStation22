@@ -202,6 +202,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"eA" = (
+/obj/effect/paint_stripe/gunmetal,
+/turf/simulated/wall/r_wall,
+/area/turbolift/administration_elevator_1)
 "eB" = (
 /turf/simulated/wall,
 /area/cmb/trainstation)
@@ -365,10 +369,10 @@
 	lift_size_y = 7;
 	lift_size_x = 5;
 	depth = 2;
-	areas_to_use = list(/area/cmb/administration_elevator)
+	areas_to_use = list(/area/turbolift/administration_elevator_1, /area/turbolift/administration_elevator_2)
 	},
 /turf/simulated/floor/plating,
-/area/cmb/administration_elevator)
+/area/turbolift/administration_elevator_1)
 "iF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -514,12 +518,8 @@
 	},
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
-"lD" = (
-/obj/effect/paint_stripe/gunmetal,
-/turf/simulated/wall/r_wall,
-/area/cmb/administration_elevator)
-"lG" = (
-/turf/simulated/wall/r_wall,
+"lM" = (
+/turf/simulated/wall/elevator,
 /area/cmb/administration_access)
 "lZ" = (
 /obj/structure/trashbin,
@@ -763,6 +763,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
+"rG" = (
+/turf/simulated/wall/r_wall,
+/area/cmb/administration_access)
 "rT" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 8
@@ -813,10 +816,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
-"sM" = (
-/obj/machinery/door/airlock/lift,
-/turf/simulated/floor/reinforced,
-/area/cmb/administration_access)
 "tf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1604,9 +1603,6 @@
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
-"Lu" = (
-/turf/simulated/wall/elevator,
-/area/cmb/administration_access)
 "LB" = (
 /obj/structure/filingcabinet,
 /obj/effect/decal/cleanable/dirt,
@@ -1799,10 +1795,6 @@
 /obj/structure/bed,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
-"Pp" = (
-/obj/machinery/door/airlock/lift,
-/turf/simulated/floor/plating,
-/area/cmb/administration_elevator)
 "Pw" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/lino,
@@ -1897,6 +1889,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"RJ" = (
+/turf/simulated/floor/plating,
+/area/cmb/administration_access)
 "RM" = (
 /obj/random/maintenance/clean,
 /obj/effect/decal/cleanable/dirt,
@@ -2164,7 +2159,7 @@
 /area/cmb/misc_buildings)
 "VT" = (
 /turf/simulated/floor/plating,
-/area/cmb/administration_elevator)
+/area/turbolift/administration_elevator_1)
 "Wh" = (
 /obj/item/ammo_casing/pistol/used,
 /obj/item/ammo_casing/rifle/used,
@@ -2184,6 +2179,9 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/outside)
+"Wt" = (
+/turf/space,
+/area/turbolift/administration_elevator_1)
 "Wu" = (
 /obj/structure/bed/chair/wood{
 	dir = 8
@@ -5542,7 +5540,7 @@ dq
 dq
 dq
 dq
-dq
+Wt
 dq
 dq
 dq
@@ -5804,16 +5802,16 @@ dq
 dq
 dq
 dq
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
-lD
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
 dq
 dq
 dq
@@ -6061,7 +6059,7 @@ dq
 dq
 dq
 dq
-lD
+eA
 VT
 VT
 VT
@@ -6070,7 +6068,7 @@ VT
 VT
 VT
 il
-lD
+eA
 dq
 dq
 dq
@@ -6318,7 +6316,7 @@ dq
 dq
 dq
 dq
-lD
+eA
 VT
 VT
 VT
@@ -6327,7 +6325,7 @@ VT
 VT
 VT
 VT
-lD
+eA
 dq
 dq
 dq
@@ -6575,7 +6573,7 @@ dq
 dq
 dq
 dq
-lD
+eA
 VT
 VT
 VT
@@ -6584,7 +6582,7 @@ VT
 VT
 VT
 VT
-lD
+eA
 dq
 dq
 dq
@@ -6832,7 +6830,7 @@ dq
 dq
 dq
 dq
-lD
+eA
 VT
 VT
 VT
@@ -6841,7 +6839,7 @@ VT
 VT
 VT
 VT
-lD
+eA
 dq
 dq
 dq
@@ -7089,7 +7087,7 @@ dq
 dq
 dq
 dq
-lD
+eA
 VT
 VT
 VT
@@ -7098,7 +7096,7 @@ VT
 VT
 VT
 VT
-lD
+eA
 dq
 dq
 dq
@@ -7347,14 +7345,14 @@ dq
 dq
 dq
 cm
-Lu
-Lu
-Lu
-Pp
-Pp
-Lu
-Lu
-Lu
+lM
+lM
+lM
+RJ
+RJ
+lM
+lM
+lM
 cm
 dq
 dq
@@ -7604,14 +7602,14 @@ dq
 dq
 dq
 cm
-lG
-lG
-lG
-sM
-sM
-lG
-lG
-lG
+rG
+rG
+rG
+So
+So
+rG
+rG
+rG
 cm
 dq
 dq
