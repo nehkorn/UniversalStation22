@@ -120,6 +120,12 @@ area/space/atmosalert()
 /area/cmb/medbay
 	name = "Citizen Medbay"
 
+/area/cmb/administration_access
+	name = "City Administration Access"
+
+/area/cmb/administration_elevator
+	name = "City Administration Elevator"
+
 /area/centcom/holding
 	name = "\improper Holding Facility"
 

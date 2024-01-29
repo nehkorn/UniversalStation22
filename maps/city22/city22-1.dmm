@@ -75,7 +75,7 @@
 	},
 /obj/structure/table/steel,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "bI" = (
 /obj/structure/street_light,
 /turf/simulated/floor/tiled/cmb_tiled/b,
@@ -111,7 +111,7 @@
 "cm" = (
 /obj/effect/paint_stripe/gunmetal,
 /turf/simulated/wall/r_wall,
-/area/space)
+/area/cmb/administration_access)
 "cv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/trash,
@@ -134,7 +134,7 @@
 	name = "exterior control"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "cX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -202,6 +202,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"eA" = (
+/obj/effect/paint_stripe/gunmetal,
+/turf/simulated/wall/r_wall,
+/area/cmb/administration_elevator)
 "eB" = (
 /turf/simulated/wall,
 /area/cmb/trainstation)
@@ -364,10 +368,11 @@
 	dir = 4;
 	lift_size_y = 7;
 	lift_size_x = 5;
-	depth = 2
+	depth = 2;
+	areas_to_use = list(/area/cmb/administration_elevator)
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/cmb/administration_elevator)
 "iF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -460,7 +465,7 @@
 	id_tag = "citadel_access_interior"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "kq" = (
 /obj/structure/railing/mapped{
 	dir = 1
@@ -513,6 +518,9 @@
 	},
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
+"lM" = (
+/turf/simulated/wall/elevator,
+/area/cmb/administration_access)
 "lZ" = (
 /obj/structure/trashbin,
 /obj/random/trash,
@@ -755,6 +763,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
+"rG" = (
+/turf/simulated/wall/r_wall,
+/area/cmb/administration_access)
 "rT" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 8
@@ -927,7 +938,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "ws" = (
 /obj/structure/railing/mapped{
 	dir = 4
@@ -1069,7 +1080,7 @@
 "zE" = (
 /obj/structure/table/steel,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "zF" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/decal/cleanable/dirt,
@@ -1124,7 +1135,7 @@
 "Bl" = (
 /obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "Bm" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -1324,7 +1335,7 @@
 	name = "interior control"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "EZ" = (
 /obj/structure/cmb_forcefield{
 	dir = 4
@@ -1488,7 +1499,7 @@
 	id_tag = "citadel_access_exterior"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "IB" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/concrete,
@@ -1557,7 +1568,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "JX" = (
 /obj/structure/street_light,
 /obj/effect/decal/cleanable/dirt,
@@ -1686,7 +1697,7 @@
 	},
 /obj/structure/table/steel,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "NE" = (
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled/steel_grid,
@@ -1761,7 +1772,7 @@
 	},
 /obj/structure/table/steel,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "OU" = (
 /obj/item/paperwork,
 /obj/effect/decal/cleanable/dirt,
@@ -1823,7 +1834,7 @@
 	name = "exterior control"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "Qk" = (
 /obj/item/ammo_casing/pistol/used,
 /turf/simulated/floor/wood/walnut,
@@ -1866,7 +1877,7 @@
 /obj/structure/railing/mapped,
 /obj/structure/table/steel,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "Rt" = (
 /obj/structure/holohoop{
 	dir = 4
@@ -1878,6 +1889,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"RJ" = (
+/obj/machinery/door/airlock/lift,
+/turf/simulated/floor/plating,
+/area/cmb/administration_elevator)
 "RM" = (
 /obj/random/maintenance/clean,
 /obj/effect/decal/cleanable/dirt,
@@ -1928,10 +1943,10 @@
 	name = "interior control"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "So" = (
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "Sw" = (
 /obj/effect/wallframe_spawn,
 /turf/space,
@@ -2037,7 +2052,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "TX" = (
 /obj/random/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -2098,7 +2113,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_access)
 "Vb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rustcar,
@@ -2145,7 +2160,7 @@
 /area/cmb/misc_buildings)
 "VT" = (
 /turf/simulated/floor/plating,
-/area/space)
+/area/cmb/administration_elevator)
 "Wh" = (
 /obj/item/ammo_casing/pistol/used,
 /obj/item/ammo_casing/rifle/used,
@@ -2165,6 +2180,10 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/outside)
+"Wt" = (
+/obj/machinery/door/airlock/lift,
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
 "Wu" = (
 /obj/structure/bed/chair/wood{
 	dir = 8
@@ -5785,16 +5804,16 @@ dq
 dq
 dq
 dq
-cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
 dq
 dq
 dq
@@ -6042,7 +6061,7 @@ dq
 dq
 dq
 dq
-cm
+eA
 VT
 VT
 VT
@@ -6051,7 +6070,7 @@ VT
 VT
 VT
 il
-cm
+eA
 dq
 dq
 dq
@@ -6299,7 +6318,7 @@ dq
 dq
 dq
 dq
-cm
+eA
 VT
 VT
 VT
@@ -6308,7 +6327,7 @@ VT
 VT
 VT
 VT
-cm
+eA
 dq
 dq
 dq
@@ -6556,7 +6575,7 @@ dq
 dq
 dq
 dq
-cm
+eA
 VT
 VT
 VT
@@ -6565,7 +6584,7 @@ VT
 VT
 VT
 VT
-cm
+eA
 dq
 dq
 dq
@@ -6813,7 +6832,7 @@ dq
 dq
 dq
 dq
-cm
+eA
 VT
 VT
 VT
@@ -6822,7 +6841,7 @@ VT
 VT
 VT
 VT
-cm
+eA
 dq
 dq
 dq
@@ -7070,7 +7089,7 @@ dq
 dq
 dq
 dq
-cm
+eA
 VT
 VT
 VT
@@ -7079,7 +7098,7 @@ VT
 VT
 VT
 VT
-cm
+eA
 dq
 dq
 dq
@@ -7328,14 +7347,14 @@ dq
 dq
 dq
 cm
-VT
-VT
-VT
-VT
-VT
-VT
-VT
-VT
+lM
+lM
+lM
+RJ
+RJ
+lM
+lM
+lM
 cm
 dq
 dq
@@ -7585,14 +7604,14 @@ dq
 dq
 dq
 cm
-So
-So
-So
-So
-So
-So
-So
-So
+rG
+rG
+rG
+Wt
+Wt
+rG
+rG
+rG
 cm
 dq
 dq
