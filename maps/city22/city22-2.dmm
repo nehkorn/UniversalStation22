@@ -9,14 +9,15 @@
 /turf/simulated/open,
 /area/turbolift/administration_elevator_2)
 "Q" = (
-/turf/simulated/wall/r_wall,
-/area/space)
+/turf/simulated/floor/plating,
+/area/turbolift/administration_elevator_2)
 "W" = (
+/obj/effect/paint_stripe/gunmetal,
 /turf/simulated/wall/r_wall,
 /area/turbolift/administration_elevator_2)
 "X" = (
-/turf/simulated/floor/plating,
-/area/space)
+/turf/simulated/wall/elevator,
+/area/turbolift/administration_elevator_2)
 
 (1,1,1) = {"
 a
@@ -5019,14 +5020,14 @@ a
 a
 a
 W
-I
-I
-I
-I
-I
-I
-I
-I
+X
+X
+X
+Q
+Q
+X
+X
+X
 W
 a
 a
@@ -5275,16 +5276,16 @@ a
 a
 a
 a
-W
-I
-I
-I
-I
-I
-I
-I
-I
-W
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
 a
 a
 a
@@ -5532,16 +5533,16 @@ a
 a
 a
 a
-Q
-Q
-Q
-Q
-X
-X
-Q
-Q
-Q
-Q
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
 o
 o
 o

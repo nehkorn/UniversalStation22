@@ -2179,9 +2179,6 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/outside)
-"Wt" = (
-/turf/space,
-/area/turbolift/administration_elevator_1)
 "Wu" = (
 /obj/structure/bed/chair/wood{
 	dir = 8
@@ -5540,7 +5537,7 @@ dq
 dq
 dq
 dq
-Wt
+dq
 dq
 dq
 dq
