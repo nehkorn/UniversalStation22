@@ -8,6 +8,14 @@
 	id_types = list(/obj/item/card/id/civilian)
 	pda_type = null
 
+/decl/hierarchy/outfit/job/citizen/worker
+	name = OUTFIT_JOB_NAME("Factory Worker")
+
+	suit = /obj/item/clothing/suit/storage/hazardvest
+	head = /obj/item/clothing/head/hardhat
+
+	id_types = list(/obj/item/card/id/civilian/worker)
+
 /decl/hierarchy/outfit/job/cp
 	hierarchy_type = /decl/hierarchy/outfit/job/cp
 	l_ear = /obj/item/device/radio/headset/headset_sec/civil_protection

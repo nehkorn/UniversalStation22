@@ -587,6 +587,9 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = DEFAULT_JOB_TYPE
 	detail_color = COLOR_CIVIE_GREEN
 
+/obj/item/card/id/civilian/worker
+	job_access_type = /datum/job/citizen/worker
+
 /obj/item/card/id/civilian/bartender
 	job_access_type = /datum/job/bartender
 

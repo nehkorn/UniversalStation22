@@ -114,6 +114,7 @@
 	icon = 'icons/obj/224x32.dmi'
 	desc = "This is what trains move on."
 	icon_state = "track"
+	anchored = TRUE
 
 /obj/structure/street_light
 	name = "street light"
@@ -161,6 +162,7 @@
 	bound_width = 64
 	anchored = TRUE
 	density = TRUE
+	obj_flags = ATOM_FLAG_CLIMBABLE
 
 /obj/structure/rustcar/Initialize()
 	. = ..()

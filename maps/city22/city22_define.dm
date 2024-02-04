@@ -15,6 +15,6 @@
 	lobby_screens = list('maps/city22/consul.gif')
 	lobby_tracks = list(/decl/audio/track/harvester)
 
-	station_levels = list(1, 2, 3)
-	contact_levels = list(1, 2, 3)
-	player_levels = list(1, 2, 3)
+	station_levels = list(1, 2)
+	contact_levels = list(1, 2)
+	player_levels = list(1, 2)

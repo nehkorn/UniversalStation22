@@ -15,6 +15,17 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/citizen
 
+/datum/job/citizen/worker
+	title = "Factory Worker"
+
+	total_positions = 5
+	spawn_positions = 5
+	supervisors = "civil protection and the Factory Overseer"
+
+	access = list(access_manufacturing)
+
+	outfit_type = /decl/hierarchy/outfit/job/citizen/worker
+
 // COPS
 
 /datum/job/cp_rankleader

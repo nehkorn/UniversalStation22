@@ -15,8 +15,14 @@
 /area/cmb/medbay
 	name = "Citizen Medbay"
 
+/area/cmb/factory
+	name = "Factory"
+
 /area/cmb/administration_access
 	name = "City Administration Access"
+
+/area/cmb/administration
+	name = "City Administration Building"
 
 /area/turbolift/administration_elevator_1
 	name = "City Admin Elevator - Floor 1"
