@@ -46,11 +46,9 @@
 	// Should this all be in Touch()?
 	if(istype(H))
 		if(H != src && check_shields(0, null, H, H.zone_sel.selecting, H.name))
-			H.do_attack_animation(src)
 			return 0
 
 		if(istype(H.gloves, /obj/item/clothing/gloves/boxing/hologlove))
-			H.do_attack_animation(src)
 			var/damage = rand(0, 9)
 			if(!damage)
 				playsound(loc, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
@@ -238,7 +236,6 @@
 				attack_message = "[H] went for [src]'s [affecting.name] but was blocked!"
 				miss_type = 2
 
-			H.do_attack_animation(src)
 			if(!attack_message)
 				attack.show_attack(H, src, hit_zone, rand_damage)
 			else
@@ -282,7 +279,6 @@
 		return
 	admin_attack_log(user, src, "Attacked their victim", "Was attacked", "has [attack_message]")
 	src.visible_message("<span class='danger'>[user] has [attack_message] [src]!</span>")
-	user.do_attack_animation(src)
 
 	var/dam_zone = pick(organs_by_name)
 	var/obj/item/organ/external/affecting = get_organ(ran_zone(dam_zone))

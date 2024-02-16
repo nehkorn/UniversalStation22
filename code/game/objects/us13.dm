@@ -147,7 +147,7 @@
 /obj/item/gnome/supercharged
 	supercharged = TRUE
 
-/obj/item/gnome/attack(mob/living/M, mob/living/user, target_zone, animate)
+/obj/item/gnome/attack(mob/living/M, mob/living/user, target_zone)
 	. = ..()
 	var/mob/living/carbon/human/victim = M
 	if(supercharged)
@@ -167,3 +167,83 @@
 /obj/structure/rustcar/Initialize()
 	. = ..()
 	color = get_random_colour()
+
+// THE FACTORY.
+
+/obj/item/plastic_block
+	name = "block of plastic"
+	desc = "A block of synthetic plastic, you doubt this is something you can feed into a fabricator."
+	icon_state = "plastic_block"
+
+/obj/item/plastic_sheet
+	name = "sheet of plastic"
+	desc = "A sheet of plastic, looks like it's ready to be molded."
+	icon_state = "plate"
+
+/obj/structure/block_crate
+	name = "crate of plastic blocks"
+	icon_state = "crate"
+	icon = 'icons/obj/storage.dmi'
+
+/obj/structure/block_crate/attack_hand(mob/user)
+	. = ..()
+	new /obj/item/plastic_block(get_turf(loc))
+
+/obj/item/citizen_ration_unfinished
+	name = "unfinished citizen ration"
+	desc = "Not filled with food yet."
+	icon = 'icons/obj/food.dmi'
+	icon_state = "ration1"
+
+/obj/item/citizen_ration_finished
+	name = "finished citizen ration"
+	desc = "Ready to be shipped off for quota."
+	icon = 'icons/obj/food.dmi'
+	icon_state = "ration0"
+
+/obj/machinery/factorium
+	icon = 'icons/obj/factorymachines.dmi'
+	desc = "What the fuck is this?"
+	var/active = FALSE
+	bound_width = 64
+
+/obj/machinery/factorium/attack_hand(mob/user)
+	. = ..()
+	var/mob/living/carbon/human/human = user
+	if(active)
+		human.apply_damage(20, BRUTE, human.hand ? BP_L_HAND : BP_R_HAND)
+		to_chat(user, SPAN_WARNING("AAAAAAAAAAHHH!!!"))
+
+/obj/machinery/factorium/plasticinizer
+	name = "plastic cutting machine"
+	desc = "Used for turning plastic into a sheet."
+	icon_state = "plastic"
+
+/obj/machinery/factorium/plasticinizer/attackby(obj/item/I, mob/user)
+	. = ..()
+	if(istype(I, /obj/item/plastic_block))
+		if(!user.unEquip(I, src))
+			return
+		qdel(I)
+		active = TRUE
+		flick("plastic-W", src)
+		sleep(17)
+		active = FALSE
+		new /obj/item/plastic_sheet(get_turf(loc))
+
+/obj/machinery/factorium/molder
+	name = "plastic molding machine"
+	desc = "Used for turning plastic sheets into ration packs."
+	icon_state = "molder"
+
+/obj/machinery/factorium/molder/attackby(obj/item/I, mob/user)
+	. = ..()
+	if(istype(I, /obj/item/plastic_sheet))
+		if(!user.unEquip(I, src))
+			return
+		qdel(I)
+		active = TRUE
+		flick("molder-W", src)
+		sleep(5)
+		active = FALSE
+		new /obj/item/citizen_ration_unfinished(get_turf(loc))

@@ -1285,6 +1285,18 @@
 	if(examine_cursor_icon && client.keys_held["Shift"])
 		client.mouse_pointer_icon = examine_cursor_icon
 
+/client/MouseEntered(object, location, control, params)
+	. = ..()
+	if(!istype(object, /obj/item))
+		return
+	mouse_pointer_icon = 'icons/effects/mouse_pointers/grab_pointer.dmi'
+
+/client/MouseExited(object, location, control, params)
+	. = ..()
+	if(!istype(object, /obj/item))
+		return
+	src.mob.update_mouse_pointer()
+
 /mob/keybind_face_direction(direction)
 	facedir(direction)
 

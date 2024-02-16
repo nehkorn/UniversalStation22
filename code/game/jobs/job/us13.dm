@@ -15,16 +15,20 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/citizen
 
-/datum/job/citizen/worker
+/datum/job/citizen/worker // child worker
 	title = "Factory Worker"
 
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "civil protection and the Factory Overseer"
 
 	access = list(access_manufacturing)
 
 	outfit_type = /decl/hierarchy/outfit/job/citizen/worker
+
+/datum/job/citizen/worker/handle_variant_join(mob/living/carbon/human/H, alt_title)
+	. = ..()
+	return H && H.change_species()
 
 // COPS
 

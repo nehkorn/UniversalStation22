@@ -131,7 +131,7 @@
 #define GLASS_COLOR_TINTED     "#222222"
 #define GLASS_COLOR_FROSTED    "#eeeeee"
 
-#define COLOR_BLOOD_HUMAN      "#a10808"
+#define COLOR_BLOOD_HUMAN      "#4e0606"
 
 // Color defines used by the crew manifest
 #define MANIFEST_COLOR_COMMAND  "#204090"

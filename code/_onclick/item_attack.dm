@@ -66,7 +66,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 	var/mob/living/attackee = null
 
 //I would prefer to rename this attack_as_weapon(), but that would involve touching hundreds of files.
-/obj/item/proc/attack(mob/living/M, mob/living/user, target_zone, animate = TRUE)
+/obj/item/proc/attack(mob/living/M, mob/living/user, target_zone, animate = FALSE)
 	if(!force || (item_flags & ITEM_FLAG_NO_BLUDGEON))
 		return 0
 	if(M == user && user.a_intent != I_HURT)
