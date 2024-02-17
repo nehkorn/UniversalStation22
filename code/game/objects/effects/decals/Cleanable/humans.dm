@@ -52,8 +52,6 @@ var/global/list/image/splatter_cache=list()
 
 /obj/effect/decal/cleanable/blood/Initialize(mapload)
 	. = ..()
-	if(merge_with_blood(!mapload))
-		return INITIALIZE_HINT_QDEL
 	start_drying()
 
 // Returns true if overriden and needs deletion. If the argument is false, we will merge into any existing blood.

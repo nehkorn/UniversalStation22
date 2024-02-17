@@ -56,7 +56,7 @@ var/list/gamemode_cache = list()
 	var/secret_disabled = FALSE // Whether or not secret - a hidden random pick from available modes - can be voted for
 	var/allow_random_events = 0			// enables random events mid-round when set to 1
 	var/hostedby = null
-	var/respawn_delay = 30 //An observer must wait this many minutes before being able to return to the main menu
+	var/respawn_delay = 10 //An observer must wait this many minutes before being able to return to the main menu
 	var/respawn_menu_delay = 0 //An observer that has returned to the main menu must wait this many minutes before rejoining
 	var/guest_jobban = 1
 	var/usewhitelist = 0
@@ -115,13 +115,13 @@ var/list/gamemode_cache = list()
 	var/organ_damage_spillover_multiplier = 0.5
 
 	var/bones_can_break = 1
-	var/limbs_can_break = 1
+	var/limbs_can_break = 0
 
 	var/revival_brain_life = -1
 
 	var/use_loyalty_implants = 0
 
-	var/allow_diagonal_movement = FALSE
+	var/allow_diagonal_movement = TRUE
 
 	var/welder_vision = 1
 	var/generate_map = 0
@@ -129,9 +129,9 @@ var/list/gamemode_cache = list()
 
 	//Used for modifying movement speed for mobs.
 	//Unversal modifiers
-	var/run_delay = 2
-	var/walk_delay = 4
-	var/creep_delay = 6
+	var/run_delay = 4
+	var/walk_delay = 6
+	var/creep_delay = 9
 	var/minimum_sprint_cost = 0.8
 	var/skill_sprint_cost_range = 0.8
 	var/minimum_stamina_recovery = 1

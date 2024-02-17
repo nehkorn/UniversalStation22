@@ -180,14 +180,35 @@
 	desc = "A sheet of plastic, looks like it's ready to be molded."
 	icon_state = "plate"
 
+/obj/item/ingredient_cube
+	name = "cube of ingredients"
+	desc = "Not to be eaten. Add it to an unfinished ration packet to seal it up."
+	icon = 'icons/obj/food.dmi'
+	icon_state = "ingredientcube"
+
 /obj/structure/block_crate
 	name = "crate of plastic blocks"
 	icon_state = "crate"
 	icon = 'icons/obj/storage.dmi'
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/ingredient_crate
+	name = "crate of ingredient cubes"
+	icon_state = "crate"
+	icon = 'icons/obj/storage.dmi'
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/ingredient_crate/attack_hand(mob/user)
+	. = ..()
+	var/obj/item/ingredient_cube/cube = new(get_turf(loc))
+	user.put_in_hands(cube)
 
 /obj/structure/block_crate/attack_hand(mob/user)
 	. = ..()
-	new /obj/item/plastic_block(get_turf(loc))
+	var/obj/item/plastic_block/blcok = new(get_turf(loc))
+	user.put_in_hands(block)
 
 /obj/item/citizen_ration_unfinished
 	name = "unfinished citizen ration"
@@ -195,15 +216,25 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "ration1"
 
+/obj/item/citizen_ration_unfinished/attackby(obj/item/W, mob/user)
+	. = ..()
+	if(istype(W, /obj/item/ingredient_cube))
+		var/obj/item/citizen_ration_finished/czf = new(get_turf(user.loc))
+		user.put_in_hands(czf)
+		qdel(W)
+		qdel(src)
+
 /obj/item/citizen_ration_finished
 	name = "finished citizen ration"
 	desc = "Ready to be shipped off for quota."
 	icon = 'icons/obj/food.dmi'
-	icon_state = "ration0"
+	icon_state = "ration"
 
 /obj/machinery/factorium
 	icon = 'icons/obj/factorymachines.dmi'
 	desc = "What the fuck is this?"
+	density = TRUE
+	anchored = TRUE
 	var/active = FALSE
 	bound_width = 64
 
@@ -211,8 +242,8 @@
 	. = ..()
 	var/mob/living/carbon/human/human = user
 	if(active)
-		human.apply_damage(20, BRUTE, human.hand ? BP_L_HAND : BP_R_HAND)
-		to_chat(user, SPAN_WARNING("AAAAAAAAAAHHH!!!"))
+		human.apply_damage(200, BRUTE, human.hand ? BP_L_HAND : BP_R_HAND)
+		to_chat(user, SPAN_DANGER("<span class='large'>AAAAAAAAAAHHH!!!</span>"))
 
 /obj/machinery/factorium/plasticinizer
 	name = "plastic cutting machine"
@@ -229,7 +260,8 @@
 		flick("plastic-W", src)
 		sleep(17)
 		active = FALSE
-		new /obj/item/plastic_sheet(get_turf(loc))
+		var/sheet = new /obj/item/plastic_sheet(get_turf(loc))
+		user.put_in_hands(sheet)
 
 /obj/machinery/factorium/molder
 	name = "plastic molding machine"
@@ -247,3 +279,53 @@
 		sleep(5)
 		active = FALSE
 		new /obj/item/citizen_ration_unfinished(get_turf(loc))
+
+/var/global/ration_quota = 10 // beggining quota
+
+/obj/item/coupon
+	name = "coupon"
+	desc = "Stuff this into a reclamation machine to get materials and such."
+	icon = 'icons/obj/items.dmi'
+	item_state = "efundcard"
+	w_class = ITEM_SIZE_TINY
+
+/obj/machinery/couponreclaim
+	name = "coupon reclamation device"
+	desc = "i hate writing these fucking descriptions"
+	icon = 'icons/obj/computer.dmi'
+	anchored = TRUE
+	icon_state = "coupon"
+
+/obj/machinery/couponreclaim/attackby(obj/item/I, mob/user)
+	. = ..()
+	if(istype(I, /obj/item/coupon))
+		var/choice = input(user, "Choose a prize for coupon redeeming") in list("STEEL", "GLASS")
+		switch(choice)
+			if("STEEL")
+				new /obj/item/stack/material/steel/fifty
+				qdel(I)
+			if("GLASS")
+				new /obj/item/stack/material/glass/fifty
+				qdel(I)
+
+/obj/machinery/deliverer
+	name = "delivery machine"
+	desc = "Used to finish ration quota."
+	icon = 'icons/obj/teleporter.dmi'
+	icon_state = "pad"
+	anchored = TRUE
+	var/delivered = 0
+
+/obj/machinery/deliverer/attack_hand(mob/user)
+	. = ..()
+	for(var/obj/item/citizen_ration_finished/H in get_turf(src.loc))
+		delivered++
+		playsound(get_turf(src), 'sound/weapons/emitter2.ogg', 25, TRUE)
+		qdel(H)
+	if(delivered >= ration_quota)
+		ration_quota += 10
+		delivered = 0
+		var/obj/item/coupon/coupon = new
+		user.put_in_hands(coupon)
+		playsound(get_turf(src), 'sound/weapons/flash.ogg', 25, TRUE)
+		audible_message(SPAN_BOLD("QUOTA COMPLETE. COUPON PRINTED. GOOD JOB, LOYALISTS."))
