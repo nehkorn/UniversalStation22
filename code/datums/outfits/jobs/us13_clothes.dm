@@ -14,6 +14,7 @@
 	desc = "Standard issue, hides your face and protects it from bullets, the whole thing!"
 	icon_state = "cpO_helm"
 	unique_death = 'sound/voice/sec_death.ogg'
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -32,6 +33,7 @@
 	desc = "Standard issue, hides your face and protects it from bullets, the whole thing!"
 	icon_state = "cpE_helm"
 	unique_death = 'sound/voice/important_sec_death.ogg'
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -50,6 +52,7 @@
 	desc = "Standard issue, hides your face and protects it from bullets, the whole thing!"
 	icon_state = "cpRL_helm"
 	unique_death = 'sound/voice/very_high_sec_death.ogg'
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -68,3 +71,21 @@
 	new /obj/item/ammo_magazine/pistol/double/usp(src)
 	new /obj/item/melee/baton/loaded(src)
 	update_icon()
+
+/obj/item/clothing/mask/owE
+	name = "overwatch elite gasmask"
+	desc = "Anticitizen One detected, bearing 12 degrees."
+	icon_state = "owE_helm"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_PADDED
+		)
+
+/obj/item/clothing/suit/armor/vest/old/security/owE
+	name = "overwatch elite armored vest"
+	desc = "White and nice."
+	icon_state = "owE"

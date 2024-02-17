@@ -68,6 +68,9 @@
 	if(modifiers["middle"] && modifiers["alt"])
 		AltMiddleClickOn(A)
 		return 1
+	if(modifiers["middle"] && modifiers["shift"])
+		ShiftMiddleClickOn(A)
+		return 1
 	if(modifiers["middle"])
 		MiddleClickOn(A)
 		return 1
@@ -233,6 +236,10 @@
 	Used for pointing at something
 */
 /mob/proc/AltMiddleClickOn(var/atom/A)
+	pointed(A)
+	return
+
+/mob/proc/ShiftMiddleClickOn(var/mob/A)
 	pointed(A)
 	return
 

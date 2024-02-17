@@ -55,13 +55,6 @@
 		/decl/emote/exertion/synthetic/creak
 	)
 
-/datum/species/human/child
-	name = "Child"
-	name_plural = "Children"
-	min_age = 8
-	max_age = 14
-	spawn_flags = SPECIES_IS_RESTRICTED
-
 /datum/species/human/get_bodytype(var/mob/living/carbon/human/H)
 	return SPECIES_HUMAN
 

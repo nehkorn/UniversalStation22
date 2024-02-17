@@ -413,28 +413,27 @@
 	if(!A.examine(src, distance))
 		crash_with("Improper /examine() override: [log_info_line(A)]")
 
-/mob/verb/pointed(atom/A as mob|obj|turf in view())
+/mob/proc/pointed(atom/A as mob|obj|turf in view())
 	set name = "Point To"
 	set category = "Object"
 
-	// Ghosts can point to anything
-	if(isliving(src) && (!isturf(src.loc) || !(A in view(src.loc))))
-		return FALSE
-
+	if(!src || !isturf(src.loc))// || !(A in view(src.loc)))
+		return 0
 	if(istype(A, /obj/effect/decal/point))
-		return FALSE
+		return 0
 
-	var/turf/T = get_turf(A)
-	if(!istype(T))
-		return FALSE
+	var/tile = get_turf(A)
+	if (!tile)
+		return 0
 
-	var/obj/P = new /obj/effect/decal/point(T)
-	var/turf/mob_tile = get_turf(src)
+	var/obj/P = new /obj/effect/decal/point(tile)
 	P.set_invisibility(invisibility)
-	animate(P, pixel_x = (T.x - mob_tile.x) * world.icon_size + A.pixel_x, pixel_y = (T.y - mob_tile.y) * world.icon_size + A.pixel_y, time = 3, easing = EASE_OUT)
+	spawn (20)
+		if(P)
+			qdel(P)	// qdel
+
 	face_atom(A)
-	setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-	return TRUE
+	return 1
 
 //Gets the mob grab conga line.
 /mob/proc/ret_grab(list/L)

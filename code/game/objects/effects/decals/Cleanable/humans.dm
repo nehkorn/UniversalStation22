@@ -15,7 +15,6 @@ var/global/list/image/splatter_cache=list()
 	random_icon_states = list("mfloor1", "mfloor2", "mfloor3", "mfloor4", "mfloor5", "mfloor6", "mfloor7", "dir_splatter_1", "dir_splatter_2")
 	blood_DNA = list()
 	generic_filth = TRUE
-	persistent = TRUE
 	appearance_flags = NO_CLIENT_COLOR
 	cleanable_scent = "blood"
 	scent_descriptor = SCENT_DESC_ODOR
@@ -276,7 +275,6 @@ var/global/list/image/splatter_cache=list()
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "mucus"
 	generic_filth = TRUE
-	persistent = TRUE
 	var/dry = FALSE
 
 /obj/effect/decal/cleanable/mucus/Initialize()

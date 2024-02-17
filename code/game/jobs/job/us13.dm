@@ -56,6 +56,7 @@
 	social_class = SOCIAL_CLASS_COM
 	head_position = TRUE
 	selection_color = "#2f67ff"
+	require_whitelist = "civilprotection"
 
 	min_skill = list( // shouldnt be out in the field much
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
@@ -75,6 +76,7 @@
 	supervisors = "rank leader"
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#6b92ff"
+	require_whitelist = "civilprotection"
 
 	min_skill = list(
 		SKILL_COMBAT = SKILL_TRAINED,
@@ -121,7 +123,7 @@ var/datum/announcement/minor/ca_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 
-	//outfit_type = /decl/hierarchy/outfit/job/earthadministrator
+	outfit_type = /decl/hierarchy/outfit/job/earthadministrator
 	available_by_default = TRUE
 
 /datum/job/cityadmin/get_access()
@@ -145,8 +147,13 @@ var/datum/announcement/minor/ca_announcement = new(do_newscast = 1)
 		SKILL_WEAPONS = SKILL_MASTER,
 		SKILL_FORENSICS = SKILL_UNTRAINED)
 
-	//outfit_type = /decl/hierarchy/outfit/job/overwatch_elite
+	outfit_type = /decl/hierarchy/outfit/job/cp/overwatch_elite
 	available_by_default = TRUE
 
 /datum/job/overwatch_elite/get_access()
 	return get_all_station_access()
+
+/datum/job/overwatch_elite/equip(mob/living/carbon/human/H, alt_title, datum/mil_branch/branch, datum/mil_rank/grade)
+	H.fully_replace_character_name("OTA::[pick("LEADER","FLASH","RANGER","HUNTER","BLADE","HAMMER","SCAR","SWEEPER","SWORD","SAVAGE","RAZOR")]>>[rand(1111,9999)]")
+	H.change_species(/datum/species/human/synthetic)
+	. = ..()

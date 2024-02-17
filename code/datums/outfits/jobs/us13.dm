@@ -51,3 +51,13 @@
 	mask = /obj/item/clothing/mask/cpRL
 	suit_store = /obj/item/gun/projectile/automatic/assault_rifle/mp7
 	backpack_contents = list(/obj/item/ammo_magazine/rifle/mp7 = 4)
+
+/decl/hierarchy/outfit/job/cp/overwatch_elite
+	name = OUTFIT_JOB_NAME("Overwatch Elite")
+
+	suit = /obj/item/clothing/suit/armor/vest/old/security/owE
+	mask = /obj/item/clothing/mask/owE
+	suit_store = /obj/item/gun/projectile/automatic/assault_rifle/mp7 // temp, make OSIPR
+
+/decl/hierarchy/outfit/job/earthadministrator
+	name = OUTFIT_JOB_NAME("Earth Administrator")

@@ -91,6 +91,21 @@
 	log_and_message_staff(" - GlobalNarrate [result[2]]/[result[3]]: [result[4]]")
 	SSstatistics.add_field_details("admin_verb","GLN") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+/client/proc/cmd_admin_play_overwatch()
+	set category = "Special Verbs"
+	set name = "Play Overwatch Voiceline"
+
+	if(!check_rights(R_ADMIN))
+		return
+
+	var/result = input(src, "Pick Voiceline") as null|anything in flist("sounds/AI/overwatch/")
+
+	if(!result)
+		return
+
+	to_world(result)
+
+	SSstatistics.add_field_details("admin_verb","POV") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /proc/cmd_admin_narrate_helper(var/user, var/style, var/size, var/message)
 	if (!style)

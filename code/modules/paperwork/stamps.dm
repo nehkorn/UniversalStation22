@@ -15,6 +15,9 @@
 	name = "captain's rubber stamp"
 	icon_state = "stamp-cap"
 
+/obj/item/stamp/captain/ca
+	name = "city administrator's rubber stamp"
+
 /obj/item/stamp/ce
 	name = "chief engineer's rubber stamp"
 	icon_state = "stamp-ce"

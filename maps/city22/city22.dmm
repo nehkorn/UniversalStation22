@@ -100,6 +100,9 @@
 	dir = 8
 	},
 /obj/structure/table/steel,
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
 /turf/simulated/floor/reinforced,
 /area/cmb/administration_access)
 "bI" = (
@@ -223,6 +226,12 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
+"dJ" = (
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
 "dQ" = (
 /obj/random/trash,
 /turf/simulated/floor/tiled/cmb_tiled/b,
@@ -369,6 +378,12 @@
 /obj/structure/rustcar,
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
+"gx" = (
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/space)
 "gG" = (
 /obj/machinery/light/dystopian{
 	dir = 4
@@ -420,6 +435,21 @@
 	},
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
 /area/cmb/trainstation)
+"hw" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
+"hx" = (
+/obj/structure/table/woodentable,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/simulated/floor/carpet/red,
+/area/space)
 "hA" = (
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
@@ -441,6 +471,16 @@
 /area/outside)
 "hQ" = (
 /turf/simulated/wall/r_wall,
+/area/space)
+"hV" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "City Administrator Office"
+	},
+/obj/machinery/door/blast/regular/open{
+	name = "LOCKDOWN";
+	id_tag = "ca_lockdown"
+	},
+/turf/simulated/floor/reinforced,
 /area/space)
 "hW" = (
 /obj/effect/floor_decal/industrial/warning/corner{
@@ -468,6 +508,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/turbolift/administration_elevator_1)
+"in" = (
+/obj/machinery/light/dystopian,
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
 "iF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -582,7 +626,7 @@
 	req_access = list(access_civilprotection);
 	name = "Citadel Access"
 	},
-/obj/machinery/door/blast/shutters{
+/obj/machinery/door/blast/shutters/open{
 	name = "INTERIOR";
 	id_tag = "citadel_access_interior"
 	},
@@ -645,6 +689,13 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"ly" = (
+/obj/structure/bed,
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/space)
 "lz" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/cmb/factory)
@@ -684,6 +735,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/medbay)
+"lY" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/shutters/open{
+	name = "City View";
+	id_tag = "cityview"
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "lZ" = (
 /obj/structure/trashbin,
 /obj/random/trash,
@@ -837,6 +896,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/cmb_tiled/b,
 /area/outside)
+"ow" = (
+/obj/structure/table/woodentable,
+/turf/simulated/floor/carpet/red,
+/area/space)
 "oA" = (
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
@@ -968,6 +1031,12 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/space)
+"rc" = (
+/obj/structure/bed/chair/armchair/red{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
 "rf" = (
 /obj/random/trash,
 /turf/simulated/floor/exoplanet/grass,
@@ -1002,6 +1071,13 @@
 /obj/structure/bed/chair/bench,
 /turf/simulated/floor/tiled/techfloor,
 /area/cmb/factory)
+"ry" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/light/dystopian,
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
 "rE" = (
 /obj/structure/block_crate,
 /turf/simulated/floor/tiled/techfloor,
@@ -1055,6 +1131,19 @@
 /obj/structure/trashbin,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"sF" = (
+/obj/machinery/computer/modular/preset/cardslot/command_sec{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
+"sG" = (
+/obj/structure/table/woodentable,
+/obj/machinery/button/blast_door{
+	id_tag = "cityview"
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
 "sJ" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -1175,6 +1264,12 @@
 	},
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
 /area/cmb/trainstation)
+"vg" = (
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/outside)
 "vt" = (
 /obj/random/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -1199,6 +1294,21 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/road,
 /area/outside)
+"vK" = (
+/obj/machinery/computer/modular/preset/security{
+	dir = 8
+	},
+/obj/machinery/light/dystopian,
+/turf/simulated/floor/carpet/red,
+/area/space)
+"vW" = (
+/obj/structure/table/woodentable,
+/obj/machinery/button/blast_door{
+	id_tag = "ca_lockdown";
+	name = "(!) LOCKDOWN"
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
 "wf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1211,6 +1321,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"wo" = (
+/obj/machinery/light/dystopian,
+/turf/simulated/floor/reinforced,
+/area/space)
 "wp" = (
 /obj/effect/floor_decal/industrial/loading{
 	dir = 8
@@ -1279,6 +1393,12 @@
 "xD" = (
 /turf/simulated/floor/plating,
 /area/turbolift/administration_elevator_2)
+"xK" = (
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
 "xM" = (
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -1387,6 +1507,12 @@
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/cmb_tiled/b,
 /area/outside)
+"za" = (
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
 "zb" = (
 /obj/machinery/light/dystopian{
 	dir = 1
@@ -1427,6 +1553,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/factory)
+"zU" = (
+/obj/machinery/light/dystopian,
+/obj/machinery/papershredder,
+/turf/simulated/floor/carpet/red,
+/area/space)
 "zX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1456,6 +1587,10 @@
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"AI" = (
+/obj/structure/filingcabinet,
+/turf/simulated/floor/carpet/red,
+/area/space)
 "AN" = (
 /obj/machinery/vending/sovietsoda/breen,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
@@ -1477,6 +1612,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/concrete,
 /area/outside)
+"AY" = (
+/obj/machinery/computer/modular/preset/security{
+	dir = 8
+	},
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
 "Ba" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1536,6 +1680,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/outside)
+"BQ" = (
+/obj/structure/table/woodentable,
+/obj/item/stamp/captain/ca,
+/turf/simulated/floor/carpet/red,
+/area/space)
 "BR" = (
 /obj/random/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -1818,7 +1967,8 @@
 	dir = 1
 	},
 /obj/machinery/door/blast/shutters{
-	id_tag = "FactoryReq"
+	id_tag = "FactoryReq";
+	pixel_x = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/factory)
@@ -1880,6 +2030,13 @@
 	dir = 4
 	},
 /area/outside)
+"HP" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/obj/item/reagent_containers/glass/bucket,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "HQ" = (
 /turf/simulated/wall/elevator,
 /area/turbolift/administration_elevator_2)
@@ -1913,7 +2070,7 @@
 	req_access = list(access_civilprotection);
 	name = "Citadel Access"
 	},
-/obj/machinery/door/blast/shutters{
+/obj/machinery/door/blast/shutters/open{
 	name = "EXTERIOR";
 	id_tag = "citadel_access_exterior"
 	},
@@ -2039,7 +2196,7 @@
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
 "KE" = (
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/carpet/red,
 /area/space)
 "KF" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2185,6 +2342,9 @@
 	dir = 1
 	},
 /obj/structure/table/steel,
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
 /turf/simulated/floor/reinforced,
 /area/cmb/administration_access)
 "ND" = (
@@ -2290,6 +2450,9 @@
 	dir = 8
 	},
 /obj/structure/table/steel,
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
 /turf/simulated/floor/reinforced,
 /area/cmb/administration_access)
 "OU" = (
@@ -2323,6 +2486,18 @@
 /obj/structure/bed,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"Pl" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_access)
+"Pm" = (
+/obj/effect/landmark/start{
+	name = "City Administrator"
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
 "Pw" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/lino,
@@ -2382,6 +2557,14 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"Qv" = (
+/obj/structure/bed,
+/obj/item/bedsheet/blue,
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
 "QE" = (
 /obj/structure/flora/pottedplant/dead,
 /obj/effect/decal/cleanable/dirt,
@@ -2415,6 +2598,9 @@
 "Rl" = (
 /obj/structure/railing/mapped,
 /obj/structure/table/steel,
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
 /turf/simulated/floor/reinforced,
 /area/cmb/administration_access)
 "Ro" = (
@@ -2432,6 +2618,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"RE" = (
+/obj/structure/closet,
+/obj/item/gun/projectile/pistol/usp,
+/obj/item/ammo_magazine/pistol/double/usp,
+/obj/item/ammo_magazine/pistol/double/usp,
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
 "RI" = (
 /obj/structure/bed/chair/wood,
 /turf/simulated/floor/wood/walnut,
@@ -2453,6 +2649,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"RN" = (
+/obj/item/mop,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
+"RP" = (
+/obj/structure/reagent_dispensers/watertank,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "RT" = (
 /obj/item/ammo_casing/pistol/used,
 /turf/simulated/floor/tiled/cmb_tiled/b,
@@ -2618,10 +2822,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"TT" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular/open{
+	name = "LOCKDOWN";
+	id_tag = "ca_lockdown"
+	},
+/turf/simulated/floor/reinforced,
+/area/space)
 "TW" = (
 /obj/machinery/computer/modular/preset/security{
 	dir = 8
 	},
+/obj/machinery/light/dystopian,
 /turf/simulated/floor/reinforced,
 /area/cmb/administration_access)
 "TX" = (
@@ -2690,6 +2903,11 @@
 /obj/structure/rustcar,
 /turf/simulated/floor/tiled/road,
 /area/outside)
+"Ve" = (
+/obj/structure/table/woodentable,
+/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
+/turf/simulated/floor/carpet/red,
+/area/space)
 "Vk" = (
 /obj/random/trash,
 /obj/machinery/light/dystopian{
@@ -8505,10 +8723,10 @@ Bu
 cm
 So
 So
+za
 So
 So
-So
-So
+za
 So
 So
 cm
@@ -9017,14 +9235,14 @@ Bu
 Bu
 Bu
 cm
+xK
 So
 So
 So
 So
 So
 So
-So
-So
+in
 cm
 Bu
 Bu
@@ -9788,14 +10006,14 @@ Bu
 Bu
 Bu
 cm
+xK
 So
 So
 So
 So
 So
 So
-So
-So
+in
 cm
 Bu
 Bu
@@ -10559,14 +10777,14 @@ Bu
 Bu
 Bu
 cm
+xK
 So
 So
 So
 So
 So
 So
-So
-So
+in
 cm
 Bu
 Bu
@@ -11075,10 +11293,10 @@ Bu
 cm
 So
 So
+Pl
 So
 So
-So
-So
+Pl
 So
 So
 cm
@@ -11587,14 +11805,14 @@ Bu
 Bu
 Bu
 cm
-UX
+hw
 UX
 OT
 UX
 UX
 bG
 UX
-UX
+ry
 cm
 Bu
 Bu
@@ -12358,7 +12576,7 @@ Bu
 Bu
 Bu
 cm
-TW
+AY
 zE
 Rl
 wp
@@ -20094,7 +20312,7 @@ lz
 lz
 lz
 Tz
-tz
+RN
 VQ
 Us
 LN
@@ -20349,9 +20567,9 @@ dk
 tz
 tz
 tz
-dk
-tz
-tz
+HP
+RP
+RP
 VQ
 Us
 oA
@@ -74296,7 +74514,7 @@ lP
 qY
 lP
 hQ
-lP
+gx
 lP
 lP
 lP
@@ -74546,12 +74764,12 @@ uQ
 uQ
 uQ
 hQ
-nV
+ly
 lP
 nV
 lP
 nV
-lP
+wo
 hQ
 lP
 lP
@@ -75574,12 +75792,12 @@ uQ
 uQ
 uQ
 hQ
-nV
+ly
 lP
 nV
 lP
 nV
-lP
+wo
 hQ
 lP
 lP
@@ -75838,7 +76056,7 @@ lP
 qY
 lP
 hQ
-lP
+gx
 lP
 lP
 lP
@@ -76095,14 +76313,14 @@ lP
 nV
 lP
 hQ
-lP
-lP
-lP
-lP
-lP
-lP
-lP
-lP
+hQ
+hQ
+TT
+hV
+hV
+TT
+hQ
+hQ
 hQ
 uQ
 uQ
@@ -76352,14 +76570,14 @@ hb
 hb
 lP
 hQ
+hQ
+hQ
 lP
 lP
 lP
 lP
-lP
-lP
-lP
-lP
+hQ
+hQ
 hQ
 uQ
 uQ
@@ -76609,14 +76827,14 @@ hQ
 hQ
 hQ
 hQ
+hQ
+hQ
 lP
 lP
 lP
 lP
-lP
-lP
-lP
-lP
+hQ
+hQ
 hQ
 uQ
 uQ
@@ -76865,16 +77083,16 @@ uQ
 uQ
 uQ
 uQ
-KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
+hQ
+hQ
+hQ
+TT
+hV
+hV
+TT
+hQ
+hQ
+hQ
 uQ
 uQ
 uQ
@@ -77122,16 +77340,16 @@ uQ
 uQ
 uQ
 uQ
+hQ
+Qv
+KE
+dJ
 KE
 KE
+dJ
 KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
+zU
+hQ
 uQ
 uQ
 uQ
@@ -77379,16 +77597,16 @@ uQ
 uQ
 uQ
 uQ
+hQ
+Pm
 KE
 KE
 KE
 KE
 KE
 KE
-KE
-KE
-KE
-KE
+AI
+hQ
 uQ
 uQ
 uQ
@@ -77636,16 +77854,16 @@ uQ
 uQ
 uQ
 uQ
+hQ
 KE
 KE
+vW
+rc
+KE
+sG
 KE
 KE
-KE
-KE
-KE
-KE
-KE
-KE
+hQ
 uQ
 uQ
 uQ
@@ -77893,16 +78111,16 @@ uQ
 uQ
 uQ
 uQ
+hQ
+RE
 KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
+BQ
+Ve
+ow
+hx
+sF
+vK
+hQ
 uQ
 uQ
 uQ
@@ -78150,16 +78368,16 @@ uQ
 uQ
 uQ
 uQ
-KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
-KE
+hQ
+hQ
+hQ
+lY
+lY
+lY
+lY
+hQ
+hQ
+hQ
 uQ
 uQ
 uQ
@@ -78409,12 +78627,12 @@ uQ
 uQ
 JN
 JN
+vg
 JN
 JN
 JN
 JN
-JN
-JN
+vg
 JN
 JN
 uQ

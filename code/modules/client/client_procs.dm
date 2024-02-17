@@ -420,10 +420,6 @@ client/verb/character_setup()
 	if(world.byond_version >= 511 && byond_version >= 511 && client_fps >= CLIENT_MIN_FPS && client_fps <= CLIENT_MAX_FPS)
 		vars["fps"] = client_fps
 
-/client/New()
-	..()
-	fullscreen()
-
 /client/proc/fullscreen()
 	fullscreen = !fullscreen
 	if(fullscreen)

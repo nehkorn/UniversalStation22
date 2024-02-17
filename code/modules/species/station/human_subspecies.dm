@@ -61,6 +61,17 @@
 	warning_low_pressure = WARNING_LOW_PRESSURE * 0.8            // Low pressure warning.
 	hazard_low_pressure = HAZARD_LOW_PRESSURE * 0.8              // Dangerously low pressure.
 
+/datum/species/human/synthetic // combine soldiers and elites and such
+	name = "Transhuman"
+	name_plural = "Transhumans"
+	description = "Killing machines engineered by the Universal Union."
+	species_flags = SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_MINOR_CUT | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_IS_RESTRICTED
+	appearance_flags = HAS_LIPS
+	brute_mod = 0.8
+	burn_mod =  0.7
+	sexybits_location = null
+	icobase =     'icons/mob/human_races/species/human/subspecies/synthetic_body.dmi'
+
 /datum/species/human/vatgrown
 	name = SPECIES_VATGROWN
 	name_plural = "Vat-Grown Humans"
