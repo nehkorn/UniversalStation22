@@ -107,6 +107,7 @@
 /decl/emote/audible/cry
 	key = "cry"
 	emote_message_3p = "USER cries."
+	emote_sound = 'sound/voice/human/cry.ogg'
 
 /decl/emote/audible/sigh
 	key = "sigh"
@@ -132,6 +133,7 @@
 /decl/emote/audible/mumble
 	key = "mumble"
 	emote_message_3p = "USER mumbles!"
+	emote_sound = 'sound/voice/human/mumble.ogg'
 
 /decl/emote/audible/grumble
 	key = "grumble"
@@ -141,11 +143,19 @@
 	key = "groan"
 	emote_message_3p = "USER groans!"
 	conscious = 0
+	emote_sound = 'sound/voice/human/grunt.ogg'
 
 /decl/emote/audible/moan
 	key = "moan"
 	emote_message_3p = "USER moans!"
 	conscious = 0
+	emote_sound = 'sound/voice/human/moan.ogg'
+
+/decl/emote/audible/moanpleasure
+	key = "moanpleasure"
+	emote_message_3p = "USER moans in pleasure!"
+	conscious = 0
+	emote_sound = 'sound/voice/human/moan.ogg'
 
 /decl/emote/audible/giggle
 	key = "giggle"
@@ -154,10 +164,15 @@
 /decl/emote/audible/scream
 	key = "scream"
 	emote_message_3p = "USER screams!"
+	emote_sound = list(
+		FEMALE = list('sound/voice/human/womanscream.ogg'),
+		MALE = list('sound/voice/human/manscream1.ogg', 'sound/voice/human/manscream2.ogg')
+	)
 
 /decl/emote/audible/grunt
 	key = "grunt"
 	emote_message_3p = "USER grunts."
+	emote_sound = 'sound/voice/human/grunt.ogg'
 
 /decl/emote/audible/slap
 	key = "slap"

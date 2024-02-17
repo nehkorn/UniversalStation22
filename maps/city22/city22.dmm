@@ -156,6 +156,9 @@
 /obj/item/reagent_containers/food/drinks/jar,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"cs" = (
+/turf/simulated/floor/reinforced,
+/area/cmb/metrocop_habitation)
 "cv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/trash,
@@ -231,7 +234,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "dQ" = (
 /obj/random/trash,
 /turf/simulated/floor/tiled/cmb_tiled/b,
@@ -383,7 +386,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_second_floor)
 "gG" = (
 /obj/machinery/light/dystopian{
 	dir = 4
@@ -416,7 +419,7 @@
 "hb" = (
 /obj/structure/closet,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/metrocop_habitation)
 "hg" = (
 /obj/structure/rustcar,
 /obj/effect/decal/cleanable/dirt,
@@ -449,7 +452,7 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "hA" = (
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
@@ -471,7 +474,7 @@
 /area/outside)
 "hQ" = (
 /turf/simulated/wall/r_wall,
-/area/space)
+/area/cmb/administration_high_sec)
 "hV" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "City Administrator Office"
@@ -481,7 +484,7 @@
 	id_tag = "ca_lockdown"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_high_sec)
 "hW" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -695,7 +698,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/metrocop_habitation)
 "lz" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/cmb/factory)
@@ -721,7 +724,7 @@
 /area/outside)
 "lP" = (
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_second_floor)
 "lS" = (
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/tiled/sidewalk,
@@ -742,7 +745,7 @@
 	id_tag = "cityview"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/cmb/administration_high_sec)
 "lZ" = (
 /obj/structure/trashbin,
 /obj/random/trash,
@@ -820,7 +823,7 @@
 	name = "Civil Protection Locker Room"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/metrocop_habitation)
 "na" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/road,
@@ -867,7 +870,7 @@
 "nV" = (
 /obj/structure/bed,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/metrocop_habitation)
 "og" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -899,7 +902,7 @@
 "ow" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "oA" = (
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
@@ -1030,13 +1033,13 @@
 	name = "Civil Protection Officer"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/metrocop_habitation)
 "rc" = (
 /obj/structure/bed/chair/armchair/red{
 	dir = 4
 	},
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "rf" = (
 /obj/random/trash,
 /turf/simulated/floor/exoplanet/grass,
@@ -1136,14 +1139,14 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "sG" = (
 /obj/structure/table/woodentable,
 /obj/machinery/button/blast_door{
 	id_tag = "cityview"
 	},
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "sJ" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -1300,7 +1303,7 @@
 	},
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "vW" = (
 /obj/structure/table/woodentable,
 /obj/machinery/button/blast_door{
@@ -1308,7 +1311,7 @@
 	name = "(!) LOCKDOWN"
 	},
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "wf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1324,7 +1327,7 @@
 "wo" = (
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/metrocop_habitation)
 "wp" = (
 /obj/effect/floor_decal/industrial/loading{
 	dir = 8
@@ -1557,7 +1560,7 @@
 /obj/machinery/light/dystopian,
 /obj/machinery/papershredder,
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "zX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1578,6 +1581,9 @@
 	},
 /turf/simulated/floor/tiled/old_cargo,
 /area/cmb/misc_buildings)
+"Ao" = (
+/turf/simulated/wall/r_wall,
+/area/cmb/metrocop_habitation)
 "Az" = (
 /obj/machinery/computer/arcade,
 /obj/effect/decal/cleanable/dirt,
@@ -1590,7 +1596,7 @@
 "AI" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "AN" = (
 /obj/machinery/vending/sovietsoda/breen,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
@@ -1684,7 +1690,7 @@
 /obj/structure/table/woodentable,
 /obj/item/stamp/captain/ca,
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "BR" = (
 /obj/random/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -1782,6 +1788,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall,
 /area/cmb/misc_buildings)
+"Dx" = (
+/obj/machinery/light/dystopian,
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_second_floor)
 "DJ" = (
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/cmb_tiled/b,
@@ -2197,7 +2207,7 @@
 /area/cmb/misc_buildings)
 "KE" = (
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "KF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2256,6 +2266,10 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"LQ" = (
+/obj/machinery/light/dystopian,
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_high_sec)
 "LS" = (
 /obj/item/ammo_casing/rifle/used,
 /obj/effect/decal/cleanable/dirt,
@@ -2405,7 +2419,7 @@
 "Ok" = (
 /obj/effect/paint_stripe/gunmetal,
 /turf/simulated/wall/r_wall,
-/area/space)
+/area/cmb/metrocop_habitation)
 "Om" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2497,7 +2511,7 @@
 	name = "City Administrator"
 	},
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "Pw" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/lino,
@@ -2511,6 +2525,10 @@
 /obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/tiled/techfloor,
 /area/cmb/factory)
+"PI" = (
+/obj/effect/paint_stripe/gunmetal,
+/turf/simulated/wall/r_wall,
+/area/cmb/administration_second_floor)
 "PP" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
@@ -2564,7 +2582,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "QE" = (
 /obj/structure/flora/pottedplant/dead,
 /obj/effect/decal/cleanable/dirt,
@@ -2577,6 +2595,9 @@
 /obj/item/ammo_casing/rifle/used,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"QP" = (
+/turf/simulated/wall/r_wall,
+/area/cmb/administration_second_floor)
 "QR" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/cmb/misc_buildings)
@@ -2627,7 +2648,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "RI" = (
 /obj/structure/bed/chair/wood,
 /turf/simulated/floor/wood/walnut,
@@ -2714,6 +2735,9 @@
 /obj/effect/wallframe_spawn,
 /turf/space,
 /area/cmb/misc_buildings)
+"Sx" = (
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_high_sec)
 "Sy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2829,7 +2853,7 @@
 	id_tag = "ca_lockdown"
 	},
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/cmb/administration_high_sec)
 "TW" = (
 /obj/machinery/computer/modular/preset/security{
 	dir = 8
@@ -2907,7 +2931,7 @@
 /obj/structure/table/woodentable,
 /obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
 /turf/simulated/floor/carpet/red,
-/area/space)
+/area/cmb/administration_high_sec)
 "Vk" = (
 /obj/random/trash,
 /obj/machinery/light/dystopian{
@@ -3145,6 +3169,12 @@
 /obj/item/paper_bin,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/medbay)
+"YI" = (
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/cmb/administration_high_sec)
 "YM" = (
 /obj/structure/flora/pottedplant/dead,
 /turf/simulated/floor/lino,
@@ -73992,23 +74022,23 @@ uQ
 uQ
 uQ
 uQ
-hQ
-hQ
-hQ
-hQ
-hQ
-hQ
-hQ
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
 Ok
-Ok
-Ok
-Ok
+PI
+PI
+PI
 lP
 lP
-Ok
-Ok
-Ok
-Ok
+PI
+PI
+PI
+PI
 uQ
 uQ
 uQ
@@ -74249,23 +74279,23 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 nV
-lP
+cs
 nV
-lP
+cs
 nV
-lP
-hQ
-lP
-lP
+cs
+Ao
 lP
 lP
 lP
 lP
 lP
 lP
-hQ
+lP
+lP
+QP
 uQ
 uQ
 uQ
@@ -74506,14 +74536,14 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 qY
-lP
+cs
 qY
-lP
+cs
 qY
-lP
-hQ
+cs
+Ao
 gx
 lP
 lP
@@ -74521,8 +74551,8 @@ lP
 lP
 lP
 lP
-lP
-hQ
+Dx
+QP
 uQ
 uQ
 uQ
@@ -74763,14 +74793,14 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 ly
-lP
+cs
 nV
-lP
+cs
 nV
 wo
-hQ
+Ao
 lP
 lP
 lP
@@ -74779,7 +74809,7 @@ lP
 lP
 lP
 lP
-hQ
+QP
 uQ
 uQ
 uQ
@@ -75020,13 +75050,13 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 qY
-lP
+cs
 qY
-lP
+cs
 qY
-lP
+cs
 mX
 lP
 lP
@@ -75036,7 +75066,7 @@ lP
 lP
 lP
 lP
-hQ
+QP
 uQ
 uQ
 uQ
@@ -75277,23 +75307,23 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 nV
-lP
+cs
 nV
-lP
+cs
 nV
-lP
-hQ
-lP
-lP
+cs
+Ao
 lP
 lP
 lP
 lP
 lP
 lP
-hQ
+lP
+lP
+QP
 uQ
 uQ
 uQ
@@ -75534,23 +75564,23 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 qY
-lP
+cs
 qY
-lP
+cs
 qY
-lP
-hQ
-lP
-lP
+cs
+Ao
 lP
 lP
 lP
 lP
 lP
 lP
-hQ
+lP
+lP
+QP
 uQ
 uQ
 uQ
@@ -75791,14 +75821,14 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 ly
-lP
+cs
 nV
-lP
+cs
 nV
 wo
-hQ
+Ao
 lP
 lP
 lP
@@ -75807,7 +75837,7 @@ lP
 lP
 lP
 lP
-hQ
+QP
 uQ
 uQ
 uQ
@@ -76048,14 +76078,14 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 qY
-lP
+cs
 qY
-lP
+cs
 qY
-lP
-hQ
+cs
+Ao
 gx
 lP
 lP
@@ -76063,8 +76093,8 @@ lP
 lP
 lP
 lP
-lP
-hQ
+Dx
+QP
 uQ
 uQ
 uQ
@@ -76305,13 +76335,13 @@ uQ
 uQ
 uQ
 uQ
-hQ
+Ao
 nV
-lP
+cs
 nV
-lP
+cs
 nV
-lP
+cs
 hQ
 hQ
 hQ
@@ -76562,20 +76592,20 @@ uQ
 uQ
 uQ
 uQ
+Ao
+hb
+hb
+hb
+hb
+hb
+cs
 hQ
-hb
-hb
-hb
-hb
-hb
-lP
 hQ
 hQ
-hQ
-lP
-lP
-lP
-lP
+YI
+Sx
+Sx
+LQ
 hQ
 hQ
 hQ
@@ -76819,20 +76849,20 @@ uQ
 uQ
 uQ
 uQ
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
 hQ
 hQ
 hQ
-hQ
-hQ
-hQ
-hQ
-hQ
-hQ
-hQ
-lP
-lP
-lP
-lP
+YI
+Sx
+Sx
+LQ
 hQ
 hQ
 hQ

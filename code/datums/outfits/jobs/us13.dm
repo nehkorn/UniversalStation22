@@ -6,6 +6,7 @@
 
 	id_slot = slot_wear_id
 	id_types = list(/obj/item/card/id/civilian)
+	back = /obj/item/storage/backpack/satchel/grey
 	pda_type = null
 
 /decl/hierarchy/outfit/job/citizen/worker
@@ -61,3 +62,8 @@
 
 /decl/hierarchy/outfit/job/earthadministrator
 	name = OUTFIT_JOB_NAME("Earth Administrator")
+
+	back = /obj/item/storage/backpack/satchel/sec
+	uniform = /obj/item/clothing/under/gentlesuit
+	shoes = /obj/item/clothing/shoes/laceup
+	l_ear = /obj/item/device/radio/headset/headset_sec/civil_protection

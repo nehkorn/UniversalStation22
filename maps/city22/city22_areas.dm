@@ -24,6 +24,15 @@
 /area/cmb/administration
 	name = "City Administration Building"
 
+/area/cmb/administration_second_floor
+	name = "City Administration, Second Floor"
+
+/area/cmb/metrocop_habitation
+	name = "Civil Protection Locker-room"
+
+/area/cmb/administration_high_sec
+	name = "City Administration, High Security Area"
+
 /area/turbolift/administration_elevator_1
 	name = "City Admin Elevator - Floor 1"
 

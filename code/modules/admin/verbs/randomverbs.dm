@@ -98,7 +98,7 @@
 	if(!check_rights(R_ADMIN))
 		return
 
-	var/result = input(src, "Pick Voiceline") as null|anything in flist("sounds/AI/overwatch/")
+	var/result = input("Pick Voiceline") as null|anything in flist("sounds/AI/overwatch/")
 
 	if(!result)
 		return
