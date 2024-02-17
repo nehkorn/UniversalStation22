@@ -207,8 +207,8 @@
 
 /obj/structure/block_crate/attack_hand(mob/user)
 	. = ..()
-	var/obj/item/plastic_block/blcok = new(get_turf(loc))
-	user.put_in_hands(block)
+	var/obj/item/plastic_block/blcok = new(get_turf(loc)) // misspelled, lol!
+	user.put_in_hands(blcok)
 
 /obj/item/citizen_ration_unfinished
 	name = "unfinished citizen ration"
@@ -286,7 +286,7 @@
 	name = "coupon"
 	desc = "Stuff this into a reclamation machine to get materials and such."
 	icon = 'icons/obj/items.dmi'
-	item_state = "efundcard"
+	icon_state = "efundcard"
 	w_class = ITEM_SIZE_TINY
 
 /obj/machinery/couponreclaim
@@ -302,10 +302,10 @@
 		var/choice = input(user, "Choose a prize for coupon redeeming") in list("STEEL", "GLASS")
 		switch(choice)
 			if("STEEL")
-				new /obj/item/stack/material/steel/fifty
+				new /obj/item/stack/material/steel/fifty(get_turf(src.loc))
 				qdel(I)
 			if("GLASS")
-				new /obj/item/stack/material/glass/fifty
+				new /obj/item/stack/material/glass/fifty(get_turf(src.loc))
 				qdel(I)
 
 /obj/machinery/deliverer
@@ -321,6 +321,7 @@
 	for(var/obj/item/citizen_ration_finished/H in get_turf(src.loc))
 		delivered++
 		playsound(get_turf(src), 'sound/weapons/emitter2.ogg', 25, TRUE)
+		flick("pad_active", src)
 		qdel(H)
 	if(delivered >= ration_quota)
 		ration_quota += 10

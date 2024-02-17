@@ -4,6 +4,7 @@
 	title = "Citizen"
 	department = "Civilians"
 	social_class = SOCIAL_CLASS_LOW
+	selection_color = "#cdcdff"
 
 	min_skill = list( // untrained scum
 		SKILL_COMBAT = SKILL_BASIC,
@@ -14,9 +15,23 @@
 	supervisors = "civil protection"
 
 	outfit_type = /decl/hierarchy/outfit/job/citizen
+	available_by_default = TRUE
+
+/datum/job/factory_overseer
+	title = "Factory Overseer"
+	social_class = SOCIAL_CLASS_MED
+	selection_color = "#8b6229"
+	head_position = 1
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the City Administrator"
+	access = list(access_manufacturing, access_bridge)
+	//outfit_type = /decl/hierarchy/outfit/job/overseer
+	available_by_default = TRUE
 
 /datum/job/citizen/worker // child worker
 	title = "Factory Worker"
+	selection_color = "#8a704c"
 
 	total_positions = 4
 	spawn_positions = 4
@@ -25,6 +40,7 @@
 	access = list(access_manufacturing)
 
 	outfit_type = /decl/hierarchy/outfit/job/citizen/worker
+	available_by_default = TRUE
 
 /datum/job/citizen/worker/handle_variant_join(mob/living/carbon/human/H, alt_title)
 	. = ..()
@@ -38,6 +54,8 @@
 	supervisors = "the Administrator"
 	req_admin_notify = 1
 	social_class = SOCIAL_CLASS_COM
+	head_position = TRUE
+	selection_color = "#2f67ff"
 
 	min_skill = list( // shouldnt be out in the field much
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
@@ -49,12 +67,14 @@
 	spawn_positions = 1
 
 	outfit_type = /decl/hierarchy/outfit/job/cp/rankleader
+	available_by_default = TRUE
 
 /datum/job/cp_elite
 	title = "Civil Protection Elite"
 	department = "Civil Protection"
 	supervisors = "rank leader"
 	social_class = SOCIAL_CLASS_MED
+	selection_color = "#6b92ff"
 
 	min_skill = list(
 		SKILL_COMBAT = SKILL_TRAINED,
@@ -65,12 +85,14 @@
 	spawn_positions = 3
 
 	outfit_type = /decl/hierarchy/outfit/job/cp/elite
+	available_by_default = TRUE
 
 /datum/job/cp_officer
 	title = "Civil Protection Officer"
 	department = "Civil Protection"
 	supervisors = "elites and the rank leader"
 	social_class = SOCIAL_CLASS_MED
+	selection_color = "#9eb8ff"
 
 	min_skill = list(
 		SKILL_COMBAT = SKILL_TRAINED,
@@ -81,6 +103,7 @@
 	spawn_positions = 3
 
 	outfit_type = /decl/hierarchy/outfit/job/cp/civilprotection
+	available_by_default = TRUE
 
 // CITY COMMAND
 
@@ -99,6 +122,7 @@ var/datum/announcement/minor/ca_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 
 	//outfit_type = /decl/hierarchy/outfit/job/earthadministrator
+	available_by_default = TRUE
 
 /datum/job/cityadmin/get_access()
 	return get_all_station_access()
@@ -122,6 +146,7 @@ var/datum/announcement/minor/ca_announcement = new(do_newscast = 1)
 		SKILL_FORENSICS = SKILL_UNTRAINED)
 
 	//outfit_type = /decl/hierarchy/outfit/job/overwatch_elite
+	available_by_default = TRUE
 
 /datum/job/overwatch_elite/get_access()
 	return get_all_station_access()

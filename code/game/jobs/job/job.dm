@@ -41,7 +41,7 @@
 	var/max_skill = list()				  //Maximum skills allowed for the job.
 	var/skill_points = 16				  //The number of unassigned skill points the job comes with (on top of the minimum skills).
 	var/no_skill_buffs = FALSE			  //Whether skills can be buffed by age/species modifiers.
-	var/available_by_default = TRUE
+	var/available_by_default = FALSE
 
 	var/social_class = SOCIAL_CLASS_MED	 //Job's social standing.
 

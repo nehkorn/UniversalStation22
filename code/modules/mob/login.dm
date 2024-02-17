@@ -66,7 +66,6 @@
 	world.update_status()
 
 	maybe_send_staffwarns("joined the round")
-	to_world("[client.ckey] has joined the game.")
 
 	client.images = null				//remove the images such as AIs being unable to see runes
 	client.screen = list()				//remove hud items just in case

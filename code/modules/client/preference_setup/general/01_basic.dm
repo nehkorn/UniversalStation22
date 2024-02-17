@@ -60,8 +60,7 @@ datum/preferences
 		var/raw_name = input(user, "Choose your character's name:", "Character Name")  as text|null
 		if (!isnull(raw_name) && CanUseTopic(user))
 
-			var/decl/cultural_info/check = SSculture.get_culture(pref.cultural_info[TAG_CULTURE])
-			var/new_name = check.sanitize_name(raw_name, pref.species)
+			var/new_name = sanitizeName(raw_name, MAX_NAME_LEN, FALSE, TRUE)
 			if(new_name)
 				pref.real_name = new_name
 				return TOPIC_REFRESH

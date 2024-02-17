@@ -26,6 +26,8 @@
 		var/turf/below = GetBelow(src)
 		if(istype(below) && !istype(below,/turf/space))
 			N = /turf/simulated/open
+		else
+			N = /turf/simulated/floor/asteroid // ghetto solution, we don't want space on earth so we just turn it into sand.
 
 	var/old_air = air
 	var/old_hotspot = hotspot
