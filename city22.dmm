@@ -1281,8 +1281,13 @@
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
 "sW" = (
-/obj/structure/table/standard,
-/turf/simulated/wall,
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/obj/structure/bed/chair/bench{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/factory)
 "tf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1449,6 +1454,10 @@
 /obj/structure/flora/pottedplant/dead,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"vE" = (
+/obj/structure/table/steel,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "vH" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/road,
@@ -2021,6 +2030,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall,
 /area/cmb/misc_buildings)
+"Dq" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/obj/structure/bed/chair/bench{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "Dx" = (
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/reinforced,
@@ -2135,6 +2153,13 @@
 "Fq" = (
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/cmb/trainstation)
+"Fs" = (
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/obj/structure/block_crate,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "Fu" = (
 /obj/machinery/atm{
 	pixel_y = 32
@@ -2518,6 +2543,12 @@
 /obj/structure/bed/chair/bench,
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
+"KC" = (
+/obj/structure/bed/chair/bench{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "KE" = (
 /turf/simulated/floor/carpet/red,
 /area/cmb/administration_high_sec)
@@ -3183,6 +3214,10 @@
 /obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
+"SS" = (
+/obj/structure/block_crate,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "SW" = (
 /obj/structure/railing/mapped{
 	dir = 4
@@ -14851,17 +14886,17 @@ Oz
 Oz
 hA
 hA
-Jj
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+VQ
+VQ
+VQ
+VQ
+VQ
+VQ
+VQ
+VQ
+VQ
+VQ
+VQ
 Bu
 Bu
 Bu
@@ -15108,17 +15143,17 @@ qy
 Oz
 hA
 hA
-Jj
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+VQ
+tz
+KC
+sW
+tz
+tz
+SS
+Fs
+tz
+tz
+VQ
 Bu
 Bu
 Bu
@@ -15365,17 +15400,17 @@ Oz
 Lo
 OO
 hA
-Jj
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+VQ
+zB
+lz
+lz
+lz
+lz
+lz
+lz
+Jg
+an
+VQ
 Bu
 Bu
 Bu
@@ -15623,16 +15658,16 @@ Oz
 hA
 hA
 VQ
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+mn
+lz
+lz
+lz
+lz
+lz
+lz
+lz
+tz
+VQ
 Bu
 Bu
 Bu
@@ -15880,16 +15915,16 @@ Oz
 hA
 hA
 VQ
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+TA
+lz
+lz
+lz
+lz
+lz
+lz
+ed
+tz
+VQ
 Bu
 Bu
 Bu
@@ -16137,16 +16172,16 @@ Oz
 hA
 hA
 VQ
-Bu
-uK
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+tz
+lz
+lz
+lz
+lz
+lz
+lz
+lz
+tz
+VQ
 Bu
 Bu
 Bu
@@ -16394,16 +16429,16 @@ Oz
 hA
 hA
 VQ
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+zB
+lz
+lz
+lz
+lo
+lo
+lz
+lz
+an
+VQ
 Bu
 Bu
 Bu
@@ -16651,16 +16686,16 @@ Oz
 OO
 hA
 VQ
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+tz
+tz
+Dq
+tz
+vE
+vE
+dk
+tz
+tz
+VQ
 Bu
 Bu
 Bu
@@ -16908,13 +16943,13 @@ Oz
 hA
 hA
 VQ
+lz
+ca
 VQ
 VQ
 VQ
 VQ
 VQ
-VQ
-sW
 VQ
 VQ
 VQ
