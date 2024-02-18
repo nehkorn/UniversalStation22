@@ -58,7 +58,7 @@
 	var/use_species_whitelist // If set, restricts the job to players with the given species whitelist. This does NOT restrict characters joining as the job to the species itself.
 	var/require_whitelist // If set to a string, requires a separate whitelist entry to use the job equal to the given string. Note: If not-null the check happens, so please don't set unless you want the whitelist.
 
-	var/required_language
+	var/required_language = LANGUAGE_HUMAN_ENGLISH
 
 /datum/job/New()
 

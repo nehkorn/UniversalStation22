@@ -26,6 +26,10 @@
 	if(user && O)
 		if(!user.unEquip(O, src)) //for some reason this allows it to actually move, hilarious
 			return
+		if(user.a_intent == I_HURT)
+			visible_message(SPAN_WARNING("[user] dumps \the [O] into \the [src], ANGRILY!"))
+			O.forceMove(src)
+			return
 		O.forceMove(src)
 
 /obj/structure/trashbin/attack_hand(mob/user)
@@ -44,14 +48,14 @@
 	desc = "I wonder who this Breen is..."
 	icon = 'icons/obj/32x64.dmi'
 	icon_state = "breen_vend"
-	products = list(/obj/item/reagent_containers/food/drinks/breen = 50)
+	products = list(/obj/item/reagent_containers/food/drinks/cans/breen = 50)
 
 /obj/machinery/vending/sovietsoda/breen/Initialize(mapload, d, populate_parts)
 	. = ..()
 	icon_deny = initial(icon_state)
 	icon_vend = initial(icon_state)
 
-/obj/item/reagent_containers/food/drinks/breen
+/obj/item/reagent_containers/food/drinks/cans/breen
 	name = "canned water"
 	desc = "Water. In a can! Provided to you by Dr. Breen."
 	icon_state = "breen_blu"

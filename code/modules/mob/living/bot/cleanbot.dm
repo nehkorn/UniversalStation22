@@ -15,6 +15,17 @@
 	var/blood = 1
 	var/list/target_types = list()
 
+/mob/living/simple_animal/cremator
+	name = "cremator"
+	icon = 'icons/mob/32x64.dmi'
+	icon_state = "cremator"
+
+/mob/living/simple_animal/cremator/do_attack(atom/A, turf/T)
+	. = ..()
+	if(istype(A,/obj/effect/decal/cleanable))
+		visible_message("[src] immolates \the [A].")
+		qdel(A)
+
 /mob/living/bot/cleanbot/New()
 	..()
 	get_targets()

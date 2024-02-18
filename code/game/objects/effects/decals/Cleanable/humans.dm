@@ -14,6 +14,7 @@ var/global/list/image/splatter_cache=list()
 	icon_state = "mfloor1"
 	random_icon_states = list("mfloor1", "mfloor2", "mfloor3", "mfloor4", "mfloor5", "mfloor6", "mfloor7", "dir_splatter_1", "dir_splatter_2")
 	blood_DNA = list()
+	persistent = TRUE
 	generic_filth = TRUE
 	appearance_flags = NO_CLIENT_COLOR
 	cleanable_scent = "blood"

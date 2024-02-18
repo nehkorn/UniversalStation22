@@ -504,9 +504,9 @@
 "il" = (
 /obj/turbolift_map_holder{
 	dir = 4;
+	depth = 2;
 	lift_size_y = 7;
 	lift_size_x = 5;
-	depth = 2;
 	areas_to_use = list(/area/turbolift/administration_elevator_1, /area/turbolift/administration_elevator_2)
 	},
 /turf/simulated/floor/plating,
@@ -1534,6 +1534,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/factory)
+"zC" = (
+/turf/simulated/floor/reinforced,
+/area/turbolift/administration_elevator_1)
 "zE" = (
 /obj/structure/table/steel,
 /turf/simulated/floor/reinforced,
@@ -2008,6 +2011,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"Hl" = (
+/turf/simulated/floor/reinforced,
+/area/turbolift/administration_elevator_2)
 "Hq" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/cmb/factory)
@@ -2048,6 +2054,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/factory)
 "HQ" = (
+/obj/effect/paint_stripe/gunmetal,
 /turf/simulated/wall/elevator,
 /area/turbolift/administration_elevator_2)
 "HS" = (
@@ -8497,8 +8504,8 @@ cm
 cm
 cm
 cm
-So
-So
+zC
+zC
 cm
 cm
 cm
@@ -74033,8 +74040,8 @@ Ok
 PI
 PI
 PI
-lP
-lP
+Hl
+Hl
 PI
 PI
 PI

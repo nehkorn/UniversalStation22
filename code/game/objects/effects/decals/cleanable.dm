@@ -2,7 +2,7 @@
 	density = FALSE
 	anchored = TRUE
 	waterproof = FALSE
-	var/persistent = FALSE
+	var/persistent = TRUE
 	var/generic_filth = FALSE
 	var/age = 0
 	var/list/random_icon_states
