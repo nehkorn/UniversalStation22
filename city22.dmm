@@ -130,6 +130,28 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/cmb/factory)
+"cb" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/obj/structure/table/rack/dark,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "ce" = (
 /obj/random/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -193,6 +215,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall,
 /area/cmb/misc_buildings)
+"db" = (
+/obj/structure/closet/walllocker/emerglocker/south,
+/turf/simulated/floor/asteroid,
+/area/space)
 "dk" = (
 /obj/machinery/light/dystopian{
 	dir = 4
@@ -382,6 +408,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/old_cargo,
 /area/cmb/misc_buildings)
+"fC" = (
+/obj/structure/table/rack/dark,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "fJ" = (
 /obj/structure/closet/crate/freezer/meat,
 /obj/effect/decal/cleanable/dirt,
@@ -402,6 +442,10 @@
 /obj/structure/table/reinforced,
 /turf/simulated/floor/reinforced,
 /area/medical)
+"gl" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "gm" = (
 /obj/structure/bed/chair/bench{
 	dir = 4
@@ -447,6 +491,12 @@
 "gQ" = (
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/cmb/misc_buildings)
+"gT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
+/turf/simulated/floor/tiled/cmb_tiled/c,
+/area/outside)
 "ha" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/decal/cleanable/dirt,
@@ -567,6 +617,10 @@
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/reinforced,
 /area/cmb/administration_access)
+"iy" = (
+/obj/random/trash,
+/turf/simulated/floor/tiled/road,
+/area/outside)
 "iF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -733,6 +787,22 @@
 	dir = 8
 	},
 /turf/simulated/floor,
+/area/cmb/trainstation)
+"kU" = (
+/obj/structure/table/rack/dark,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/tiled/techmaint,
 /area/cmb/trainstation)
 "kV" = (
 /obj/machinery/clock,
@@ -968,6 +1038,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"ok" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rubble/house,
+/turf/simulated/wall,
+/area/outside)
 "oo" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/cmb/trainstation)
@@ -997,6 +1072,12 @@
 "oA" = (
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"oC" = (
+/obj/machinery/door/window/brigdoor/westright,
+/obj/machinery/door/window/brigdoor/eastright,
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "oD" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 1;
@@ -1004,6 +1085,10 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"oG" = (
+/obj/structure/block_crate,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "oN" = (
 /obj/structure/bed/chair/bench{
 	dir = 4
@@ -1041,6 +1126,10 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/cmb/medbay)
+"pc" = (
+/obj/machinery/constructable_frame/computerframe/deconstruct,
+/turf/simulated/floor/asteroid,
+/area/space)
 "pi" = (
 /obj/structure/railing/mapped{
 	dir = 4
@@ -1051,6 +1140,10 @@
 "pq" = (
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/medbay)
+"pz" = (
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/asteroid,
+/area/space)
 "pH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rustcar,
@@ -1070,6 +1163,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/medbay)
+"pY" = (
+/turf/simulated/floor/tiled/techmaint,
+/area/space)
 "qd" = (
 /obj/structure/table/steel,
 /obj/structure/window/reinforced{
@@ -1103,6 +1199,7 @@
 /obj/machinery/button/blast_door{
 	id_tag = "FactoryReq"
 	},
+/obj/item/clothing/head/collectable/kitty,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/factory)
 "qw" = (
@@ -1132,9 +1229,6 @@
 /area/cmb/factory)
 "qO" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/light/dystopian{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/cmb_tiled/trainstation,
 /area/cmb/trainstation)
 "qV" = (
@@ -1148,6 +1242,28 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/cmb/metrocop_habitation)
+"qZ" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/obj/structure/table/rack/dark,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "rc" = (
 /obj/structure/bed/chair/armchair/red{
 	dir = 4
@@ -1238,6 +1354,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"so" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/obj/machinery/vending/hotfood,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "sr" = (
 /obj/structure/bed/chair/bench{
 	dir = 4
@@ -1280,15 +1403,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
+"sP" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/citizen_ration_finished,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "sW" = (
 /obj/machinery/light/dystopian{
-	dir = 8
-	},
-/obj/structure/bed/chair/bench{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/cmb/factory)
+/turf/simulated/floor/tiled/cmb_tiled/trainstation,
+/area/cmb/trainstation)
 "tf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1372,6 +1501,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/medbay)
+"um" = (
+/obj/structure/street_light,
+/obj/random/trash,
+/turf/simulated/floor/tiled/sidewalk,
+/area/outside)
 "uu" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 4
@@ -1416,6 +1550,10 @@
 	},
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/outside)
+"uX" = (
+/obj/item/clothing/head/collectable/kitty,
+/turf/simulated/floor/asteroid,
+/area/space)
 "vb" = (
 /obj/structure/sign/poster{
 	pixel_y = 32
@@ -1428,12 +1566,22 @@
 	},
 /turf/simulated/open,
 /area/outside)
+"vi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
+/turf/simulated/floor/tiled/sidewalk,
+/area/outside)
 "vj" = (
 /obj/effect/paint_stripe/blue,
 /obj/effect/paint_stripe/blue,
 /obj/effect/paint_stripe/blue,
 /turf/simulated/floor/reinforced,
 /area/medical)
+"vk" = (
+/obj/structure/rubble/house,
+/turf/simulated/wall,
+/area/outside)
 "vt" = (
 /obj/random/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -1454,10 +1602,6 @@
 /obj/structure/flora/pottedplant/dead,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
-"vE" = (
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/cmb/factory)
 "vH" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/road,
@@ -1479,6 +1623,7 @@
 /area/cmb/administration_high_sec)
 "wa" = (
 /obj/machinery/light/dystopian,
+/obj/machinery/sleeper,
 /turf/simulated/floor/reinforced,
 /area/medical)
 "wf" = (
@@ -1558,6 +1703,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/sidewalk,
 /area/outside)
+"wO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/remains,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "wQ" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/machinery/light/dystopian{
@@ -1624,6 +1775,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"yi" = (
+/obj/machinery/light/dystopian{
+	dir = 1
+	},
+/obj/machinery/computer,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "yk" = (
 /obj/structure/rubble/house,
 /turf/simulated/floor/tiled/old_cargo,
@@ -1716,6 +1874,15 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"zt" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/obj/structure/bed/chair/bench{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "zv" = (
 /obj/random/trash,
 /obj/effect/decal/cleanable/dirt,
@@ -1745,6 +1912,11 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/road,
+/area/outside)
+"zO" = (
+/obj/machinery/door/unpowered/simple/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
 /area/outside)
 "zT" = (
 /obj/structure/trashbin,
@@ -1795,6 +1967,10 @@
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"AC" = (
+/obj/machinery/door/unpowered/simple/iron,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "AI" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/carpet/red,
@@ -1992,6 +2168,11 @@
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"CO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rubble/house,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "CQ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
@@ -2030,15 +2211,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall,
 /area/cmb/misc_buildings)
-"Dq" = (
-/obj/machinery/light/dystopian{
-	dir = 4
-	},
-/obj/structure/bed/chair/bench{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/cmb/factory)
 "Dx" = (
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/reinforced,
@@ -2067,12 +2239,22 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
+"DX" = (
+/obj/structure/rubble/house,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "Ec" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/steel/fifty,
 /obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/factory)
+"Ed" = (
+/obj/machinery/door/unpowered/simple/iron{
+	dir = 8
+	},
+/turf/simulated/floor/asteroid,
+/area/space)
 "Ee" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/item/ammo_casing/pistol/used,
@@ -2097,11 +2279,25 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"Em" = (
+/obj/machinery/sleeper,
+/turf/simulated/floor/asteroid,
+/area/space)
 "Eo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"Er" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/citizen_ration_finished,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "Ev" = (
 /obj/structure/table/steel_reinforced,
 /obj/structure/window/reinforced{
@@ -2140,12 +2336,22 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/cmb/administration_access)
+"EK" = (
+/obj/random/trash,
+/turf/simulated/floor/tiled/road/walk{
+	dir = 4
+	},
+/area/outside)
 "EZ" = (
 /obj/structure/cmb_forcefield{
 	dir = 4
 	},
 /turf/simulated/floor,
 /area/cmb/trainstation)
+"Fg" = (
+/obj/structure/table/steel,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "Fi" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/wood/walnut,
@@ -2153,13 +2359,6 @@
 "Fq" = (
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/cmb/trainstation)
-"Fs" = (
-/obj/machinery/light/dystopian{
-	dir = 8
-	},
-/obj/structure/block_crate,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/cmb/factory)
 "Fu" = (
 /obj/machinery/atm{
 	pixel_y = 32
@@ -2221,6 +2420,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/filingcabinet/wallcabinet,
 /turf/simulated/floor/tiled/cmb_tiled/b,
 /area/outside)
 "Gs" = (
@@ -2370,6 +2570,12 @@
 "HT" = (
 /turf/simulated/open,
 /area/turbolift/administration_elevator_2)
+"HU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rubble/house,
+/obj/structure/rubble/house,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "Ig" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2397,6 +2603,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/old_cargo,
 /area/cmb/misc_buildings)
+"It" = (
+/obj/machinery/door/unpowered/simple/iron{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "Iy" = (
 /obj/machinery/door/airlock/highsecurity{
 	req_access = list(access_civilprotection);
@@ -2533,6 +2745,10 @@
 /obj/random/medical,
 /turf/simulated/floor/reinforced,
 /area/medical)
+"Kx" = (
+/obj/structure/filingcabinet/wallcabinet,
+/turf/simulated/wall,
+/area/outside)
 "Kz" = (
 /obj/machinery/light/small/yellowish{
 	dir = 4
@@ -2543,12 +2759,6 @@
 /obj/structure/bed/chair/bench,
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
-"KC" = (
-/obj/structure/bed/chair/bench{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/cmb/factory)
 "KE" = (
 /turf/simulated/floor/carpet/red,
 /area/cmb/administration_high_sec)
@@ -2581,6 +2791,13 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/road,
 /area/outside)
+"Lr" = (
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/obj/structure/block_crate,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "Ly" = (
 /obj/effect/landmark/start{
 	name = "Factory Overseer"
@@ -2614,6 +2831,10 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"LP" = (
+/obj/machinery/light/dystopian,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "LQ" = (
 /obj/machinery/light/dystopian,
 /turf/simulated/floor/reinforced,
@@ -2636,6 +2857,10 @@
 /obj/random/trash,
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/outside)
+"Mj" = (
+/obj/structure/rubble/house,
+/turf/simulated/floor/asteroid,
+/area/space)
 "Mm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2674,6 +2899,9 @@
 /obj/random/medical/lite,
 /turf/simulated/floor/reinforced,
 /area/medical)
+"My" = (
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "Mz" = (
 /obj/item/ammo_casing/pistol/used,
 /obj/item/ammo_casing/pistol/used,
@@ -2691,10 +2919,8 @@
 /area/cmb/misc_buildings)
 "MN" = (
 /obj/effect/paint_stripe/blue,
-/obj/machinery/door/unpowered/simple/iron{
-	dir = 8
-	},
 /obj/effect/paint,
+/obj/machinery/door/unpowered/simple/iron,
 /turf/simulated/wall/r_wall,
 /area/medical)
 "MP" = (
@@ -2916,6 +3142,12 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/cmb/administration_high_sec)
+"Pn" = (
+/obj/structure/bed/chair/bench{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "Pw" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/lino,
@@ -3044,6 +3276,11 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/outside)
+"Rv" = (
+/obj/structure/rubble/house,
+/obj/structure/rubble/house,
+/turf/simulated/wall,
+/area/outside)
 "Rw" = (
 /obj/structure/table/rack,
 /obj/item/stack/medical/advanced/bruise_pack,
@@ -3157,6 +3394,10 @@
 "So" = (
 /turf/simulated/floor/reinforced,
 /area/cmb/administration_access)
+"Sv" = (
+/obj/structure/filingcabinet/wallcabinet,
+/turf/simulated/floor/asteroid,
+/area/space)
 "Sw" = (
 /obj/effect/wallframe_spawn,
 /turf/space,
@@ -3214,10 +3455,6 @@
 /obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/lino,
 /area/cmb/misc_buildings)
-"SS" = (
-/obj/structure/block_crate,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/cmb/factory)
 "SW" = (
 /obj/structure/railing/mapped{
 	dir = 4
@@ -3230,6 +3467,14 @@
 /obj/random/medical/lite,
 /turf/simulated/floor/reinforced,
 /area/medical)
+"Tb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "Th" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/lino,
@@ -3408,6 +3653,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/medbay)
+"Vw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rubble/house,
+/turf/simulated/floor/tiled/sidewalk,
+/area/outside)
 "Vz" = (
 /obj/machinery/door/unpowered/simple,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -3421,6 +3671,12 @@
 /obj/effect/paint,
 /turf/simulated/wall/r_wall,
 /area/cmb/administration_access)
+"VF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rubble/house,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "VG" = (
 /obj/machinery/light/dystopian{
 	dir = 1
@@ -3454,6 +3710,10 @@
 "VT" = (
 /turf/simulated/floor/plating,
 /area/turbolift/administration_elevator_1)
+"VZ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "Wh" = (
 /obj/item/ammo_casing/pistol/used,
 /obj/item/ammo_casing/rifle/used,
@@ -3512,6 +3772,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/cmb_tiled/b,
 /area/outside)
+"WJ" = (
+/obj/machinery/light/dystopian{
+	dir = 8
+	},
+/obj/structure/bed/chair/bench{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/cmb/factory)
 "WK" = (
 /obj/effect/landmark/start{
 	name = "Citizen"
@@ -3538,11 +3807,37 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"WY" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/obj/structure/table/rack/dark,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/reagent_containers/food/snacks/hydration,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "Xd" = (
 /obj/machinery/door/window{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/sidewalk,
+/area/outside)
+"Xf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/filingcabinet/wallcabinet,
+/turf/simulated/floor/tiled/cmb_tiled/b,
 /area/outside)
 "Xi" = (
 /obj/machinery/ntnet_relay,
@@ -3589,6 +3884,20 @@
 /obj/structure/trashbin,
 /turf/simulated/floor/tiled/cmb_tiled/c,
 /area/cmb/trainstation)
+"XT" = (
+/obj/structure/table/rack/dark,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/citizen_ration_finished,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/tiled/techmaint,
+/area/cmb/trainstation)
 "XU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
@@ -3613,6 +3922,12 @@
 /obj/machinery/cooker/oven,
 /turf/simulated/floor/wood/walnut,
 /area/cmb/misc_buildings)
+"Yj" = (
+/obj/machinery/light/dystopian{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/space)
 "Yl" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/decal/cleanable/blood/splatter,
@@ -3626,6 +3941,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/cmb/medbay)
+"Yq" = (
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "YD" = (
 /obj/structure/table/steel,
 /obj/item/paper_bin,
@@ -3675,6 +3993,13 @@
 "Zb" = (
 /turf/simulated/floor/asteroid,
 /area/cmb/trainstation)
+"Zk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rubble/house,
+/obj/structure/rubble/house,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "Zl" = (
 /obj/effect/paint_stripe/white,
 /turf/simulated/wall,
@@ -3693,6 +4018,11 @@
 /obj/random/maintenance/clean,
 /turf/simulated/floor/tiled/steel_grid,
 /area/cmb/misc_buildings)
+"ZD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/outside)
 "ZR" = (
 /obj/effect/landmark/map_data{
 	height = 2
@@ -11357,7 +11687,7 @@ fd
 FN
 dw
 dw
-FN
+gT
 fd
 FN
 dw
@@ -12119,7 +12449,7 @@ Zp
 yD
 yD
 Zp
-YW
+cv
 Om
 yD
 Zp
@@ -12367,12 +12697,12 @@ dq
 dq
 Jj
 Rg
+AO
 hA
-hA
 YW
 YW
-YW
-YW
+cv
+cv
 hA
 YW
 YW
@@ -12646,7 +12976,7 @@ hA
 OO
 hA
 hA
-YW
+cv
 hA
 YW
 hA
@@ -13332,7 +13662,7 @@ Bu
 Bu
 Bu
 Bu
-Bu
+Em
 Bu
 Bu
 cm
@@ -13935,7 +14265,7 @@ Us
 hA
 Zp
 hA
-YW
+cv
 rG
 NU
 NU
@@ -14165,7 +14495,7 @@ dq
 dq
 dq
 Jj
-hA
+AO
 yD
 YW
 Us
@@ -14692,12 +15022,12 @@ YW
 YW
 hA
 YW
-Zp
-Zp
-YW
-YW
+vi
 Zp
 YW
+cv
+vi
+cv
 YW
 YW
 Zp
@@ -15145,12 +15475,12 @@ hA
 hA
 VQ
 tz
-KC
-sW
+Pn
+WJ
 tz
 tz
-SS
-Fs
+oG
+Lr
 tz
 tz
 VQ
@@ -16223,7 +16553,7 @@ dq
 Jj
 hA
 hA
-hA
+AO
 Us
 Us
 Us
@@ -16247,7 +16577,7 @@ Zl
 Zl
 YW
 hA
-YW
+cv
 Rg
 rG
 NU
@@ -16421,9 +16751,9 @@ Bu
 Bu
 Jj
 hA
-hA
-Oz
-Oz
+AO
+iy
+iy
 Oz
 Oz
 hA
@@ -16688,10 +17018,10 @@ hA
 VQ
 tz
 tz
-Dq
+zt
 tz
-vE
-vE
+Fg
+Fg
 dk
 tz
 tz
@@ -17197,7 +17527,7 @@ Oz
 Oz
 Oz
 Oz
-hA
+AO
 hA
 VQ
 tz
@@ -17764,7 +18094,7 @@ dq
 dq
 Jj
 hm
-YW
+cv
 YW
 bm
 bm
@@ -18482,7 +18812,7 @@ Oz
 Oz
 Oz
 Oz
-hA
+AO
 hA
 VQ
 zB
@@ -18739,7 +19069,7 @@ Oz
 Oz
 Oz
 Oz
-OO
+um
 MS
 VQ
 tz
@@ -19309,7 +19639,7 @@ HO
 HO
 Im
 na
-Oz
+iy
 Oz
 Oz
 Oz
@@ -19560,7 +19890,7 @@ hA
 Oz
 Oz
 Oz
-Oz
+iy
 Oz
 HO
 HO
@@ -22084,8 +22414,8 @@ Oz
 Oz
 Oz
 Oz
-Oz
-Oz
+iy
+iy
 Oz
 Oz
 Oz
@@ -22109,7 +22439,7 @@ na
 na
 na
 Oz
-Oz
+iy
 Oz
 na
 Oz
@@ -22333,6 +22663,8 @@ Bu
 Jj
 hA
 hA
+iy
+iy
 Oz
 Oz
 Oz
@@ -22343,9 +22675,7 @@ Oz
 Oz
 Oz
 Oz
-Oz
-Oz
-Oz
+iy
 Oz
 Oz
 Oz
@@ -22382,7 +22712,7 @@ RW
 Oz
 Oz
 Oz
-Oz
+iy
 Oz
 Oz
 na
@@ -22578,7 +22908,7 @@ Bu
 Bu
 Bu
 Bu
-Bu
+uX
 Bu
 Bu
 Bu
@@ -22591,7 +22921,7 @@ Jj
 hA
 hA
 Oz
-Oz
+iy
 Oz
 Oz
 Oz
@@ -22625,7 +22955,7 @@ na
 na
 Oz
 Oz
-Oz
+iy
 Oz
 Oz
 na
@@ -22650,7 +22980,7 @@ Im
 Im
 Im
 Oz
-Oz
+iy
 Oz
 Oz
 Oz
@@ -22870,7 +23200,7 @@ RW
 RW
 Oz
 Oz
-Oz
+iy
 Oz
 Oz
 Oz
@@ -22903,11 +23233,11 @@ Oz
 na
 na
 Oz
+EK
+EK
 Im
-Im
-Im
-Oz
-Oz
+iy
+iy
 Oz
 na
 Oz
@@ -23117,7 +23447,7 @@ hA
 hA
 OO
 hA
-hA
+AO
 hA
 Zp
 YW
@@ -23127,7 +23457,7 @@ hA
 YW
 hA
 hA
-hA
+AO
 hA
 OO
 hA
@@ -24163,7 +24493,7 @@ Us
 yZ
 wS
 Cq
-Jj
+Kx
 Bu
 Bu
 Bu
@@ -25170,7 +25500,7 @@ Bu
 Bu
 Jj
 hA
-hA
+AO
 Us
 zb
 eR
@@ -25188,7 +25518,7 @@ Us
 Us
 Us
 Us
-Cq
+Xf
 Cq
 wS
 Jj
@@ -25941,7 +26271,7 @@ Bu
 Bu
 Jj
 hA
-hA
+AO
 Us
 rg
 Ba
@@ -27221,7 +27551,7 @@ Bu
 Bu
 Bu
 Bu
-Bu
+Mj
 Bu
 Bu
 Jj
@@ -27261,7 +27591,7 @@ Bu
 Bu
 Bu
 Bu
-Bu
+Ed
 Bu
 Bu
 Bu
@@ -27478,12 +27808,12 @@ Bu
 Bu
 Jj
 Jj
+vk
 Jj
-Jj
-Jj
-Jj
+ok
+mc
 hA
-hA
+AO
 Us
 Us
 Us
@@ -27525,21 +27855,21 @@ Bu
 Bu
 Ou
 qL
-qL
+sW
 tD
 qO
 nC
-qL
-qL
+sW
+sW
 tD
 qO
 nC
-qL
-qL
+sW
+sW
 tD
 qO
 nC
-qL
+sW
 qL
 qL
 qL
@@ -27734,12 +28064,12 @@ Bu
 Bu
 Bu
 Jj
-hA
-hA
-hA
-hA
-hA
-hA
+CO
+DX
+DX
+VF
+Jj
+DX
 hA
 hA
 hA
@@ -27784,20 +28114,20 @@ Ou
 Ou
 Ou
 Ou
+oC
 Ou
 Ou
 Ou
 Ou
+oC
 Ou
 Ou
 Ou
 Ou
+oC
 Ou
 Ou
-Ou
-Ou
-Ou
-Ou
+It
 Ou
 Ou
 Ou
@@ -27991,14 +28321,14 @@ Bu
 Bu
 Bu
 Jj
-hA
-hA
-hA
-hA
-hA
-hA
-hA
-hA
+wO
+VZ
+HU
+ZD
+Jj
+Yq
+YW
+cv
 hA
 hA
 hA
@@ -28038,24 +28368,24 @@ Bu
 uK
 Bu
 Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+eB
+Er
+My
+My
+fC
+eB
+sP
+My
+My
+kU
+eB
+sP
+My
+My
+XT
+eB
+pY
+Cu
 Bu
 Bu
 Bu
@@ -28248,15 +28578,15 @@ Bu
 Bu
 Bu
 Jj
+ZD
+CO
+VF
+ZD
+Jj
+VZ
+Vw
 hA
-hA
-hA
-hA
-hA
-hA
-hA
-hA
-hA
+AO
 hA
 hA
 hA
@@ -28295,24 +28625,24 @@ Bu
 Bu
 Bu
 Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+eB
+yi
+My
+My
+LP
+eB
+yi
+My
+My
+LP
+eB
+yi
+My
+My
+LP
+eB
+pY
+Cu
 Bu
 Bu
 Bu
@@ -28505,15 +28835,15 @@ Bu
 Bu
 Bu
 Jj
+ZD
+VF
+CO
+VZ
+zO
+VZ
 hA
 hA
-hA
-hA
-hA
-hA
-hA
-hA
-hA
+AO
 hA
 hA
 hA
@@ -28552,24 +28882,24 @@ Bu
 Bu
 Bu
 Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+eB
+My
+My
+My
+My
+AC
+My
+My
+My
+My
+AC
+My
+My
+My
+My
+eB
+pY
+Cu
 Bu
 Bu
 Bu
@@ -28762,14 +29092,14 @@ Bu
 Bu
 Bu
 Jj
+VZ
+Tb
+VF
+VZ
+mc
+VZ
 hA
-hA
-hA
-hA
-hA
-hA
-hA
-hA
+Ac
 hA
 hA
 hA
@@ -28809,24 +29139,24 @@ Bu
 Bu
 Bu
 Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+eB
+My
+My
+My
+My
+eB
+My
+My
+My
+My
+eB
+My
+My
+My
+My
+AC
+Yj
+Cu
 Bu
 Bu
 Bu
@@ -29019,13 +29349,13 @@ Bu
 Bu
 Bu
 Jj
-hA
-hA
-hA
-hA
-hA
-hA
-hA
+VZ
+ZD
+CO
+HU
+mc
+CO
+Ac
 hA
 hA
 hA
@@ -29066,24 +29396,24 @@ Bu
 Bu
 Bu
 Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+eB
+qZ
+gl
+gl
+so
+eB
+cb
+gl
+gl
+so
+eB
+WY
+gl
+gl
+so
+eB
+Cu
+Cu
 Bu
 Bu
 Bu
@@ -29276,12 +29606,12 @@ Bu
 Bu
 Bu
 Jj
-hA
-hA
-hA
-hA
-hA
-hA
+Yq
+Zk
+HU
+Yq
+mc
+CO
 hA
 hA
 hA
@@ -29323,22 +29653,22 @@ Bu
 Bu
 Bu
 Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
-Bu
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
+eB
 Bu
 Bu
 Bu
@@ -29534,9 +29864,9 @@ Bu
 Bu
 Jj
 Jj
-Jj
-Jj
-Jj
+mc
+vk
+Rv
 Jj
 Jj
 Jj
@@ -30104,7 +30434,7 @@ Bu
 Bu
 Bu
 Bu
-Bu
+pz
 Bu
 Bu
 Bu
@@ -30340,6 +30670,7 @@ Bu
 Bu
 Bu
 Bu
+db
 Bu
 Bu
 Bu
@@ -30363,8 +30694,7 @@ Bu
 Bu
 Bu
 Bu
-Bu
-Bu
+pc
 Bu
 Bu
 Bu
@@ -33126,7 +33456,7 @@ Bu
 Bu
 Bu
 Bu
-Bu
+Sv
 Bu
 Bu
 Bu
