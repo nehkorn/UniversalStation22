@@ -108,6 +108,16 @@
 	load_admins()
 	SSstatistics.add_field_details("admin_verb","RLDA") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+/client/proc/reload_whitelist()
+	set name = "Reload Whitelist"
+	set category = "Debug"
+
+	if(!check_rights(R_SERVER)) return
+	load_alienwhitelist()
+	message_admins("[usr] manually reloaded the whitelist")
+
+	SSstatistics.add_field_details("admin_verb","RLDW") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
 /client/proc/print_jobban_old()
 	set name = "Print Jobban Log"
 	set desc = "This spams all the active jobban entries for the current round to standard output."
