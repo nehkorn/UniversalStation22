@@ -113,6 +113,8 @@
 		/decl/emote/audible/grumble,
 		/decl/emote/audible/groan,
 		/decl/emote/audible/moan,
+		/decl/emote/audible/moanpleasure,
+		/decl/emote/audible/cheese,
 		/decl/emote/audible/grunt,
 		/decl/emote/audible/slap,
 		/decl/emote/human,

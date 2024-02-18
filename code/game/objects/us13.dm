@@ -330,3 +330,11 @@
 		user.put_in_hands(coupon)
 		playsound(get_turf(src), 'sound/weapons/flash.ogg', 25, TRUE)
 		audible_message(SPAN_BOLD("QUOTA COMPLETE. COUPON PRINTED. GOOD JOB, LOYALISTS."))
+
+/obj/structure/fakestairs
+	name = "stairs"
+	desc = "They lead to somewhere, I don't know where though."
+	icon = 'icons/obj/stairs.dmi'
+	density = FALSE
+	anchored = TRUE
+	layer = RUNE_LAYER

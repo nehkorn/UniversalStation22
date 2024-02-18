@@ -729,8 +729,6 @@
 			stat("Local Time", stationtime2text())
 			stat("Local Date", stationdate2text())
 			stat("Round Duration", roundduration2text())
-		if(client.holder || isghost(client.mob))
-			stat("Location:", "([x], [y], [z]) [loc]")
 
 	if(client.holder && client.holder.rights != R_MENTOR) //Mentors don't deserve the MC panel
 		if(statpanel("MC"))

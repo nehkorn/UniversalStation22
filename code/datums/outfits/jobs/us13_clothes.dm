@@ -76,6 +76,7 @@
 	name = "overwatch elite gasmask"
 	desc = "Anticitizen One detected, bearing 12 degrees."
 	icon_state = "owE_helm"
+	unique_death = 'sound/voice/elite_death.ogg'
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,

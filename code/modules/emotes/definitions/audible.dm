@@ -157,6 +157,12 @@
 	conscious = 0
 	emote_sound = 'sound/voice/human/moan.ogg'
 
+/decl/emote/audible/cheese
+	key = "cheese"
+	emote_message_3p = "USER says that they sometimes dream about cheese."
+	conscious = 1
+	emote_sound = 'sound/voice/human/cheese.ogg'
+
 /decl/emote/audible/giggle
 	key = "giggle"
 	emote_message_3p = "USER giggles."
